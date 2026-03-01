@@ -1492,13 +1492,28 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
               </constraints>
               <modifiers>
                 <modifier type="set" value="0" field="8d68-c280-e5b4-1982-min">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4ac7-8ba9-59a4-c416" shared="true"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4ac7-8ba9-59a4-c416" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" value="0" field="8d68-c280-e5b4-1982-max">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="4ac7-8ba9-59a4-c416" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4ac7-8ba9-59a4-c416" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1518,8 +1533,33 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1554-301c-a3f1-3284-min" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1554-301c-a3f1-3284-max" includeChildSelections="false" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="1554-301c-a3f1-3284-min">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="1554-301c-a3f1-3284-max">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Heavy Weapons" id="4ac7-8ba9-59a4-c416" hidden="false" defaultSelectionEntryId="0849-616b-7961-6b5d" sortIndex="3">
+            <selectionEntryGroup name="Heavy Weapons" id="4ac7-8ba9-59a4-c416" hidden="false" defaultSelectionEntryId="0849-616b-7961-6b5d" sortIndex="4">
               <entryLinks>
                 <entryLink import="true" name="Assault Cannon" hidden="false" id="37ae-97e9-807e-25a3" type="selectionEntry" targetId="958c-db25-e5af-3db5" sortIndex="1">
                   <costs>
@@ -1564,6 +1604,68 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="root-entry" shared="true" id="18ac-c5c8-4bd3-38e6" includeChildSelections="true" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Terminator Weapons" id="3421-c9db-f464-08c4" hidden="false" flatten="true" sortIndex="3" defaultSelectionEntryId="ec0e-1228-763d-22b8">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Paired Lightning Claws" hidden="true" id="2ad6-a8e7-d32a-591f" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Lightning Claw" id="bc03-6963-5979-8110" hidden="false" type="profile" targetId="5d6f-948a-8857-ed26">
+                      <modifiers>
+                        <modifier type="set" value="Paired Lightning Claws" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b146-1a62-ebb2-adf4" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Thunder Hammer and Storm Shield" hidden="true" id="ec0e-1228-763d-22b8" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Thunder Hammer" id="cf26-2e74-a4ca-346c" hidden="false" type="profile" targetId="d847-93ef-b880-0cc8"/>
+                    <infoLink name="Storm Shield" id="bf35-d3fa-e05d-e65f" hidden="false" type="profile" targetId="1b55-f520-4b9a-c7e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b372-4234-0be3-9695" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c17-9cb5-9418-4f12-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c17-9cb5-9418-4f12-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="8c17-9cb5-9418-4f12-min">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="8c17-9cb5-9418-4f12-max">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1586,6 +1688,142 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="b6a8-04a9-ffe9-4b72" hidden="false" flatten="true" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="2cc7-75c3-7b3e-c5af" type="selectionEntry" targetId="1ed7-654d-07b2-1121" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a083-ee40-0ed5-57a0-min" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a083-ee40-0ed5-57a0-max" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="a083-ee40-0ed5-57a0-min">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="a083-ee40-0ed5-57a0-max">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Fist" id="e3d4-743e-56bb-07f7" hidden="false" defaultSelectionEntryId="f1cd-2eb9-8d8b-c6f0" flatten="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Power Fist" hidden="false" id="b483-a10c-00df-2564" type="selectionEntry" targetId="57ca-c59f-1fa9-e1b5" sortIndex="1"/>
+                <entryLink import="true" name="Chainfist" hidden="false" id="e4a4-8014-96a8-bd19" type="selectionEntry" targetId="fe39-28ae-f570-e2f5" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38d6-8222-4afe-f761-min" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d6-8222-4afe-f761-max" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="38d6-8222-4afe-f761-min">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="38d6-8222-4afe-f761-max">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Terminator Weapons" id="9889-575b-24fa-818f" hidden="false" flatten="true" sortIndex="3" defaultSelectionEntryId="ec0e-1228-763d-22b8">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Paired Lightning Claws" hidden="true" id="7955-27b4-cdef-6ac5" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Lightning Claw" id="7a1e-64f3-d0a2-5656" hidden="false" type="profile" targetId="5d6f-948a-8857-ed26">
+                      <modifiers>
+                        <modifier type="set" value="Paired Lightning Claws" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b614-8cfb-4d85-c1ed" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Thunder Hammer and Storm Shield" hidden="true" id="a8c7-fc8a-e057-dda7" sortIndex="1">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink name="Thunder Hammer" id="69f6-e7bc-81b4-2f23" hidden="false" type="profile" targetId="d847-93ef-b880-0cc8"/>
+                    <infoLink name="Storm Shield" id="de7a-ff9c-c97a-3e1c" hidden="false" type="profile" targetId="1b55-f520-4b9a-c7e7"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03c9-3df6-f7d2-a274" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d9e-6d9f-2ef2-738d-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d9e-6d9f-2ef2-738d-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="4d9e-6d9f-2ef2-738d-min">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="4d9e-6d9f-2ef2-738d-max">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Armoury" hidden="false" id="1e57-ade6-8b4e-f72e" type="selectionEntryGroup" targetId="armoury1" sortIndex="2"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Razorback" hidden="false" id="ee1d-64c6-0a77-1b03" publicationId="e1e7-bf54-15e0-5ded" page="35">
       <costs>
@@ -2739,9 +2977,6 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Armoury" hidden="false" id="0fb8-19db-5077-4414" type="selectionEntryGroup" targetId="armoury1"/>
-          </entryLinks>
         </entryLink>
         <entryLink import="true" name="Special Skills" hidden="false" id="6d8f-52cf-a03d-d7bf" type="selectionEntryGroup" targetId="ac78-e6e9-a411-196a" sortIndex="3">
           <constraints>
@@ -2807,9 +3042,6 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
           </costs>
-          <entryLinks>
-            <entryLink import="true" name="Armoury" hidden="false" id="4b5c-81f4-fe40-1548" type="selectionEntryGroup" targetId="armoury1"/>
-          </entryLinks>
         </entryLink>
         <entryLink import="true" name="Terminator" hidden="false" id="83f2-eb85-9791-2b6c" type="selectionEntry" targetId="8051-d1f8-666c-c5e2" sortIndex="2">
           <constraints>
