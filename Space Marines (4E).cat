@@ -3732,7 +3732,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
         <categoryLink name="Fast Attack" hidden="false" id="5078-6922-66b1-f0fa" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Scout Biker Sergeant" hidden="false" id="306d-a124-7618-8d4f" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Scout Biker Sergeant" hidden="false" id="306d-a124-7618-8d4f" sortIndex="1">
           <profiles>
             <profile name="Scout Biker Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2bd2-d01d-a0c8-b457">
               <characteristics>
@@ -3767,9 +3767,20 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Bolter" hidden="false" id="5638-8c65-bb92-584b" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033">
+              <modifiers>
+                <modifier type="set" value="Twin-linked Bolter" field="name"/>
+                <modifier type="set" value="Twin-linked Bolter" field="name" affects="profiles.Weapon"/>
+                <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2bdd-b714-178a-245f-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bdd-b714-178a-245f-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Scout Biker" hidden="false" id="6299-a9e1-0a97-7317" sortIndex="2">
+        <selectionEntry type="model" import="true" name="Scout Biker" hidden="false" id="6299-a9e1-0a97-7317" sortIndex="2">
           <profiles>
             <profile name="Scout Biker" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="812b-27c9-fa68-1377">
               <characteristics>
@@ -3793,6 +3804,19 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="385a-ec7b-90fb-fefe" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033">
+              <modifiers>
+                <modifier type="set" value="Twin-linked Bolter" field="name"/>
+                <modifier type="set" value="Twin-linked Bolter" field="name" affects="profiles.Weapon"/>
+                <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8af5-c534-3972-7436-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8af5-c534-3972-7436-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
