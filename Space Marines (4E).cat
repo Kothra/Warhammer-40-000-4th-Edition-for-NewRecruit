@@ -5000,6 +5000,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                     <modifier type="set" value="9" field="4c4423232344415441232323"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="And They Shall Know No Fear" id="a2f3-a37b-08a9-32b3" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="82c3-ac19-b125-6bda" includeChildSelections="false" automatic="true"/>
