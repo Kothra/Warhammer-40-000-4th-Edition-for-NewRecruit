@@ -7,6 +7,7 @@
     <categoryEntry name="Fast Attack" id="11cf-dc94-5c14-2c2a" hidden="false"/>
     <categoryEntry name="Heavy Support" id="6a52-1951-5b0c-024e" hidden="false"/>
     <categoryEntry name="Force Customization" id="7466-cf81-3a11-64ab" hidden="false"/>
+    <categoryEntry name="Character" id="c918-96c1-1ff1-3df1" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Warhammer 40,000 4th Edition Rulebook" id="c0d3-c074-f54c-9ec4" hidden="false" shortName="BRB" publisher="Warhammer 40,000 4th Edition Rulebook" publicationDate="2004/08/28" publisherUrl="https://wh40k.lexicanum.com/wiki/Warhammer_40,000_4th_Edition_Rulebook"/>

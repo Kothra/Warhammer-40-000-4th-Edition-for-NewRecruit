@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -667,6 +667,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
     <selectionEntry type="unit" import="true" name="Commander" hidden="false" id="3e34-7cee-6d3e-25f1" publicationId="e1e7-bf54-15e0-5ded" page="28" sortIndex="1">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="cb0a-0a35-b2dd-6315" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="3d67-fe88-55b5-c85f" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Commander" id="4140-de2f-9bfb-d528" hidden="false" defaultSelectionEntryId="e993-8efa-781f-7d26" sortIndex="1" flatten="true">
@@ -730,6 +731,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
     <selectionEntry type="unit" import="true" name="Chapter Chaplain" hidden="false" id="81e5-498e-ee8c-e348" publicationId="e1e7-bf54-15e0-5ded" page="28" sortIndex="2">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="73c6-af81-ace1-1924" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="f0be-0a70-6f03-a242" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Chapter Chaplain" id="dd2f-a2c7-909a-4259" hidden="false" defaultSelectionEntryId="d705-a1cc-a559-5c24" sortIndex="1" flatten="true">
@@ -822,10 +824,23 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
         <infoLink name="Honour of the Chapter" id="0989-248a-d38c-68d6" hidden="false" type="rule" targetId="5233-d4bb-fb4c-dad0"/>
         <infoLink name="And They Shall Know No Fear" id="1be5-7745-8b55-6546" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="remove" value="0d45-9523-cfd8-4efd" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chapter Librarian" hidden="false" id="cd2f-5665-5521-8396" publicationId="e1e7-bf54-15e0-5ded" page="28" sortIndex="3">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="9d81-ee9d-273d-fc7f" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="93db-8eaa-aced-1377" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Chapter Librarian" id="f124-762c-0058-a5b7" hidden="false" defaultSelectionEntryId="0e38-7a66-efc1-2f2d" sortIndex="1" flatten="true">
@@ -895,6 +910,16 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="aa3b-b41f-8457-c12f" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="remove" value="0d45-9523-cfd8-4efd" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -3363,6 +3388,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
     <selectionEntry type="model" import="true" name="Techmarine" hidden="false" id="926d-0021-c465-da7c" sortIndex="10">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="0b0d-e0e8-a0ec-f129" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="fbcb-343d-3cb6-5015" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="65"/>
@@ -4864,6 +4890,7 @@ If you select a named chapter from above and choose to use codex divergent trait
     <selectionEntry type="model" import="true" name="Kayvaan Shrike" hidden="true" id="5f56-3d70-0cad-6440">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="722a-c941-b1bf-dca5" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="485d-d2a0-0c2e-3c14" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Kayvaan Shrike" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="c731-f31c-b0a5-5933">
@@ -5161,6 +5188,7 @@ If you select a named chapter from above and choose to use codex divergent trait
     <selectionEntry type="model" import="true" name="Marneus Calgar, Chapter Master" hidden="true" id="1d8f-f602-f983-fdad">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="c6d1-43ee-f404-59d3" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="57c4-8c41-9675-938d" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="185"/>
@@ -5316,6 +5344,7 @@ If you select a named chapter from above and choose to use codex divergent trait
       </costs>
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="4efe-da35-a4e5-d610" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="5272-3075-22d3-8f9d" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad24-39f0-ddf3-7cf1" includeChildSelections="true" includeChildForces="true" automatic="true"/>
@@ -5398,7 +5427,8 @@ If you select a named chapter from above and choose to use codex divergent trait
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chaplain Cassius" hidden="true" id="9df2-f317-1174-40df">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="86e8-347a-57b8-820b" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="HQ" hidden="false" id="2ab8-f6c4-1138-e176" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="f50b-adf8-f277-873b" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Command Squad" hidden="false" id="14f1-7cfc-0c2d-30a2" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="8"/>
@@ -5511,6 +5541,7 @@ If you select a named chapter from above and choose to use codex divergent trait
     <selectionEntry type="model" import="true" name="Tigurius, Chief Librarian" hidden="true" id="d2fd-1e19-346c-e5f5">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="8967-e30b-483b-5a0a" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="dda0-ec86-074b-6be6" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Command Squad" hidden="false" id="ed99-8a9e-e948-7bd7" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="7"/>
@@ -5810,16 +5841,8 @@ If you select a named chapter from above and choose to use codex divergent trait
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="sergeant1" shared="true" includeChildSelections="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="sergeant1" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="terminatorsergeant" shared="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="fb5c-116d-3a1f-a9f8" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="4147-17d1-1cda-a597" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3b51-2480-5a6f-3d60" shared="true" includeChildSelections="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true" includeChildSelections="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9996-88e2-8ff9-a37c" shared="true" includeChildSelections="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="1507-f6be-3680-5e10" shared="true" includeChildSelections="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="306d-a124-7618-8d4f" shared="true" includeChildSelections="false"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c918-96c1-1ff1-3df1" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5921,7 +5944,34 @@ If you select a named chapter from above and choose to use codex divergent trait
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6c7d-7437-61b4-7225" automatic="true"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Auspex" hidden="false" id="cf32-e44d-15bb-e5d6" type="selectionEntry" targetId="654e-4eb2-8af2-248b"/>
+            <entryLink import="true" name="Auspex" hidden="false" id="cf32-e44d-15bb-e5d6" type="selectionEntry" targetId="654e-4eb2-8af2-248b">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Death Mask" hidden="true" id="7788-cf1a-c4a3-3e02">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c918-96c1-1ff1-3df1" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile name="Death Mask" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="942a-484a-15a0-0b58">
+                      <characteristics>
+                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any enemy unit that loses a close combat against a model wearing a Death Mask suffers a -1 modifier to its Leadership for the subsequent Morale check, in addition to any other modifiers for being below half strength or outnumbered.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
             <entryLink import="true" name="Bionics" hidden="false" id="f9df-8c19-cd83-9af2" type="selectionEntry" targetId="566d-c785-7272-4aeb"/>
           </entryLinks>
           <selectionEntries>
@@ -7661,4 +7711,10 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
       <description>A Terminator Squad may start the game in Reserve and arrive using the Deep Strike special rule, even if it is not part of the mission being played.</description>
     </rule>
   </sharedRules>
+  <categoryEntries>
+    <categoryEntry name="Blood Angel" id="e39c-0852-74f1-402d" hidden="false"/>
+    <categoryEntry name="Black Templar" id="9936-1255-bf77-b8fe" hidden="false"/>
+    <categoryEntry name="Dark Angel" id="9862-c761-5bd2-ffc7" hidden="false"/>
+    <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
+  </categoryEntries>
 </catalogue>
