@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -574,7 +574,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Armoury" hidden="false" id="3209-8bf2-4de5-aab6" type="selectionEntryGroup" targetId="armoury1" sortIndex="4">
+        <entryLink import="true" name="Armoury" hidden="false" id="3209-8bf2-4de5-aab6" type="selectionEntryGroup" targetId="armoury1" sortIndex="5">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -583,13 +583,14 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Deathwing" hidden="false" id="29bd-6247-fca2-3850" type="selectionEntry" targetId="1f0e-c351-e783-f25f" sortIndex="3"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14ab-f05b-8061-8b71-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ab-f05b-8061-8b71-max" includeChildSelections="false"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon" id="d589-28c8-efbb-2d10" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapon" id="d589-28c8-efbb-2d10" hidden="false" flatten="true" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Bolter" hidden="false" id="244c-d3e9-328f-7f7c" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
               <modifiers>
@@ -629,7 +630,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Apothecary" hidden="true" id="e8dc-6ec9-08d4-58d5" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Apothecary" hidden="true" id="e8dc-6ec9-08d4-58d5" sortIndex="4">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -1019,30 +1020,15 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b306-4592-ecf3-33b3-max" includeChildSelections="false" automatic="true"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Narthecium &amp; Reductor" hidden="false" id="1c72-6185-7fa9-d84f" type="selectionEntry" targetId="6609-4cc6-252f-d307" sortIndex="2">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2881-4778-0cb7-0b74" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Narthecium" hidden="false" id="c832-86af-87b5-e2b5" sortIndex="2">
-                  <infoLinks>
-                    <infoLink name="Narthecium" id="18e8-6611-2839-86e6" hidden="false" type="profile" targetId="63c1-ec09-fb3c-1496"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f61-2a95-65f9-e9e4-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f61-2a95-65f9-e9e4-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Reductor" hidden="false" id="510b-255d-71e5-eaa1" sortIndex="3">
-                  <infoLinks>
-                    <infoLink name="Reductor" id="3406-ff36-e568-1f97" hidden="false" type="profile" targetId="d1ca-e5e4-d7e3-9b29"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d1d-2c68-6878-b8d6-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d1d-2c68-6878-b8d6-max" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="7401-0a1b-e5fd-5309" hidden="false" sortIndex="1" defaultSelectionEntryId="f4e8-ca37-ae48-1b3f" flatten="true">
                   <entryLinks>
@@ -1114,7 +1100,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapons" id="168f-70a4-5318-0bab" hidden="false" defaultSelectionEntryId="f4e8-ca37-ae48-1b3f" sortIndex="1" flatten="true">
@@ -1184,6 +1170,9 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                       </conditionGroups>
                     </modifier>
                   </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
@@ -1332,7 +1321,11 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
           <modifiers>
             <modifier type="increment" value="1" field="4deb-313d-6685-f48b">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ca13-8f18-c026-36c2" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="sergeant1" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="3b51-2480-5a6f-3d60" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="9996-88e2-8ff9-a37c" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1350,7 +1343,11 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
           <modifiers>
             <modifier type="increment" value="2" field="4deb-313d-6685-f48b">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="ca13-8f18-c026-36c2" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="sergeant1" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="3b51-2480-5a6f-3d60" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="9996-88e2-8ff9-a37c" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1374,6 +1371,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="f063-218d-bd6a-215f" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1424,12 +1422,27 @@ A character who is leading or attached to a squad does not stop being an Indepen
             <selectionEntryGroup name="Standard Weapons" id="61d8-f530-4630-bef7" hidden="false" sortIndex="1" defaultSelectionEntryId="af1f-5ed4-99bf-1a55">
               <entryLinks>
                 <entryLink import="true" name="Bolt Pistol &amp; Close combat weapon" hidden="false" id="af1f-5ed4-99bf-1a55" type="selectionEntry" targetId="7f30-e510-d3b1-0acf" sortIndex="1"/>
-                <entryLink import="true" name="Bolter" hidden="false" id="32a7-e57e-077e-24d2" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="2"/>
+                <entryLink import="true" name="Bolter" hidden="false" id="32a7-e57e-077e-24d2" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="2">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink import="true" name="Shotgun" hidden="false" id="d2ad-a186-67a1-07e1" type="selectionEntry" targetId="477b-10b1-2505-2525" sortIndex="3"/>
                 <entryLink import="true" name="Sniper Rifle" hidden="false" id="23b3-4ca4-2efa-30c4" type="selectionEntry" targetId="41a4-2ccc-b269-fa51" sortIndex="4">
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -1449,6 +1462,13 @@ A character who is leading or attached to a squad does not stop being an Indepen
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="3144-ef96-e11b-fa62" includeChildSelections="true" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -1501,6 +1521,39 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
         <infoLink name="Scout Sergeant" id="d25c-be9e-e503-4400" hidden="false" type="profile" targetId="2519-7255-cc1c-a834"/>
         <infoLink name="And They Shall Know No Fear" id="7433-c2de-6049-f5c4" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="12b6-76b7-222d-af2c" hidden="false" defaultSelectionEntryId="a6ab-6863-988f-f73c" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol &amp; Close combat weapon" hidden="false" id="a6ab-6863-988f-f73c" type="selectionEntry" targetId="7f30-e510-d3b1-0acf" sortIndex="1"/>
+            <entryLink import="true" name="Bolter" hidden="false" id="3985-4ff8-c2c7-9238" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="2">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Shotgun" hidden="false" id="2fae-b3d7-60e6-3a1c" type="selectionEntry" targetId="477b-10b1-2505-2525" sortIndex="3"/>
+            <entryLink import="true" name="Sniper Rifle" hidden="false" id="1da8-8cf7-10e4-2645" type="selectionEntry" targetId="41a4-2ccc-b269-fa51" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="254e-5a42-d876-fba9-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="254e-5a42-d876-fba9-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Terminator" hidden="false" id="8051-d1f8-666c-c5e2">
       <profiles>
@@ -1913,6 +1966,24 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f7-7183-9d8d-0720" includeChildSelections="false"/>
       </constraints>
+      <rules>
+        <rule name="Over-Charged Engines" id="6071-f10a-783e-5a95" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e39c-0852-74f1-402d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="85" field="4deb-313d-6685-f48b">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e39c-0852-74f1-402d" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhino" hidden="false" id="a3f8-b482-c0b6-e468">
       <profiles>
@@ -1943,7 +2014,28 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
         <rule name="Repair" id="a7f7-a600-5797-96e3" hidden="false">
           <description>If a Rhino is immobilised for any reason, then in subsequent turns the driver may attempt to effect a temporary repair instead of shooting. Roll a D6 in the Shooting phase, and on a 6 the vehicle is free to move in its next turn.</description>
         </rule>
+        <rule name="Over-Charged Engines" id="14ab-8446-b1a9-34bc" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e39c-0852-74f1-402d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="65" field="4deb-313d-6685-f48b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e39c-0852-74f1-402d" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="3c1a-0f72-de9c-14e3" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Drop Pod" hidden="false" id="fa50-c2b5-c7cf-865e" publicationId="e1e7-bf54-15e0-5ded">
       <costs>
@@ -2075,9 +2167,14 @@ Drop pods may be used in Standard Missions without your opponent&apos;s agreemen
       </constraints>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="0" field="d5e7-efe5-1868-c0e9">
           <conditions>
@@ -2668,13 +2765,13 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df35-f153-bfb0-7dfa-max" includeChildSelections="false" negative="false" automatic="true"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="3f2b-e5c1-6b5f-aec1" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033">
+                <entryLink import="true" name="Bolter" hidden="false" id="3f2b-e5c1-6b5f-aec1" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c2a9-32b3-61f0-19e9-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2a9-32b3-61f0-19e9-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Power Weapon" hidden="false" id="d13b-aac6-62a5-57e5" type="selectionEntry" targetId="b28f-478a-74fb-ec87">
+                <entryLink import="true" name="Power Weapon" hidden="false" id="d13b-aac6-62a5-57e5" type="selectionEntry" targetId="b28f-478a-74fb-ec87" sortIndex="2">
                   <modifiers>
                     <modifier type="set" value="Axe of Ultramar (Power Weapon)" field="name"/>
                     <modifier type="set" value="Axe of Ultramar (Power Weapon)" field="name" affects="self.entries.profiles.Melee Weapon"/>
@@ -2684,7 +2781,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0dab-4f85-aefe-a4a2-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Purity Seals" hidden="false" id="bae7-b15c-ac7f-0435" type="selectionEntry" targetId="59ae-0489-8e98-2ef9">
+                <entryLink import="true" name="Purity Seals" hidden="false" id="bae7-b15c-ac7f-0435" type="selectionEntry" targetId="59ae-0489-8e98-2ef9" sortIndex="3">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab4f-9b2d-9c4d-438e-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab4f-9b2d-9c4d-438e-max" includeChildSelections="false"/>
@@ -2693,7 +2790,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Terminator Honours" hidden="false" id="45a5-c5e9-1202-1a89" type="selectionEntry" targetId="7461-f70a-5205-fe07">
+                <entryLink import="true" name="Terminator Honours" hidden="false" id="45a5-c5e9-1202-1a89" type="selectionEntry" targetId="7461-f70a-5205-fe07" sortIndex="4">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e811-bf1e-efdf-018c-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e811-bf1e-efdf-018c-max" includeChildSelections="false"/>
@@ -2701,6 +2798,24 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Krak Grenades" hidden="false" id="1193-14f9-52c8-f91a" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4e2-a3e2-cfe5-4e0e-min" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e2-a3e2-cfe5-4e0e-max" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Frag Grenades" hidden="false" id="3ac1-cce8-84a6-e446" type="selectionEntry" targetId="2d20-fb36-3564-0dbe">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7ee-565f-0b6d-bdda-min" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7ee-565f-0b6d-bdda-max" includeChildSelections="false" automatic="true"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
               <infoLinks>
@@ -2791,6 +2906,24 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Krak Grenades" hidden="false" id="d407-4862-b300-39cd" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e949-9d8d-b212-2d2b-min" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e949-9d8d-b212-2d2b-max" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Frag Grenades" hidden="false" id="f51f-26e5-d4d4-0537" type="selectionEntry" targetId="2d20-fb36-3564-0dbe">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d11b-4c45-fc6c-ee62-min" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d11b-4c45-fc6c-ee62-max" includeChildSelections="false" automatic="true"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -2891,6 +3024,24 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8202-a560-40c3-e209-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="1385-9a07-332a-eeea" type="selectionEntry" targetId="2d20-fb36-3564-0dbe">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80fa-dfbd-89b0-5dca-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80fa-dfbd-89b0-5dca-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="e92c-0a97-99f7-ed98" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad1d-5e1b-6b3d-23f1-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad1d-5e1b-6b3d-23f1-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Psychic Hood" hidden="false" id="3ec1-9875-7ae9-0f90">
@@ -2905,6 +3056,51 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Deathwing" hidden="true" id="1f0e-c351-e783-f25f">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Stubborn" id="150c-3e39-3e2f-db52" hidden="false" type="rule" targetId="e74d-09c0-8669-dbfa"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7461-f70a-5205-fe07" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="3dd2-7adf-d573-e010">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9862-c761-5bd2-ffc7" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02c1-8abf-85cc-c9c2" includeChildSelections="false" negative="false" automatic="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3dd2-7adf-d573-e010" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Narthecium &amp; Reductor" hidden="false" id="6609-4cc6-252f-d307">
+      <infoLinks>
+        <infoLink name="Narthecium" id="99a9-707d-f6ff-61eb" hidden="false" type="profile" targetId="63c1-ec09-fb3c-1496"/>
+        <infoLink name="Reductor" id="8ac1-8283-3d93-69d3" hidden="false" type="profile" targetId="d1ca-e5e4-d7e3-9b29"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6819-1831-4492-7ff6" includeChildSelections="false"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -3156,12 +3352,12 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9234-d024-6746-d900-max" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Terminator Honours" hidden="false" id="ece2-4188-3268-5182" type="selectionEntry" targetId="7461-f70a-5205-fe07">
+            <entryLink import="true" name="Terminator Honours" hidden="false" id="ece2-4188-3268-5182" type="selectionEntry" targetId="7461-f70a-5205-fe07" sortIndex="2">
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="13"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Armoury" hidden="false" id="305f-786c-2e5e-fe6b" type="selectionEntryGroup" targetId="armoury1">
+            <entryLink import="true" name="Armoury" hidden="false" id="305f-786c-2e5e-fe6b" type="selectionEntryGroup" targetId="armoury1" sortIndex="3">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
@@ -3214,6 +3410,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="13"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Transport" hidden="false" id="43a1-c371-e8de-4708" type="selectionEntryGroup" targetId="f59a-7dd6-663f-131b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Infiltrate" id="f055-00fc-1486-e6da" hidden="false" type="rule" targetId="c27d-09d4-6a09-1bcd">
@@ -3248,15 +3445,16 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
       </costs>
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="829c-4249-81a8-8b62" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Dreadnought" hidden="false" id="0473-8a46-4eb0-a905" targetId="5330-7b73-1fd2-d75f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Special Skills" hidden="false" id="5fdc-5bca-4b75-fed1" type="selectionEntryGroup" targetId="ac78-e6e9-a411-196a">
+        <entryLink import="true" name="Special Skills" hidden="false" id="5fdc-5bca-4b75-fed1" type="selectionEntryGroup" targetId="ac78-e6e9-a411-196a" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="011c-6b40-7ccc-e87d" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="064f-dfd0-0ede-4aee" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9"/>
-        <entryLink import="true" name="Transport" hidden="false" id="8b82-eb4d-ae49-58e5" type="selectionEntryGroup" targetId="f59a-7dd6-663f-131b"/>
+        <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="064f-dfd0-0ede-4aee" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9" sortIndex="5"/>
+        <entryLink import="true" name="Transport" hidden="false" id="8b82-eb4d-ae49-58e5" type="selectionEntryGroup" targetId="f59a-7dd6-663f-131b" sortIndex="6"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8b91-b210-255f-c202"/>
@@ -4623,11 +4821,23 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
       </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="39eb-b011-40d2-4d22">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="9862-c761-5bd2-ffc7" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="39eb-b011-40d2-4d22" automatic="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Squad" hidden="false" id="veteransquad" sortIndex="8">
       <categoryLinks>
@@ -5661,7 +5871,8 @@ If you select a named chapter from above and choose to use codex divergent trait
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e43e-477a-16b4-cf94" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3b16-fe0b-6073-e8d3" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5729,7 +5940,8 @@ If you select a named chapter from above and choose to use codex divergent trait
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e43e-477a-16b4-cf94" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="3b16-fe0b-6073-e8d3" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5740,6 +5952,122 @@ If you select a named chapter from above and choose to use codex divergent trait
                   </characteristics>
                 </profile>
               </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Holy Shroud" hidden="true" id="3447-1709-5e62-82a9">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3b16-fe0b-6073-e8d3" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="45"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grail" hidden="true" id="02c0-13c8-4206-7b85">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="b77a-f75d-76a2-7918" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="795b-6490-7e94-2873" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="81e5-498e-ee8c-e348" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="3b16-fe0b-6073-e8d3" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Lion Helm" hidden="true" id="16a3-b6bd-23d3-02a9">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+              </costs>
+              <profiles>
+                <profile name="The Lion Helm" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="a1f4-df2b-6c7c-af6c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a66-b0e3-9de5-db79" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Book of Salvation" hidden="true" id="7fcd-63c3-4169-b9db">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="cd2f-5665-5521-8396" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Book of Salvation" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="155f-b901-5f1f-e565">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cup of Retribution" hidden="true" id="0b3a-64c4-a7b2-fc88">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+              </costs>
+              <profiles>
+                <profile name="Cup of Retribution" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="6bfa-09e5-49d1-cd87">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c918-96c1-1ff1-3df1" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5944,34 +6272,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6c7d-7437-61b4-7225" automatic="true"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Auspex" hidden="false" id="cf32-e44d-15bb-e5d6" type="selectionEntry" targetId="654e-4eb2-8af2-248b">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Death Mask" hidden="true" id="7788-cf1a-c4a3-3e02">
-                  <costs>
-                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c918-96c1-1ff1-3df1" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <profiles>
-                    <profile name="Death Mask" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="942a-484a-15a0-0b58">
-                      <characteristics>
-                        <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any enemy unit that loses a close combat against a model wearing a Death Mask suffers a -1 modifier to its Leadership for the subsequent Morale check, in addition to any other modifiers for being below half strength or outnumbered.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </entryLink>
+            <entryLink import="true" name="Auspex" hidden="false" id="cf32-e44d-15bb-e5d6" type="selectionEntry" targetId="654e-4eb2-8af2-248b"/>
             <entryLink import="true" name="Bionics" hidden="false" id="f9df-8c19-cd83-9af2" type="selectionEntry" targetId="566d-c785-7272-4aeb"/>
           </entryLinks>
           <selectionEntries>
@@ -6026,6 +6327,169 @@ If you select a named chapter from above and choose to use codex divergent trait
                 </modifier>
               </modifiers>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Death Mask" hidden="true" id="7788-cf1a-c4a3-3e02">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e39c-0852-74f1-402d" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c918-96c1-1ff1-3df1" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Death Mask" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="942a-484a-15a0-0b58">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any enemy unit that loses a close combat against a model wearing a Death Mask suffers a -1 modifier to its Leadership for the subsequent Morale check, in addition to any other modifiers for being below half strength or outnumbered.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca6c-1051-eef4-130c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exsanguinator" hidden="true" id="130d-7229-107f-37bb">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="795b-6490-7e94-2873" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="parent" childId="b77a-f75d-76a2-7918" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Exsanguinator" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="50ab-84ad-e00c-9b3f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model with an Exsanguinor allows the squad he is in to ignore the first failed Armour Save each turn. In addition, the Sanguinary Priest can try to save more of his brethren with his own life fluid and attempt to negate a second and subsequent failed Armour Saves. To do so, roll a D6. If the score is equal to or less than the Sanguinary Priest&apos;s Toughness, the failed Armour Save is ignored. If it is higher than the Sanguinary Priest&apos;s Toughness, the model which failed its Armour Save  and the Priest both suffer a wound with no Armour Save allowed. An Exsanguinator cannot negate hits from a weapon that inflicts Instant Death and it cannot be used if the Priest is in base contact with an enemy model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1bc-2eb6-9e25-ace9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sword of Secrets" hidden="true" id="d5a6-316e-fdc4-b81c">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a66-b0e3-9de5-db79" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="8677-9e63-6b54-9a46" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blades of Reason" hidden="true" id="1f1e-af24-cfb9-cfe3">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="81e5-498e-ee8c-e348" shared="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="ea75-c1ab-47e4-1c6c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard of Devastation" hidden="true" id="ad82-88c6-291d-d92d">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="b79e-529a-b3ba-1055" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard of Fortitude" hidden="true" id="e58d-1992-db1f-d5ef">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="aae3-e220-7554-37f4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Standard of Retribution" hidden="true" id="f11e-3b99-23cf-2e06">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3b88-ab20-7461-a7fa" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Armour" id="05d1-12e6-5c25-25e2" hidden="false" sortIndex="1" defaultSelectionEntryId="dc21-40d3-2e2e-11a2" flatten="true">
@@ -6079,6 +6543,19 @@ If you select a named chapter from above and choose to use codex divergent trait
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="10" field="4deb-313d-6685-f48b">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or"/>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c918-96c1-1ff1-3df1" shared="true"/>
+                      </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -6394,7 +6871,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             <modifier type="set" value="Storm Bolter (Pintle-mounted)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="Storm Bolter (Pintle-mounted)" field="name" affects="self.entries.profiles.Weapon"/>
@@ -6416,7 +6893,7 @@ If you select a named chapter from above and choose to use codex divergent trait
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6450,7 +6927,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="f0dd-db2d-3fc8-f8b7" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6467,7 +6944,7 @@ If you select a named chapter from above and choose to use codex divergent trait
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7153,6 +7630,13 @@ If you select a named chapter from above and choose to use codex divergent trait
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d4a-7410-b33a-8a89" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e39c-0852-74f1-402d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Transport" id="f59a-7dd6-663f-131b" hidden="false">
       <entryLinks>
@@ -7166,17 +7650,11 @@ If you select a named chapter from above and choose to use codex divergent trait
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="a10d-d7dd-4f63-b6a0" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8a0f-5a7a-17cb-568f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="10" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -7195,23 +7673,11 @@ If you select a named chapter from above and choose to use codex divergent trait
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="a10d-d7dd-4f63-b6a0" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8a0f-5a7a-17cb-568f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
                   </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="6" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="6" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f063-218d-bd6a-215f" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -7233,21 +7699,16 @@ If you select a named chapter from above and choose to use codex divergent trait
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="6" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
                       </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="10" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -7273,14 +7734,14 @@ If you select a named chapter from above and choose to use codex divergent trait
                           <conditions>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true"/>
                             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </conditionGroup>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="5" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dfad-a748-913f-6a1f" shared="true"/>
+                        <condition type="atLeast" value="11" field="selections" scope="root-entry" childId="model" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -7288,10 +7749,12 @@ If you select a named chapter from above and choose to use codex divergent trait
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="16bd-1997-ce61-f3ce" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="veteransquad" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="985e-dda7-9cd9-a782" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1202-16ac-4bf1-c237" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d438-1078-bc67-68b4" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="926d-0021-c465-da7c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8a0f-5a7a-17cb-568f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5fee-5b5d-d4a3-c880" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7652,6 +8115,15 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6fd0-571e-3c12-fc82" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Death Company" hidden="false" id="7bcb-4bcd-dba3-3d0b" targetId="3c1a-0f72-de9c-14e3">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e39c-0852-74f1-402d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink name="Elites" hidden="false" id="0e07-cc4e-7107-b860" targetId="39ab-2bcd-49d1-cfef">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e8fc-9149-21e5-f647" includeChildSelections="true"/>
@@ -7716,5 +8188,10 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
     <categoryEntry name="Black Templar" id="9936-1255-bf77-b8fe" hidden="false"/>
     <categoryEntry name="Dark Angel" id="9862-c761-5bd2-ffc7" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
+    <categoryEntry name="Death Company" id="3c1a-0f72-de9c-14e3" hidden="true"/>
+    <categoryEntry name="Dreadnought" id="5330-7b73-1fd2-d75f" hidden="false"/>
   </categoryEntries>
+  <infoLinks>
+    <infoLink name="And They Shall Know No Fear" id="9d0f-b0cd-b7f8-ebf0" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
+  </infoLinks>
 </catalogue>
