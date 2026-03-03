@@ -20,6 +20,9 @@
       <categoryLinks>
         <categoryLink name="Blood Angel" hidden="false" id="1e74-442a-8e40-7bb5" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a672-7f5e-fbf4-d0b6" includeChildSelections="false"/>
+      </constraints>
     </entryLink>
     <entryLink import="true" name="Land Raider" hidden="false" id="f52f-156c-8275-f9d2" type="selectionEntry" targetId="29de-e7fe-1741-d490" sortIndex="26">
       <categoryLinks>
