@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="1c6a-4f6b-9265-e6ee" type="selectionEntry" targetId="16bd-1997-ce61-f3ce" sortIndex="13">
       <categoryLinks>
@@ -395,7 +395,7 @@
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Standard Weapons" id="1f35-b773-bf67-45ad" hidden="false" sortIndex="1" defaultSelectionEntryId="5167-03f8-0879-7c51">
                       <entryLinks>
-                        <entryLink import="true" name="Bolter" hidden="false" id="63a0-2631-d736-02e5" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1" defaultAmount="">
+                        <entryLink import="true" name="Bolter" hidden="false" id="63a0-2631-d736-02e5" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
                           <modifiers>
                             <modifier type="set" value="true" field="hidden">
                               <conditions>
@@ -521,7 +521,7 @@
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Standard Weapons" id="116d-746a-9b23-92fb" hidden="false" sortIndex="1" defaultSelectionEntryId="5167-03f8-0879-7c51">
                       <entryLinks>
-                        <entryLink import="true" name="Bolter" hidden="false" id="69ff-d0f9-0da4-589d" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1" defaultAmount="">
+                        <entryLink import="true" name="Bolter" hidden="false" id="69ff-d0f9-0da4-589d" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
                           <modifiers>
                             <modifier type="set" value="true" field="hidden">
                               <conditions>
@@ -604,7 +604,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Standard Weapons" id="e597-dc17-1c0e-ff75" hidden="false" sortIndex="1" defaultSelectionEntryId="5167-03f8-0879-7c51">
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="5167-03f8-0879-7c51" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1" defaultAmount="">
+                <entryLink import="true" name="Bolter" hidden="false" id="5167-03f8-0879-7c51" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditions>
@@ -1263,6 +1263,577 @@
       <entryLinks>
         <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="5b00-4510-22f2-d41c" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9" sortIndex="3"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Brother Corbulo, Bearer of the Red Grail" hidden="false" id="d859-7075-7e58-bc66">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="3917-54b4-76bf-a636" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="3ba6-4877-4bc4-2bb5" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="9335-6353-a828-4639" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="156"/>
+      </costs>
+      <profiles>
+        <profile name="Brother Corbulo, Bearer of the Red Grail" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0e48-5a61-1405-37b2">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">2</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bolt Pistol &amp; Close combat weapon" hidden="false" id="55cd-c0ab-38d4-c925" type="selectionEntry" targetId="7f30-e510-d3b1-0acf" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41be-831d-d058-a8f7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41be-831d-d058-a8f7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Exsanguinator" hidden="false" id="c3a8-1dfd-4c7b-85f7" type="selectionEntry" targetId="130d-7229-107f-37bb" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e6a-5c1e-bb63-a588-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e6a-5c1e-bb63-a588-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d859-7075-7e58-bc66" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Narthecium &amp; Reductor" hidden="false" id="06ce-fb43-4e04-8249" type="selectionEntry" targetId="6609-4cc6-252f-d307" sortIndex="3">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e79b-7cfb-5384-40f7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e79b-7cfb-5384-40f7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="e443-9f26-eab1-df28" type="selectionEntry" targetId="2d20-fb36-3564-0dbe" sortIndex="5">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a01-9b15-99be-a9bf-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a01-9b15-99be-a9bf-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="d9b0-b107-1cc1-fe74" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e7c1-e45c-4358-4b4e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c1-e45c-4358-4b4e-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Blood Angels Honour Guard" hidden="false" id="b5b6-3e20-285f-ba09" type="selectionEntry" targetId="fabc-5c51-ed3a-b9f5" sortIndex="7"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Red Grail" hidden="false" id="fe7b-4ec2-7985-1860" sortIndex="4">
+          <profiles>
+            <profile name="The Red Grail" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="7ded-4355-b4b0-12e4">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The rules for a normal Grail apply to the Red Grail. In addition, any Blood Angels models within 2D6&quot; of Corbulo add +1 to their Attacks characteristic (roll at the start of every Assault phase).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc78-9272-6f8a-7e93-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc78-9272-6f8a-7e93-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Sanguinius&apos; Chosen" id="b3f7-8cea-970a-621e" hidden="false" type="rule" targetId="193f-6b90-350b-da1b"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30c2-6e6b-940f-45b0" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chaplain Lemartes, Guardian of the Lost" hidden="false" id="56cf-e22f-1003-a952">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="109"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="d06e-e6d5-0e5e-38d0" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="9e82-41e4-623f-1782" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="6210-a8a2-ca76-fe86" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chaplain Lemartes, Guardian of the Lost" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4da7-c80d-2c2a-a9b9">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">2</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">D3 (+3)</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="04e3-ece0-c89e-e2ac" type="selectionEntry" targetId="b4d3-5dc3-8317-362c" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4871-daee-734f-4837-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4871-daee-734f-4837-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Crozius Arcanum" hidden="false" id="280c-0c56-7001-2017" type="selectionEntry" targetId="745d-64f7-03c1-de30" sortIndex="2"/>
+        <entryLink import="true" name="Rosarius" hidden="false" id="96d2-dd81-293e-f758" type="selectionEntry" targetId="37c6-b7e8-dfdc-ae8d" sortIndex="3"/>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="8d4e-ccd9-6ee3-48a8" type="selectionEntry" targetId="2d20-fb36-3564-0dbe" sortIndex="5">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="298f-fbab-c5a1-5068-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="298f-fbab-c5a1-5068-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="4bce-f467-2bbc-d9ea" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3" sortIndex="6">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d52-ad30-f1c4-72bf-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d52-ad30-f1c4-72bf-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Jump Pack" hidden="true" id="1b3e-8d4e-0e0b-96ec" type="selectionEntry" targetId="ad18-c21b-2a52-ef86" sortIndex="7">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="23b9-44e0-5e86-2f63" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="442d-2523-b2a5-78b7" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d2d-b622-96a9-cf80" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="23b9-44e0-5e86-2f63">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1d2d-b622-96a9-cf80" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="442d-2523-b2a5-78b7">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="1d2d-b622-96a9-cf80" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Death Company" hidden="false" id="9892-e69f-a9f2-94ef" type="selectionEntry" targetId="7205-9c16-857d-ba53" sortIndex="8">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="120"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e668-e7d3-ea17-8759" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Death Mask" hidden="false" id="aa1f-4b77-9184-b996" type="selectionEntry" targetId="7788-cf1a-c4a3-3e02" sortIndex="4">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d31-f1c0-6dab-1ec9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d31-f1c0-6dab-1ec9-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Litanies of Hate" id="149a-3bfa-4791-0488" hidden="false" type="rule" targetId="99d7-eaaa-fb97-4d39"/>
+        <infoLink name="Honour of the Chapter" id="27fd-843e-009c-071a" hidden="false" type="rule" targetId="9cb2-4889-4b6c-190d"/>
+      </infoLinks>
+      <rules>
+        <rule name="Iron-Willed" id="bbba-5be4-fe05-c2cc" hidden="false">
+          <description>As soon as he is in close combat Lemartes must take a Leadership test. If he passes, he has D3+3 attacks that phase. If he fails he only has D3 attacks that phase as he as forced to clamp down on his raging bloodthirst. This already includes the bonus attack for his two close combat weapons, but Lemartes still gains the normal +1 Attack if he charges.</description>
+        </rule>
+        <rule name="Rigid Discipline" id="9228-772c-3552-5187" hidden="false">
+          <description>Any Blood Angels unit within 6&quot;&apos; of Lemartes can re-roll the D6 when testing to restrain themselves at the start of the turn. If the second roll is also a 1, the unit must move towards the enemy as normal.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3b2c-0b34-0455-a75c" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Commander Dante, Lord of the Blood Angels" hidden="false" id="70fa-9d71-12f4-480c">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="bad1-fdf6-45c2-cb35" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="b35b-4fa4-7bfd-a190" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="6608-9528-bd3f-3746" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Commander Dante, Lord of the Blood Angels" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="475b-6bef-40dc-a07a">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">6</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Jump Pack" hidden="false" id="b629-2d65-aec0-4d3c" type="selectionEntry" targetId="ad18-c21b-2a52-ef86" sortIndex="5">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de5e-9a31-82e1-010e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de5e-9a31-82e1-010e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="3044-d757-44a5-ab62" type="selectionEntry" targetId="2d20-fb36-3564-0dbe" sortIndex="7">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="94ea-0d68-c2c3-ce42-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94ea-0d68-c2c3-ce42-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="db61-1261-910b-d584" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3" sortIndex="8">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="393e-c51f-efb3-d932-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="393e-c51f-efb3-d932-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Terminator Honours" hidden="false" id="ac68-192c-29e5-f3a8" type="selectionEntry" targetId="7461-f70a-5205-fe07" sortIndex="10">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e06e-b229-377d-6654-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e06e-b229-377d-6654-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Artificier Armour" hidden="false" id="08e6-c923-fffe-b8f3" type="selectionEntry" targetId="ca63-bf9b-91fe-f3d0" sortIndex="6">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6458-df42-a08e-462e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6458-df42-a08e-462e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Purity Seals" hidden="false" id="5af8-16a9-2d80-370b" type="selectionEntry" targetId="59ae-0489-8e98-2ef9" sortIndex="9">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f00e-fd28-46d4-47d7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f00e-fd28-46d4-47d7-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Power Weapon" hidden="false" id="5eb9-af4f-0545-7f2f" type="selectionEntry" targetId="b28f-478a-74fb-ec87" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55ac-af81-e2cc-6fc3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ac-af81-e2cc-6fc3-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="aaeb-c680-7d84-e257" type="selectionEntry" targetId="4e8d-4ba1-82d0-3818" sortIndex="4">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="16e7-6389-5ac7-141e" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bcbb-280a-6370-2e34-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcbb-280a-6370-2e34-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Blood Angels Honour Guard" hidden="false" id="6150-39b2-5f83-4d3b" type="selectionEntry" targetId="fabc-5c51-ed3a-b9f5"/>
+      </entryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="205"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Inferno Pistol" hidden="false" id="ed2d-1a81-3f2d-03cb" sortIndex="1">
+          <profiles>
+            <profile name="Inferno Pistol" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b03f-acd4-6e2c-8c28">
+              <characteristics>
+                <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
+                <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                <characteristic name="Type" typeId="8b10-045a-f593-605e">Pistol, Melta</characteristic>
+                <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b62-bdbf-1194-e861-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b62-bdbf-1194-e861-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Death Mask of Sanguinius" hidden="false" id="7129-04e3-1c02-5600" sortIndex="3">
+          <profiles>
+            <profile name="Death Mask of Sanguinius" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="a0a2-ad30-6283-2284">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The Death Mask of Sanguinius follows the standard rules for Death Masks.
+In addition, any enemy squad within 6&quot; of Dante at the start of that side&apos;s turn must pass a Morale check or immediately start falling back. A -1 modifier for being below half strength applies.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a23-5513-dff7-61ee-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a23-5513-dff7-61ee-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="06ec-75c3-b212-f03e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="06ec-75c3-b212-f03e">
+          <conditions>
+            <condition type="atLeast" value="2000" field="4deb-313d-6685-f48b" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="May only be taken in a Force of at least 2000 points" field="error">
+          <conditions>
+            <condition type="lessThan" value="2000" field="4deb-313d-6685-f48b" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chief Librarian Mephiston, Lord of Death" hidden="false" id="d018-499a-2d02-483e">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="117c-ca36-39e9-a0cc" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="70f2-d6f8-0591-e669" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="08b3-7b4f-4f5d-4b71" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="217"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d86-3ad8-5e00-3d7a" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Commander Dante, Lord of the Blood Angels" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="3e75-4ef7-f7aa-6e9f">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">6</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">5</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Artificier Armour" hidden="false" id="78c2-7729-6e6a-2892" type="selectionEntry" targetId="ca63-bf9b-91fe-f3d0" sortIndex="5">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e9e8-d4f0-75d7-5de6-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e8-d4f0-75d7-5de6-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="aa0a-349c-6b2a-a4a0" type="selectionEntry" targetId="2d20-fb36-3564-0dbe" sortIndex="6">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe4d-64fe-57db-95d8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe4d-64fe-57db-95d8-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Terminator Honours" hidden="false" id="b1e2-8efd-65fd-270b" type="selectionEntry" targetId="7461-f70a-5205-fe07" sortIndex="8">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fd83-c403-bdc7-cedc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd83-c403-bdc7-cedc-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="d0bb-2012-4d37-d289" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3" sortIndex="7">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a951-3f35-bc32-c5d4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a951-3f35-bc32-c5d4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Psychic Powers" hidden="false" id="1d3e-ca9d-8f75-0d71" type="selectionEntryGroup" targetId="adde-b091-49fb-9791" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="0" field="4deb-313d-6685-f48b" affects="self.entries"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Plasma Pistol" hidden="false" id="d8fb-6f30-12b0-df54" type="selectionEntry" targetId="43f8-0d25-b271-4d6c" sortIndex="2">
+          <modifiers>
+            <modifier type="prepend" value="Master-crafted" field="name"/>
+            <modifier type="prepend" value="Master-crafted" field="name" affects="self.entries.profiles.Weapon"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53ef-77fb-2ab7-d7bb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53ef-77fb-2ab7-d7bb-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Master-crafted" id="9369-faa6-13bd-726c" hidden="false" type="rule" targetId="55c5-f2b8-a4a7-b734"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink import="true" name="Force Weapon" hidden="false" id="1364-23dc-0933-ab95" type="selectionEntry" targetId="bede-9886-e7e7-1175" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d037-6f1d-7fbe-2fc4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d037-6f1d-7fbe-2fc4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Psychic Hood" hidden="false" id="f96a-0a9e-5e02-3013" type="selectionEntry" targetId="3ec1-9875-7ae9-0f90" sortIndex="4"/>
+        <entryLink import="true" name="Blood Angels Honour Guard" hidden="false" id="cd87-3008-73f7-4481" type="selectionEntry" targetId="fabc-5c51-ed3a-b9f5"/>
+      </entryLinks>
+      <rules>
+        <rule name="Transfixing Glare" id="42c6-696f-b00a-7d05" hidden="false">
+          <description>Any model in base contact with Mephiston in close combat must take a Leadership test (with the model&apos;s own Leadership with no bonuses or penalties). If it is passed, the model can attack normally. If it is failed the model counts as having a Weapon Skill of 1 for the rest of that round. Test each turn for each model in contact with Mephiston.</description>
+        </rule>
+        <rule name="Blood Fever" id="befa-8a73-0044-b710" hidden="false">
+          <description>If Mephiston&apos;s close combat opponents break, he must take a normal Leadership test on 2D6. if he passes, then he advances as normal. If he fails then he stops to quench is ravening bloodthirst and cannot move at all.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brother-Captain Tycho, Commander of the Blood Angels Third Company" hidden="false" id="3c24-b8ab-3779-2ce8">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="109"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="1901-c4e6-7d68-708a" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="2a56-a7e4-0b41-8daf" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="2ed1-ad71-cc91-35a5" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Brother-Captain Tycho, Commander of the Blood Angels Third Company" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0d91-ac69-c328-5df5">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">2</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="162b-440c-fda7-6d69" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Combi-melta" hidden="false" id="b95e-593b-3a98-3f98" type="selectionEntry" targetId="41b7-2235-bd40-76d3" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c70c-e818-174d-0c0f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c70c-e818-174d-0c0f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="e9a8-a5af-a211-c65a" type="selectionEntry" targetId="b4d3-5dc3-8317-362c" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f413-a40d-ec11-135f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f413-a40d-ec11-135f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="d0f9-11fb-a4c9-a113" type="selectionEntry" targetId="2d20-fb36-3564-0dbe" sortIndex="7">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3158-cb24-a1f8-e27f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3158-cb24-a1f8-e27f-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="8856-3583-f40a-ba6f" type="selectionEntry" targetId="f95f-36b5-33b7-c0f3" sortIndex="8">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5614-12d3-43a2-7db2-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5614-12d3-43a2-7db2-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Artificier Armour" hidden="false" id="6161-cddf-5412-e7ae" type="selectionEntry" targetId="ca63-bf9b-91fe-f3d0" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90de-d5bc-ff2a-2cad-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90de-d5bc-ff2a-2cad-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Bionics" hidden="false" id="80d2-bae0-f37e-a9df" type="selectionEntry" targetId="566d-c785-7272-4aeb" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25bc-0cfe-ecfa-c256-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25bc-0cfe-ecfa-c256-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Purity Seals" hidden="false" id="6998-adae-8d30-1462" type="selectionEntry" targetId="59ae-0489-8e98-2ef9" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c44-4827-b02f-5ca7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c44-4827-b02f-5ca7-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Blood Angels Honour Guard" hidden="false" id="e201-181c-4fe7-832b" type="selectionEntry" targetId="fabc-5c51-ed3a-b9f5"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Digi-lasers" hidden="false" id="b971-af05-ab46-c122" sortIndex="3">
+          <profiles>
+            <profile name="Digi-lasers" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="045a-5c5d-8f2e-0585">
+              <characteristics>
+                <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Digi-lasers are used at the start of a round of close combat before any attacks are made. One model in base contact with Tycho, chosen by the Blood Angels player, suffers a wound on a D6 roll of 4+. Normal saving throws are allowed. In addition, the digi-lasers count as an extra close combat weapon (giving Tycho a total of 4 Attacks).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bf0-71da-a4a3-3eba-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7bf0-71da-a4a3-3eba-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Embittered" id="3ad9-384a-83c5-3c55" hidden="false">
+          <description>Any squad led by Tycho always moves towards the enemy D6&quot;, just as if you had rolled a 1 for them when testing for the Black Rage at the start of the turn.</description>
+        </rule>
+        <rule name="Hates Orks" id="41fe-6833-ce94-5631" hidden="false">
+          <description>When fighting against Orks, Tycho and any squad he leads automatically pass any Morale checks they are required to make. In close combat against Orks, Tycho always hits on a 3+ regardless of Weapon Skill, etc.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>
