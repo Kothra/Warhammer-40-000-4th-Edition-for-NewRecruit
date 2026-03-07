@@ -451,6 +451,22 @@
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="18"/>
               </costs>
+              <profiles>
+                <profile name="Veteran Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="777e-35c9-f7a5-76e5">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                    <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                    <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+                    <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+                    <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                    <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                    <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sanguinary Priest" hidden="false" id="795b-6490-7e94-2873" sortIndex="2">
               <entryLinks>
@@ -577,6 +593,22 @@
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="18"/>
               </costs>
+              <profiles>
+                <profile name="Veteran Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="f177-d798-d7a0-7df0">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                    <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                    <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+                    <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+                    <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                    <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                    <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -595,7 +627,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -863,7 +895,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -885,7 +917,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1053,7 +1085,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27"/>
           </characteristics>
         </profile>
       </profiles>
@@ -1285,7 +1317,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1384,7 +1416,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">D3 (+3)</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1493,7 +1525,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1646,7 +1678,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1744,7 +1776,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>

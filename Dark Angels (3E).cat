@@ -898,7 +898,7 @@
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -919,7 +919,7 @@
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1027,7 +1027,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1227,7 +1227,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1364,6 +1364,22 @@
       <infoLinks>
         <infoLink name="Stubborn" id="ff23-d90a-7701-1ad0" hidden="false" type="rule" targetId="e74d-09c0-8669-dbfa"/>
       </infoLinks>
+      <profiles>
+        <profile name="Ezekiel, Grand Master of the Librarians" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="10da-d405-280e-a63d">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -1381,7 +1397,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1427,7 +1443,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1528,7 +1544,7 @@
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>

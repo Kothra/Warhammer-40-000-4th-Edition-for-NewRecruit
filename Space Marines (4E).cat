@@ -12,7 +12,7 @@
         <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
         <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
         <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-        <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
       </characteristics>
     </profile>
     <profile name="Space Marine Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4a23-77d6-bb88-e7ac">
@@ -26,7 +26,7 @@
         <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
         <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
         <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-        <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
       </characteristics>
     </profile>
     <profile name="Frag Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="0f43-aa70-49ba-8c41">
@@ -60,7 +60,7 @@
         <characteristic name="I" typeId="4.923232344415441e+21"/>
         <characteristic name="A" typeId="4.123232344415441e+21"/>
         <characteristic name="LD" typeId="4c4423232344415441232323"/>
-        <characteristic name="Save" typeId="5.361766523232344e+27"/>
+        <characteristic name="Sv" typeId="5.361766523232344e+27"/>
       </characteristics>
     </profile>
     <profile name="Scout" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="728a-c4af-caf8-1024">
@@ -74,7 +74,7 @@
         <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
         <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
         <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-        <characteristic name="Save" typeId="5.361766523232344e+27">4+</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
       </characteristics>
     </profile>
     <profile name="Terminator Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a705-e11f-d621-2dd9">
@@ -88,7 +88,7 @@
         <characteristic name="I" typeId="4.923232344415441e+21"/>
         <characteristic name="A" typeId="4.123232344415441e+21"/>
         <characteristic name="LD" typeId="4c4423232344415441232323"/>
-        <characteristic name="Save" typeId="5.361766523232344e+27"/>
+        <characteristic name="Sv" typeId="5.361766523232344e+27"/>
       </characteristics>
     </profile>
     <profile name="Scout Sergeant" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2519-7255-cc1c-a834">
@@ -102,7 +102,7 @@
         <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
         <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
         <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-        <characteristic name="Save" typeId="5.361766523232344e+27">4+</characteristic>
+        <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
       </characteristics>
     </profile>
     <profile name="Narthecium" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="63c1-ec09-fb3c-1496">
@@ -686,7 +686,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -704,7 +704,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -793,7 +793,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -814,7 +814,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1747,7 +1747,7 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1973,7 +1973,7 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2564,7 +2564,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3201,7 +3201,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3940,7 +3940,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4597,7 +4597,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
                 <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                 <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                 <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="Save" typeId="5.361766523232344e+27">4+</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4648,7 +4648,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
                 <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                 <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                 <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="Save" typeId="5.361766523232344e+27">4+</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5446,7 +5446,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5823,7 +5823,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5942,7 +5942,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6051,7 +6051,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6197,7 +6197,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             <characteristic name="I" typeId="4.923232344415441e+21"/>
             <characteristic name="A" typeId="4.123232344415441e+21"/>
             <characteristic name="LD" typeId="4c4423232344415441232323"/>
-            <characteristic name="Save" typeId="5.361766523232344e+27"/>
+            <characteristic name="Sv" typeId="5.361766523232344e+27"/>
           </characteristics>
         </profile>
       </profiles>
