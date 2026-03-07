@@ -68,7 +68,7 @@
         <characteristicType name="I" id="4.923232344415441e+21"/>
         <characteristicType name="A" id="4.123232344415441e+21"/>
         <characteristicType name="LD" id="4c4423232344415441232323"/>
-        <characteristicType name="Save" id="5.361766523232344e+27"/>
+        <characteristicType name="Sv" id="5.361766523232344e+27"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Transport" id="307d-047f-ca13-706b" hidden="false" kind="model" sortIndex="3">
@@ -394,49 +394,31 @@
       </characteristics>
     </profile>
     <profile name="Power Weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="793f-3d45-00ad-58d2">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Power weapons ignore Armour Saves, and some may give a Strength bonus or wound on a fixed dice score regardless of the enemy&apos;s Toughness characteristic (as detailed in the appropriate army Codex).</characteristic>
       </characteristics>
     </profile>
     <profile name="Thunder Hammer" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="d847-93ef-b880-0cc8">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Doubles user&apos;s base Strength (to a maximum of 10). Ignores Armour Saves. Attacks are made at Initiative 1, ignoring modifiers. Any model wounded but not killed by an attack with a Thunder Hammer has Initiative 1 in the next Assault Phase. Vehicles struck by a Thunder Hammer suffer a &apos;Crew Shaken&apos; result in addition to any other damage results.</characteristic>
       </characteristics>
     </profile>
     <profile name="Power Fist" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="180c-c683-5834-19cc">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Doubles user&apos;s base Strength (to a maximum of 10). Ignores Armour Saves. Attacks are made at Initiative 1, ignoring modifiers.</characteristic>
       </characteristics>
     </profile>
     <profile name="Close Combat Weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="7b3d-1932-99ef-f5c8">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">There is is a bewildering array of close combat weapons, all of which confer no bonus to the Strength of combatants. However, swords and pistols (or similar hand weapons) gain the wielder an additonal close combat attack. A plasma pistol can be used as a close combat weapon, though it confers no Strength bonus or particular armour penetration advantages.</characteristic>
       </characteristics>
     </profile>
     <profile name="Chainfist" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="7226-d535-3f43-b157">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A Chainfist is treated exactly like a Power Fist, but rolls 2D6 for Armour Penetration against Vehicles.</characteristic>
       </characteristics>
     </profile>
     <profile name="Lightning Claw" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="5d6f-948a-8857-ed26">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Lightning claws are commonly used as matched pairs, as only a second lightning claw can provide an additional close combat weapon attack bonus for a model equipped with one. Lightning claws ignore Armour Saves and re-roll any failed To Wound rolls.</characteristic>
       </characteristics>
@@ -452,9 +434,6 @@
       </characteristics>
     </profile>
     <profile name="Force Weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="29ac-7e83-0ba0-5fd3">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Force weapons are treated as a power weapon, but can unleash a psychic attack that kills an opponent outright. Roll to hit and wound as normal, allowing any Invulnerable Saving throws the victim might have. As long as one wound has been inflicted, make a Psychic test for the Psyker against any one opponent wounded by the weapon. The normal rules for using psychic powers apply, and you may not use another psychic power in the same turn. Passing the test slays the opponent outright, no matter how many Wounds it has (count the actual number inflicted for determining who won the assault). Force weapons have no special effect against targets that don&apos;t have Wounds, such as vehicles.</characteristic>
       </characteristics>
@@ -494,17 +473,11 @@
       </characteristics>
     </profile>
     <profile name="Heavy close combat weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="b3d3-8bf8-a94a-194c">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The maximum Armour Save that can be used against a Heavy close combat weapon is 4+ even if it would normally be better.</characteristic>
       </characteristics>
     </profile>
     <profile name="Witchblade" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="0448-9b63-d2b2-7082">
-      <attributes>
-        <attribute name="Details" typeId="1dca-e229-7bd3-0fbb"/>
-      </attributes>
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A Witchblade inflicts wounds on a roll of 2+, regardless of the target&apos;s Toughness, though Armour Saves are taken as normal. Against vehicles, the wielder of a witchblade triples his Strength (up to S10).</characteristic>
       </characteristics>
@@ -607,6 +580,9 @@ Jump infantry fall back 3D6&quot;, as they will always use their packs. They may
 Beasts and cavalry move 12&quot; when charging. They are slowed by difficult terrain - roll for distance they can move just like you would for infantry, but double the result.
 
 Beasts and cavalry fall back 3D6&quot;.</description>
+      <alias>Beast</alias>
+      <alias>Beasts</alias>
+      <alias>Cavalry</alias>
     </rule>
     <rule name="Jet Pack Infantry" id="ffdf-361f-d803-4b5d" hidden="false">
       <description>Jet pack infantry work like Jump infantry with some differences.
@@ -708,6 +684,7 @@ This special rule is gained by any independent character joining a Stubborn unit
     </rule>
     <rule name="Swarms" id="3861-5fe9-d4bb-9917" hidden="false">
       <description>Swarms represent creatures that are too puny to be an individual threat, but when operating as a sea of dozens of creatures they can destroy much larger enemies. All Swarms have the Small Targest and Vulnerable to Blasts/Templates special rules.</description>
+      <alias>Swarm</alias>
     </rule>
     <rule name="Tank Hunters" id="bb6f-77dc-26ac-51ab" hidden="false">
       <description>Tank Hunters are especially skilled at finding and exploiting weaknesses in the armour of enemy vehicles. They add +1 to their Armour Penetration rolls whenever they hit a vehicle (with any weapon), and automatically pass Morale checks caused by Tank Shock</description>
@@ -755,6 +732,8 @@ Note: vehicles, monstrous creatures, riders on bikes (including jetbikes) and ce
       <alias>Assault 6</alias>
       <alias>Assault 7</alias>
       <alias>Assault 8</alias>
+      <alias>Assault X</alias>
+      <alias>Assault 2X</alias>
       <description>Models carrying assault weapons can fire them in the Shooting phase and still charge into close combat in the Assault phase.</description>
     </rule>
     <rule name="Ordnance" id="5335-0ee8-a82a-b66b" hidden="false">
@@ -933,7 +912,7 @@ When engaged in close combat, enemy units must allocate their attacks between th
             <characteristic name="I" typeId="4.923232344415441e+21">3</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">5+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -988,7 +967,7 @@ When engaged in close combat, enemy units must allocate their attacks between th
             <characteristic name="I" typeId="4.923232344415441e+21">3</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">4+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1009,7 +988,7 @@ When engaged in close combat, enemy units must allocate their attacks between th
             <characteristic name="I" typeId="4.923232344415441e+21">3</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-            <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1205,9 +1184,6 @@ When engaged in close combat, enemy units must allocate their attacks between th
     <selectionEntry type="upgrade" import="true" name="Dreadnought close combat weapon" hidden="false" id="271b-32b1-d9ab-6fae">
       <profiles>
         <profile name="Dreadnought close combat weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="6eff-6aa7-a3a5-34d3">
-          <attributes>
-            <attribute name="Details" typeId="1dca-e229-7bd3-0fbb">A Dreadnought armed with a close combat weapon doubles its Strength in close combat (to a maximum of 10) and ignores Armour Saving throws. A Dreadnought armed with two close combat weapons gains an extra attack, just like ordinary troopers armed with two weapons. If one of the weapons is destroyed, the bonus attack is lost. Further Weapon Destroyed results do not affect the walker&apos;s Attacks characteristics, but will prevent it gaining the benefits of Dreadnought close combat weapons if that weapon is destroyed (so, the Dreadnought will fight at its base strength, and wounded enemies will still be allowed to take their Armour Saves).</attribute>
-          </attributes>
           <characteristics>
             <characteristic name="Details" typeId="acf3-d214-6e51-29fe"/>
           </characteristics>
