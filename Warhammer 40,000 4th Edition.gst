@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
+<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
   <categoryEntries>
     <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
     <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
@@ -656,6 +656,8 @@ Models with this ability may choose to leave close combat. Declare this at the e
       <description>Warriors in certain parts of the galaxy have developed nocturnal tendencies by fighting in perpetual night, or perhaps carry equipment that gives them such abilities. When the Night Fighting mission special rules are in use, such models may choose to reroll the test to determine how far they can see, but must abide by the new result. Such troops make excellent sentries, and when used in this role, they have a spotting distance equal to double their Initiative rating.
 
 Characters with this rule confer it onto any unit they join, as long as they are part of the unit. Units with this rule confer it onto any characters joining them, as long as they are part of the unit.</description>
+      <alias>Night Vision</alias>
+      <alias>Acute Senses</alias>
     </rule>
     <rule name="Preferred Enemy" id="b6b9-28e7-4a3f-5334" hidden="false">
       <description>Some warriors are able to predict the moves of the enemies they are used to fighting. In close combat they have developed special techniques that enable them to counter such enemies more effectively. Such troops will always hit their designated preferred enemy on 3+ in close combat, regardless of the comparative Weapon Skills. This ability will not help when attempting to hit independent characters, monstrous creatures or vehicles without a Weapon Skill characteristic.</description>
@@ -663,7 +665,9 @@ Characters with this rule confer it onto any unit they join, as long as they are
     <rule name="Scouts" id="ec7c-9e8c-06ac-06b7" hidden="false">
       <description>This special rule is automatically lost by an independent character joining a unit that does not have this special rule, and vice versa.
 
-Scouts are used to reconnoitre ahead and are always used in the vanguard of the army. To represent this, any Scouts in the army may be deployed as the start of the battle, even in scenarios where they could not normally be deployed. For example, if you are using a mission variant with the Escalation special rule, then your Scouts would set up at the start of the battle instead of being places in reserve. In addition to this rule, after both sides have deployed (including Infiltrators), any Scouts may make a &apos;free move&apos;. The move happens before rolling to see who goes first. All of the normal Movement rules apply.</description>
+Scouts are used to reconnoitre ahead and are always used in the vanguard of the army. To represent this, any Scouts in the army may be deployed as the start of the battle, even in scenarios where they could not normally be deployed. For example, if you are using a mission variant with the Escalation special rule, then your Scouts would set up at the start of the battle instead of being places in reserve. In addition to this rule, after both sides have deployed (including Infiltrators), any Scouts may make a &apos;free move&apos;. The move happens before rolling to see who goes first. All of the normal Movement rules apply.
+
+This rule does not apply if the Scouts begin the game embarked on a Transport.</description>
     </rule>
     <rule name="Skilled Rider" id="f5d4-5cda-70b3-469d" hidden="false">
       <description>The model may re-roll the dice for Dangerous Terrain tests.</description>
@@ -825,6 +829,7 @@ If an artillery unit is forced to fall back from close combat and the enemy is f
       <description>When Night Fighting is in effect, after selecting a target, but before a unit fires, a check needs to be made to see if the firing unit can see their target through the darkness. Roll 2D6 and multiply the result by 3, rolling only once per unit. This is the maximum range that any non-barrage we3apon can be fired at. If the shooters have selected a target beyond this range, they lose the right to fire, as they search the darkness for a target that never appears
 
 Normal barrage and ordnance barrage weapons may fire at unseen targets, but if they do, they add an extra D6 to the distance scattered.</description>
+      <alias>Fighting at night</alias>
     </rule>
     <rule name="Master-crafted" id="55c5-f2b8-a4a7-b734" hidden="false">
       <description>A master-crafted weapon may re-roll one failed to-hit roll per turn. A master crafted ranged weapon may only re-roll hits for ranged attacks even if the weapon can also be used in close combat (such as pistols).</description>
@@ -857,7 +862,8 @@ When engaged in close combat, enemy units must allocate their attacks between th
       <profiles>
         <profile name="Frag Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="03d9-ffef-c80f-5272">
           <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models armed with frag grenades that are charging an enemy in or behind cover fight with Initiative 10, so they strike blows simultaneously with the defenders.
+Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -869,7 +875,7 @@ When engaged in close combat, enemy units must allocate their attacks between th
       <profiles>
         <profile name="Krak Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="433d-b280-086f-a17b">
           <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Krak grenades are used offensively against vehicles, rolling D6+6 for armour penetration.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -881,7 +887,7 @@ When engaged in close combat, enemy units must allocate their attacks between th
       <profiles>
         <profile name="Melta Bombs" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="966b-eeda-876f-1104">
           <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Melta bombs are used offensively against vehicles, rolling 2D6+8 for armour penetration.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1193,6 +1199,16 @@ When engaged in close combat, enemy units must allocate their attacks between th
         <modifier type="multiply" value="2" field="c10b-81fc-f48d-cb9c" scope="root-entry" affects="profiles.Walker"/>
         <modifier type="ceil" value="10" field="c10b-81fc-f48d-cb9c" scope="root-entry" affects="profiles.Walker"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="07ae-f0c7-b277-fb93">
+      <profiles>
+        <profile name="Plasma Grenades" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="0ba9-5ab3-c378-61f0">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">The effects of cover on close combat are negated by plasma grenades, so all fighting is done in standard Initiative order, since the Initiative 10 bonus for cover is lost.
+Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <conditions>
