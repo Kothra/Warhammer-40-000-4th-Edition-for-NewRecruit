@@ -8594,70 +8594,6 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
       </modifiers>
     </entryLink>
   </entryLinks>
-  <forceEntries>
-    <forceEntry name="Standard Mission Force Organization Chart [SM]" id="4657-a521-3e15-0d2a" hidden="false" exportable="false">
-      <categoryLinks>
-        <categoryLink name="Force Customization" hidden="false" id="8c22-b741-b15f-adb1" targetId="7466-cf81-3a11-64ab"/>
-        <categoryLink name="HQ" hidden="false" id="a2dd-863d-02d8-7544" targetId="0d45-9523-cfd8-4efd">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a102-4a07-c78f-cf85" includeChildSelections="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6fd0-571e-3c12-fc82" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Death Company" hidden="false" id="7bcb-4bcd-dba3-3d0b" targetId="3c1a-0f72-de9c-14e3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e39c-0852-74f1-402d" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="0e07-cc4e-7107-b860" targetId="39ab-2bcd-49d1-cfef">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e8fc-9149-21e5-f647" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="e8fc-9149-21e5-f647">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="253d-d4ce-5a7a-f24b" targetId="23e2-2a28-50f4-a3c1">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2044-dcaf-b228-e3a5" includeChildSelections="true"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d1e0-1d2f-eea8-e15e" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Fast Attack" hidden="false" id="e08b-2cba-0586-aadc" targetId="11cf-dc94-5c14-2c2a">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6b58-931d-0ea2-899a" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="6b58-931d-0ea2-899a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Heavy Support" hidden="false" id="2b1e-f9ef-776b-21b2" targetId="6a52-1951-5b0c-024e">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1690-5ebc-d328-e12a" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="decrement" value="1" field="1690-5ebc-d328-e12a">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <sharedRules>
     <rule name="Rites of Battle" id="2443-287f-f8df-ffa4" hidden="false">
       <description>If a Space Marine Commander is on the table then all other Space Marine squads may used his Leadership for Morale, Pinning, or Leadership tests (but not Psychic tests).</description>
@@ -8677,7 +8613,15 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
     <categoryEntry name="Black Templar" id="9936-1255-bf77-b8fe" hidden="false"/>
     <categoryEntry name="Dark Angel" id="9862-c761-5bd2-ffc7" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
-    <categoryEntry name="Death Company" id="3c1a-0f72-de9c-14e3" hidden="true"/>
+    <categoryEntry name="Death Company" id="3c1a-0f72-de9c-14e3" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e39c-0852-74f1-402d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Dreadnought" id="5330-7b73-1fd2-d75f" hidden="false"/>
   </categoryEntries>
   <infoLinks>

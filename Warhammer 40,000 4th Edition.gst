@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
   <categoryEntries>
-    <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
-    <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
-    <categoryEntry name="Troops" id="23e2-2a28-50f4-a3c1" hidden="false"/>
-    <categoryEntry name="Fast Attack" id="11cf-dc94-5c14-2c2a" hidden="false"/>
-    <categoryEntry name="Heavy Support" id="6a52-1951-5b0c-024e" hidden="false"/>
+    <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb91-ab6e-1d22-7b9d" includeChildSelections="true"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="74ba-68da-040c-9b9e" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d518-1c27-da4e-764e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="d518-1c27-da4e-764e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Troops" id="23e2-2a28-50f4-a3c1" hidden="false">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="64fe-3999-b9ed-7453" includeChildSelections="true"/>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1511-9e96-1d39-3410" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Fast Attack" id="11cf-dc94-5c14-2c2a" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6b58-931d-0ea2-899a" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="6b58-931d-0ea2-899a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Heavy Support" id="6a52-1951-5b0c-024e" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1690-5ebc-d328-e12a" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="decrement" value="1" field="1690-5ebc-d328-e12a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry name="Force Customization" id="7466-cf81-3a11-64ab" hidden="false"/>
-    <categoryEntry name="Character" id="c918-96c1-1ff1-3df1" hidden="false"/>
+    <categoryEntry name="Character" id="c918-96c1-1ff1-3df1" hidden="false">
+      <infoLinks>
+        <infoLink name="Character" id="ef1a-f9b1-cc1d-691d" hidden="false" type="rule" targetId="ff9d-2579-a056-981b"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Death Company" id="0589-7c29-bfa2-d566" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e39c-0852-74f1-402d" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <publications>
     <publication name="Warhammer 40,000 4th Edition Rulebook" id="c0d3-c074-f54c-9ec4" hidden="false" shortName="BRB" publisher="Warhammer 40,000 4th Edition Rulebook" publicationDate="2004/08/28" publisherUrl="https://wh40k.lexicanum.com/wiki/Warhammer_40,000_4th_Edition_Rulebook"/>
@@ -186,7 +242,7 @@
     </profileType>
   </profileTypes>
   <forceEntries>
-    <forceEntry name="Standard Mission Force Organization Chart" id="916a-7942-cedc-170c" hidden="false" sortIndex="1" exportable="false" import="false">
+    <forceEntry name="Standard Mission Force Organization Chart" id="916a-7942-cedc-170c" hidden="false" sortIndex="1" exportable="false">
       <categoryLinks>
         <categoryLink name="Force Customization" hidden="false" id="2536-580a-6798-ea9f" targetId="7466-cf81-3a11-64ab"/>
         <categoryLink name="HQ" hidden="false" id="7d81-9036-eb2e-ffe7" targetId="0d45-9523-cfd8-4efd">
@@ -195,6 +251,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="650c-a852-8d3e-4fcd" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Death Company" hidden="false" id="127f-8dd1-cf9d-64c0" targetId="0589-7c29-bfa2-d566"/>
         <categoryLink name="Elites" hidden="false" id="9adf-cce0-a1a7-22e2" targetId="39ab-2bcd-49d1-cfef">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="72b8-d157-8702-12e5" includeChildSelections="true"/>

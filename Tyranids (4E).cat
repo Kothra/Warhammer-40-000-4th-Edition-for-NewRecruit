@@ -3048,38 +3048,4 @@ A Scythe tail gets D3 attacks at half the creature&apos;s Strength (rounding dow
       <comment>For Hive Tyrants</comment>
     </selectionEntry>
   </sharedSelectionEntries>
-  <forceEntries>
-    <forceEntry name="Standard Mission Force Organization Chart" id="e24a-3ddf-7652-f5b0" hidden="false" exportable="false" import="false">
-      <categoryLinks>
-        <categoryLink name="Force Customization" hidden="false" id="fe4f-93b1-f666-a9bd" targetId="7466-cf81-3a11-64ab"/>
-        <categoryLink name="HQ" hidden="false" id="8d79-0f4e-8264-79f2" targetId="0d45-9523-cfd8-4efd">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0261-a460-6a53-d3c7" includeChildSelections="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e44c-b57b-9aac-d588" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="a7ac-9bf7-8aa9-0a48" targetId="39ab-2bcd-49d1-cfef">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1234-d9c2-3b1a-c517" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="9bc8-5825-bd84-f8f7" targetId="23e2-2a28-50f4-a3c1">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0239-6146-f040-3d0a" includeChildSelections="true"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a2b5-3ab3-2d2f-0d3c" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Fast Attack" hidden="false" id="da11-7cbb-e467-a7ce" targetId="11cf-dc94-5c14-2c2a">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="ff85-a884-9685-deb8" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Support" hidden="false" id="518b-b09e-e071-8fda" targetId="6a52-1951-5b0c-024e">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="239d-d106-7819-707b" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
 </catalogue>

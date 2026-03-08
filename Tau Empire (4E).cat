@@ -1632,40 +1632,6 @@
       </constraints>
     </selectionEntry>
   </selectionEntries>
-  <forceEntries>
-    <forceEntry name="Standard Mission Force Organization Chart" id="e656-8936-937a-5763" hidden="false" exportable="false" import="false">
-      <categoryLinks>
-        <categoryLink name="Force Customization" hidden="false" id="3b0c-a217-7534-836f" targetId="7466-cf81-3a11-64ab"/>
-        <categoryLink name="HQ" hidden="false" id="58e4-4921-6e6c-3ca2" targetId="0d45-9523-cfd8-4efd">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8075-fe7e-7a33-27ae" includeChildSelections="true"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a89d-b3ba-6600-b743" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Elites" hidden="false" id="3983-3682-bbe2-3912" targetId="39ab-2bcd-49d1-cfef">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="bbe8-3f75-3c49-e1b3" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="false" id="ccc0-fa21-067b-0038" targetId="23e2-2a28-50f4-a3c1">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8a9c-51f6-eb42-2b33" includeChildSelections="true"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2ac3-918f-5609-0879" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Fast Attack" hidden="false" id="a506-9a4c-4392-15e3" targetId="11cf-dc94-5c14-2c2a">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="91de-5ffd-a6a0-86b1" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink name="Heavy Support" hidden="false" id="1b9f-adc9-3e4a-3d79" targetId="6a52-1951-5b0c-024e">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e9d3-8fd2-e76b-d66a" includeChildSelections="true"/>
-          </constraints>
-        </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Devilfish Troop Carrier" hidden="false" id="b3b0-17af-698b-03ba">
       <profiles>
