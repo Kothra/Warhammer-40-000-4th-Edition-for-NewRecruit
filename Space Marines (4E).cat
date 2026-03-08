@@ -690,6 +690,9 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Master" hidden="false" id="9a66-b0e3-9de5-db79" sortIndex="2">
               <profiles>
@@ -709,7 +712,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="75"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -723,54 +726,15 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
         <entryLink import="true" name="Armoury" hidden="false" id="4c2c-ceea-e6cc-1a10" type="selectionEntryGroup" targetId="armoury1" sortIndex="3"/>
         <entryLink import="true" name="Command Squad" hidden="false" id="cbf5-5790-eb1f-5ff3" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="4"/>
         <entryLink import="true" name="Terminator Command Squad" hidden="false" id="8716-c967-f7b5-39ab" type="selectionEntry" targetId="dfad-a748-913f-6a1f" sortIndex="5"/>
+        <entryLink import="true" name="Deathwing" hidden="false" id="df6c-350b-d6c0-6887" type="selectionEntry" targetId="1f0e-c351-e783-f25f" sortIndex="2"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Rites of Battle" id="f436-84aa-fe2c-c1d0" hidden="false" type="rule" targetId="2443-287f-f8df-ffa4"/>
         <infoLink name="And They Shall Know No Fear" id="81f4-e2eb-526d-f4a1" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
       </infoLinks>
       <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Deathwing" hidden="true" id="e8ed-faf9-1be8-ac84" sortIndex="2">
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Stubborn" id="300d-0ada-f127-2379" hidden="false" type="rule" targetId="e74d-09c0-8669-dbfa"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7461-f70a-5205-fe07" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="1" field="7e5d-e378-08e1-e946">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c918-96c1-1ff1-3df1" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and"/>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="915b-6b49-dbe2-78ee" field="category" scope="parent"/>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57e7-ba49-ec6a-1fea" includeChildSelections="false" negative="false" automatic="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7e5d-e378-08e1-e946" includeChildSelections="false" automatic="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chapter Chaplain" hidden="false" id="81e5-498e-ee8c-e348" publicationId="e1e7-bf54-15e0-5ded" page="28" sortIndex="2">
       <categoryLinks>
@@ -798,7 +762,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Master of Sanctity" hidden="false" id="f945-d764-591b-56cf" sortIndex="2">
@@ -819,7 +783,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="105"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -827,14 +791,19 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f360-3e68-ad7d-d080-max-min" includeChildSelections="false" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f360-3e68-ad7d-d080-max-max" includeChildSelections="false" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="110" field="4deb-313d-6685-f48b" affects="self.entries.dd2f-a2c7-909a-4259" scope="parent">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e39c-0852-74f1-402d" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Armoury" hidden="false" id="c0b3-129e-f51e-2e86" type="selectionEntryGroup" targetId="armoury1" sortIndex="5"/>
+        <entryLink import="true" name="Deathwing" hidden="false" id="67b4-73c9-04ff-76c4" type="selectionEntry" targetId="1f0e-c351-e783-f25f" sortIndex="4"/>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
-      </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Crozius Arcanum" hidden="false" id="745d-64f7-03c1-de30" sortIndex="2">
           <infoLinks>
@@ -860,44 +829,6 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="452e-cc5d-fe8e-d4df-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="452e-cc5d-fe8e-d4df-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Deathwing" hidden="true" id="7ced-4afa-2fdd-a038" sortIndex="4">
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Stubborn" id="6451-e6fa-ae51-21dd" hidden="false" type="rule" targetId="e74d-09c0-8669-dbfa"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7461-f70a-5205-fe07" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="1" field="703c-308c-76d6-c49d">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c918-96c1-1ff1-3df1" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and"/>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="915b-6b49-dbe2-78ee" field="category" scope="parent"/>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f46a-9c3a-36ff-f7e2" includeChildSelections="false" negative="false" automatic="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="703c-308c-76d6-c49d" includeChildSelections="false" automatic="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -961,6 +892,9 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Epistolary" hidden="false" id="b99b-4e21-6176-f480" sortIndex="2">
               <profiles>
@@ -980,7 +914,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 </profile>
               </profiles>
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="115"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1000,10 +934,8 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
         </entryLink>
         <entryLink import="true" name="Psychic Powers" hidden="false" id="d9a5-832e-37a6-58c9" type="selectionEntryGroup" targetId="adde-b091-49fb-9791" sortIndex="2"/>
         <entryLink import="true" name="Psychic Hood" hidden="false" id="dabe-57c2-0ceb-335e" type="selectionEntry" targetId="3ec1-9875-7ae9-0f90" sortIndex="4"/>
+        <entryLink import="true" name="Deathwing" hidden="false" id="c479-7e4d-c310-1485" type="selectionEntry" targetId="1f0e-c351-e783-f25f" sortIndex="5"/>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -1012,6 +944,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="aa3b-b41f-8457-c12f" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2fd-1e19-346c-e5f5" shared="true" includeChildSelections="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="011c-ecc1-7b26-e702" shared="true" includeChildSelections="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9936-1255-bf77-b8fe" shared="true" includeChildSelections="true"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -1045,46 +978,6 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="9f76-1d46-a7c7-a631" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Deathwing" hidden="true" id="b0d1-8ff7-23ee-84cc" sortIndex="5">
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Stubborn" id="9761-da55-b4d6-2826" hidden="false" type="rule" targetId="e74d-09c0-8669-dbfa"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7461-f70a-5205-fe07" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="1" field="d81e-db1d-4857-248d">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c918-96c1-1ff1-3df1" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="213a-8bf1-e310-6baa" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="and"/>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" value="915b-6b49-dbe2-78ee" field="category" scope="parent"/>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39a2-e78f-73f3-945e" includeChildSelections="false" negative="false" automatic="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d81e-db1d-4857-248d" includeChildSelections="false" automatic="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Command Squad" hidden="false" id="1202-16ac-4bf1-c237" sortIndex="4">
       <selectionEntryGroups>
@@ -1437,9 +1330,6 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3661-76a3-d169-41d1" includeChildSelections="false"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
-          </costs>
         </entryLink>
         <entryLink import="true" name="Chapter Chaplain" hidden="false" id="df2d-f90b-7bd7-2690" type="selectionEntry" targetId="81e5-498e-ee8c-e348" defaultAmount="0" sortIndex="9">
           <constraints>
@@ -1457,9 +1347,6 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
               </conditionGroups>
             </modifier>
           </modifiers>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
-          </costs>
         </entryLink>
         <entryLink import="true" name="Frag Grenades" hidden="false" id="e504-34d5-7eb4-5b73" type="selectionEntry" targetId="2d20-fb36-3564-0dbe" sortIndex="5">
           <costs>
@@ -8447,9 +8334,6 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
         <entryLink import="true" name="Terminator Command Squad" hidden="false" id="e031-03af-4134-0b9f" type="selectionEntry" targetId="dfad-a748-913f-6a1f" sortIndex="8"/>
         <entryLink import="true" name="Honour Guard Command Squad" hidden="false" id="d586-509e-514b-a551" type="selectionEntry" targetId="f063-218d-bd6a-215f" sortIndex="9"/>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Chapter Chaplain" hidden="false" id="cd40-d9d1-807e-ac8a" type="selectionEntry" targetId="81e5-498e-ee8c-e348" sortIndex="2">
       <categoryLinks>
@@ -8460,17 +8344,11 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
         <entryLink import="true" name="Terminator Command Squad" hidden="false" id="382c-03b2-8c7e-4a6f" type="selectionEntry" targetId="dfad-a748-913f-6a1f" sortIndex="7"/>
         <entryLink import="true" name="Honour Guard Command Squad" hidden="false" id="aba0-2f29-acdb-c064" type="selectionEntry" targetId="f063-218d-bd6a-215f" sortIndex="8"/>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
-      </costs>
     </entryLink>
     <entryLink import="true" name="Commander" hidden="false" id="4b4d-e384-568a-0f3e" type="selectionEntry" targetId="3e34-7cee-6d3e-25f1" sortIndex="1">
       <categoryLinks>
         <categoryLink targetId="0d45-9523-cfd8-4efd" id="ff73-bea5-b485-04a8" primary="true" name="HQ"/>
       </categoryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -8609,7 +8487,6 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
     </rule>
   </sharedRules>
   <categoryEntries>
-    <categoryEntry name="Blood Angel" id="e39c-0852-74f1-402d" hidden="false"/>
     <categoryEntry name="Black Templar" id="9936-1255-bf77-b8fe" hidden="false"/>
     <categoryEntry name="Dark Angel" id="9862-c761-5bd2-ffc7" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>

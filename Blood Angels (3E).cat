@@ -36,9 +36,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Commander" hidden="false" id="6e41-2158-620d-98da" type="selectionEntry" targetId="3e34-7cee-6d3e-25f1" sortIndex="1">
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
-      </costs>
       <categoryLinks>
         <categoryLink name="Blood Angel" hidden="false" id="c303-a4f6-f209-9d29" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
@@ -66,14 +63,14 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="195"/>
-      </costs>
       <rules>
         <rule name="Death Company" id="b38e-27f6-e76a-3ca5" hidden="false">
           <description>Instead of an Honour Guard, a Blood Angels Chaplain is always accompanied by D3+3 Death Company Space Marines. If the Death Company are equipped with jump packs, the Chaplain must also be equipped with a jump pack.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="increment" value="110" field="4deb-313d-6685-f48b" affects="self.entries.dd2f-a2c7-909a-4259" scope="parent"/>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Dreadnought" hidden="false" id="d00b-3434-a218-674f" type="selectionEntry" targetId="985e-dda7-9cd9-a782" sortIndex="25">
       <categoryLinks>

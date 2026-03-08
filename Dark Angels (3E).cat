@@ -43,9 +43,6 @@
         <categoryLink name="Dark Angel" hidden="false" id="f810-7460-395b-c814" targetId="9862-c761-5bd2-ffc7" primary="false"/>
         <categoryLink name="Deathwing" hidden="false" id="919a-9875-12bd-4c24" targetId="915b-6b49-dbe2-78ee" primary="false"/>
       </categoryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
-      </costs>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditions>
@@ -63,9 +60,6 @@
         <entryLink import="true" name="Command Squad" hidden="false" id="acf0-eff0-5d00-1305" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="7"/>
         <entryLink import="true" name="Terminator Command Squad" hidden="false" id="d633-1bfe-9c8f-12ad" type="selectionEntry" targetId="dfad-a748-913f-6a1f" sortIndex="8"/>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -87,9 +81,6 @@
         <entryLink import="true" name="Command Squad" hidden="false" id="d2b8-3f32-b32e-b7d8" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="6"/>
         <entryLink import="true" name="Terminator Command Squad" hidden="false" id="14b5-06bd-e7c2-438f" type="selectionEntry" targetId="dfad-a748-913f-6a1f" sortIndex="7"/>
       </entryLinks>
-      <costs>
-        <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
-      </costs>
       <modifierGroups>
         <modifierGroup type="and">
           <modifiers>
@@ -749,7 +740,7 @@
     <categoryEntry name="Ravenwing" id="a3e2-4142-4975-c3f4" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Ravenwing Bike Squadron" hidden="false" id="712c-08d9-66b3-04f7" sortIndex="">
+    <selectionEntry type="unit" import="true" name="Ravenwing Bike Squadron" hidden="false" id="712c-08d9-66b3-04f7">
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="5f05-f660-048a-977b" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
         <categoryLink name="Dark Angel" hidden="false" id="2c88-9453-9ad6-f43e" targetId="9862-c761-5bd2-ffc7" primary="false"/>
@@ -994,8 +985,7 @@
           <profiles>
             <profile name="The Raven Sword" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="f867-b8b4-3985-39da">
               <characteristics>
-                <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The Raven Sword is a master-crafted power sword.
-</characteristic>
+                <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The Raven Sword is a master-crafted power sword.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1718,8 +1708,6 @@ Aside from characters, the only units allowed in the army are Ravenwing bike squ
     <infoLink name="Intractable" id="092f-d764-dc73-d790" hidden="false" type="rule" targetId="3f48-c006-3f7b-bc63"/>
   </infoLinks>
   <rules>
-    <rule name="Hunting the Fallen" id="d3cb-aebc-db67-b171" hidden="false">
-      <description/>
-    </rule>
+    <rule name="Hunting the Fallen" id="d3cb-aebc-db67-b171" hidden="false"/>
   </rules>
 </catalogue>
