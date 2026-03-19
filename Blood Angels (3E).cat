@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="1c6a-4f6b-9265-e6ee" type="selectionEntry" targetId="16bd-1997-ce61-f3ce" sortIndex="13">
       <categoryLinks>
@@ -155,6 +155,21 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a064-527a-94d9-01f6-min" includeChildSelections="false" automatic="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a064-527a-94d9-01f6-max" includeChildSelections="false"/>
       </constraints>
+      <rules>
+        <rule name="Death Company" id="25bb-32a8-3b83-761c" hidden="false">
+          <description>At the start of a battle, before the armies are deployed, you must determine how many wawrriors in your army have been infused with the Black Range and joined the Death Company.
+
+Fore each of the squads listed below, roll a D6 at the start of the battle. On a 1, 2 or 3 the squad fights normally. On a 4 or 5, one model (of your choice) from the squad becomes a Death Company Space Marine. On a 6 one of the models in the unit joins the Death Company and you must roll again (it is possible for two or more models from the same unit to join the Death Company if you roll successive 6s). If you have insufficient models to represent every Blood Angel who joins the Death Company, any excess models are simply lost.
+
+These are the squads from which the Death Company can be drawn:
+Honour Guard; Terminator Squad; Terminator Assault Squad; Veteran Squad; Veteran Assault Squad; Tactical Squad; Scout Squad; Assault Squad; Bike Squadron; Scout Bike Squadron; Devastator Squad
+(Note that when a model joins the Death Company its equipment is replaced with those in the Death Company army list entry).
+
+All Death Company Space Marines fight as one unit. If you have a Champion in your army, then extra Death Company Space Marines join the Death Company accompanying him.
+
+If you roll a 4+ for a squad led by a Veteran Sergeant (has terminator honours), he may also join the Death Company. He may be armed with a power weapon or power fist as noted in the Death Company army list entry.</description>
+        </rule>
+      </rules>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
