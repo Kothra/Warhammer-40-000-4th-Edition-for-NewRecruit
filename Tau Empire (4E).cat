@@ -3099,7 +3099,7 @@ The team is moved as normal, but the character stays where he is and the enemy m
         </selectionEntryGroup>
         <selectionEntryGroup name="Battlesuit Systems" id="5068-a60c-f10d-b270" hidden="false" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapon Systems" id="2d19-b9f3-eba0-4b2a" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Weapon Systems" id="2d19-b9f3-eba0-4b2a" hidden="false" sortIndex="1" defaultSelectionEntryId="none">
               <entryLinks>
                 <entryLink import="true" name="Fusion Blaster" hidden="false" id="5901-90db-2965-214c" type="selectionEntry" targetId="6253-6b4c-d446-c2e4">
                   <costs>
@@ -3200,7 +3200,7 @@ The team is moved as normal, but the character stays where he is and the enemy m
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Support Systems" id="373f-e5d6-64cc-bd2b" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Support Systems" id="373f-e5d6-64cc-bd2b" hidden="false" sortIndex="2" defaultSelectionEntryId="none">
               <entryLinks>
                 <entryLink import="true" name="Blacksun Filter" hidden="false" id="fe2d-d3cd-c500-26b7" type="selectionEntry" targetId="f059-7b07-188f-d606">
                   <costs>
