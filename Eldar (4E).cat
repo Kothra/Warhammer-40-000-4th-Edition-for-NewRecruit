@@ -1099,9 +1099,6 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="gjb01-wl-max" includeChildSelections="false"/>
           </constraints>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
-          </costs>
         </entryLink>
       </entryLinks>
       <selectionEntries>
