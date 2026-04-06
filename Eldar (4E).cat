@@ -528,7 +528,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4c1f-5286-8fef-01f6" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a781-a8ff-4937-3038" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -548,7 +548,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="sh01-labl-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Exarch" hidden="false" id="sh01-ex-link" type="selectionEntry" targetId="4c1f-5286-8fef-01f6" sortIndex="1">
+            <entryLink import="true" name="Exarch" hidden="false" id="sh01-ex-link" type="selectionEntry" targetId="a781-a8ff-4937-3038" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Exarch Weapons" id="sh01-exwpn-grp" hidden="false" sortIndex="1">
                   <constraints>
@@ -629,7 +629,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d348-cdde-d61a-78b7" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a781-a8ff-4937-3038" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -649,7 +649,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ss01-pg-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Exarch" hidden="false" id="ss01-ex-link" type="selectionEntry" targetId="d348-cdde-d61a-78b7" sortIndex="1">
+            <entryLink import="true" name="Exarch" hidden="false" id="ss01-ex-link" type="selectionEntry" targetId="a781-a8ff-4937-3038" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Exarch Weapons" id="ss01-exwpn-grp" hidden="false" sortIndex="1">
                   <constraints>
@@ -729,7 +729,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f5b8-eeea-4622-1796" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a781-a8ff-4937-3038" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -743,7 +743,7 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="hb01-max" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Exarch" hidden="false" id="hb01-ex-link" type="selectionEntry" targetId="f5b8-eeea-4622-1796" sortIndex="1">
+            <entryLink import="true" name="Exarch" hidden="false" id="hb01-ex-link" type="selectionEntry" targetId="a781-a8ff-4937-3038" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Exarch Weapons" id="hb01-exwpn-grp" hidden="false" sortIndex="1">
                   <constraints>
@@ -1058,7 +1058,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="ba81-cd03-0488-4a29" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a781-a8ff-4937-3038" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1072,7 +1072,7 @@
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ws01-max" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Exarch" hidden="false" id="ws01-ex-link" type="selectionEntry" targetId="ba81-cd03-0488-4a29" sortIndex="1">
+            <entryLink import="true" name="Exarch" hidden="false" id="ws01-ex-link" type="selectionEntry" targetId="a781-a8ff-4937-3038" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Exarch Weapons" id="ws01-exwpn-grp" hidden="false" sortIndex="1">
                   <constraints>
@@ -1869,7 +1869,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="6758-d6ee-576b-3d96" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a781-a8ff-4937-3038" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1902,7 +1902,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Exarch" hidden="false" id="dr01-ex-link" type="selectionEntry" targetId="6758-d6ee-576b-3d96" sortIndex="1">
+            <entryLink import="true" name="Exarch" hidden="false" id="dr01-ex-link" type="selectionEntry" targetId="a781-a8ff-4937-3038" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Exarch Weapons" id="dr01-exwpn-grp" hidden="false" sortIndex="1">
                   <constraints>
@@ -2063,7 +2063,7 @@
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="67cd-bdfb-e8af-bb1b" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="a781-a8ff-4937-3038" shared="true" includeChildSelections="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2092,7 +2092,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Exarch" hidden="false" id="ssp01-ex-link" type="selectionEntry" targetId="67cd-bdfb-e8af-bb1b" sortIndex="1">
+            <entryLink import="true" name="Exarch" hidden="false" id="ssp01-ex-link" type="selectionEntry" targetId="a781-a8ff-4937-3038" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Exarch Weapons" id="ssp01-exwpn-grp" hidden="false" sortIndex="1">
                   <constraints>
