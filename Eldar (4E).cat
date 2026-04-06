@@ -812,6 +812,16 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="10" field="selections" scope="parent" childId="83af-8999-54fb-a887" shared="true" includeChildSelections="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e369-146d-967c-5070" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink name="Troops" hidden="true" id="wg01-troops-link" targetId="23e2-2a28-50f4-a3c1" primary="false">
