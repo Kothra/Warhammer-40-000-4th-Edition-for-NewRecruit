@@ -11,14 +11,119 @@
       <entryLinks>
         <entryLink import="true" name="Warlock" hidden="false" id="8f87-0aea-aece-ca81" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0c-8fe9-76c5-5c5c" includeChildSelections="false" negative="true" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b0c-8fe9-76c5-5c5c" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Transport" hidden="false" id="ca63-d0e6-6830-1371" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Guardian" hidden="false" id="fc07-fe89-0c4b-94a5"/>
+        <selectionEntry type="model" import="true" name="Guardian" hidden="false" id="fc07-fe89-0c4b-94a5">
+          <profiles>
+            <profile name="Guardian" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a1b2-c3d4-e5f6-7890">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">3</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">3</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="8"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="fc07-min" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="fc07-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Shuriken Catapult" hidden="false" id="g1h2-i3j4-k5l6-m7n8" type="selectionEntry" targetId="e564-1262-1623-a522">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="g1h2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="g1h2-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Heavy Weapon Platform" id="h2i3-j4k5-l6m7-n8o9" hidden="false">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="h2i3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="h2i3-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="i3j4-k5l6-m7n8-o9p0">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Bright Lance" id="j4k5-l6m7-n8o9-p0q1" hidden="false" type="profile" targetId="9a29-1a7b-4b07-e57f"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="k5l6-m7n8-o9p0-q1r2">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="l6m7-n8o9-p0q1-r2s3">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="m7n8-o9p0-q1r2-s3t4">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="n8o9-p0q1-r2s3-t4u5">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Storm Guardians" id="o9p0-q1r2-s3t4-u5v6" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="o9p0-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Upgrade to Storm Guardians" hidden="false" id="p0q1-r2s3-s3t4-v6w7">
+              <profiles>
+                <profile name="Storm Guardians" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="q1r2-s3t4-t4u5-w7x8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Storm Guardians exchange their shuriken catapults for shuriken pistols and close combat weapons at no additional cost. They do not have a heavy weapon platform, but up to two models may exchange their weapons for either a fusion gun at +6 points per model or a flamer at +6 points per model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special Weapons" id="r2s3-t4u5-u5v6-x8y9" hidden="false">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="r2s3-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Fusion Gun" hidden="false" id="s3t4-u5v6-v6w7-y9z0">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="6"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="t4u5-v6w7-w7x8-z0a1">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="6"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Farseer" hidden="false" id="955d-190c-860c-38f4">
       <categoryLinks>
@@ -29,7 +134,7 @@
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="55"/>
       </costs>
       <selectionEntries>
-        <selectionEntry type="unit" import="true" name="Warlock Council" hidden="false" id="538d-13da-a5fd-dc4a" sortIndex="6">
+        <selectionEntry type="unit" import="true" name="Warlocks" hidden="false" id="538d-13da-a5fd-dc4a" sortIndex="6">
           <entryLinks>
             <entryLink import="true" name="Warlock" hidden="false" id="2461-7c22-2a56-b603" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
               <constraints>
@@ -405,31 +510,93 @@
         <infoLink name="Fleet" id="a601-db5f-dc42-8fac" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="4c1f-5286-8fef-01f6">
-          <entryLinks>
-            <entryLink import="true" name="Exarch Powers" hidden="false" id="b78b-5b3e-e879-b2e6" type="selectionEntryGroup" targetId="5d9a-6a0a-66b2-4fce" sortIndex="2"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="a189-9b58-55d0-13e5" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Exarch" id="e4a0-6cfd-b1ad-480f" hidden="false" type="profile" targetId="6a53-093e-cc86-fd79"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="12"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
+        <selectionEntry type="model" import="true" name="Swooping Hawk" hidden="false" id="sh01-mod1-4640-d4d1">
+          <profiles>
+            <profile name="Swooping Hawk" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="sh01-prof-4640-d4d1">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jump Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="4c1f-5286-8fef-01f6" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="4c1f-5286-8fef-01f6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4c1f-5286-8fef-01f6" shared="true" includeChildSelections="false"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="21"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="sh01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="sh01-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lasblaster" hidden="false" id="sh01-labl-4640-d4d1" type="selectionEntry" targetId="sh-lasblaster-01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="sh01-labl-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="sh01-labl-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Exarch" hidden="false" id="sh01-ex-link" type="selectionEntry" targetId="4c1f-5286-8fef-01f6" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exarch Weapons" id="sh01-exwpn-grp" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="sh01-exwpn-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="sh01-pw-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Hawk&apos;s Talon" hidden="false" id="sh01-ht-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Hawk&apos;s Talon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="sh01-ht-prof">
+                          <characteristics>
+                            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                            <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+                            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 3</characteristic>
+                            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Sunrifle" hidden="false" id="sh01-sr-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Sunrifle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="sh01-sr-prof">
+                          <characteristics>
+                            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+                            <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+                            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 6, Pinning</characteristic>
+                            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -444,31 +611,92 @@
         <entryLink import="true" name="Transport" hidden="false" id="5284-026e-d33f-080b" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="d348-cdde-d61a-78b7">
-          <entryLinks>
-            <entryLink import="true" name="Exarch Powers" hidden="false" id="b116-26e8-d232-07d2" type="selectionEntryGroup" targetId="5d9a-6a0a-66b2-4fce" sortIndex="2"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="2d64-d2e0-eea3-15a3" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Exarch" id="e35b-e702-23a7-d75c" hidden="false" type="profile" targetId="6a53-093e-cc86-fd79"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="12"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
+        <selectionEntry type="model" import="true" name="Striking Scorpion" hidden="false" id="ss01-mod1-f77c-80a3">
+          <profiles>
+            <profile name="Striking Scorpion" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="ss01-prof-f77c-80a3">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d348-cdde-d61a-78b7" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="d348-cdde-d61a-78b7" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="d348-cdde-d61a-78b7" shared="true" includeChildSelections="false"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="16"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ss01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ss01-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plasma Grenades" hidden="false" id="ss01-pg-link" type="selectionEntry" targetId="07ae-f0c7-b277-fb93">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ss01-pg-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ss01-pg-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Exarch" hidden="false" id="ss01-ex-link" type="selectionEntry" targetId="d348-cdde-d61a-78b7" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exarch Weapons" id="ss01-exwpn-grp" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ss01-exwpn-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Scorpion&apos;s Claw" hidden="false" id="ss01-sc-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Scorpion&apos;s Claw" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="ss01-sc-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The Scorpion&apos;s Claw is a power fist with a built-in shuriken catapult.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Biting Blade" hidden="false" id="ss01-bb-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Biting Blade" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="ss01-bb-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A biting blade adds +2 to the wielder&apos;s Strength, but requires two hands so the wielder cannot gain the extra attack from an extra hand weapon.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Chainsabres" hidden="false" id="ss01-cs-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Chainsabres" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="ss01-cs-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Chainsabres are a pair of power weapons. The wielder can re-roll failed hits in close combat.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -483,31 +711,90 @@
         <entryLink import="true" name="Transport" hidden="false" id="2fda-3e3b-ff4e-25a8" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="f5b8-eeea-4622-1796">
-          <entryLinks>
-            <entryLink import="true" name="Exarch Powers" hidden="false" id="d56d-77d6-2f2c-9e5f" type="selectionEntryGroup" targetId="5d9a-6a0a-66b2-4fce" sortIndex="2"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="c8d4-f380-f2b6-5506" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Exarch" id="8426-f941-0200-3b5c" hidden="false" type="profile" targetId="6a53-093e-cc86-fd79"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="12"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
+        <selectionEntry type="model" import="true" name="Howling Banshee" hidden="false" id="hb01-mod1-5551-4eb5">
+          <profiles>
+            <profile name="Howling Banshee" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="hb01-prof-5551-4eb5">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="f5b8-eeea-4622-1796" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="f5b8-eeea-4622-1796" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="f5b8-eeea-4622-1796" shared="true" includeChildSelections="false"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="16"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="hb01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="hb01-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Exarch" hidden="false" id="hb01-ex-link" type="selectionEntry" targetId="f5b8-eeea-4622-1796" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exarch Weapons" id="hb01-exwpn-grp" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hb01-exwpn-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Executioner" hidden="false" id="hb01-exec-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Executioner" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="hb01-exec-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The Executioner is a large two-handed power weapon that adds +2 to the wielder&apos;s Strength. The wielder cannot gain an extra attack from an additional hand weapon.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Triskele" hidden="false" id="hb01-tri-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Triskele" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="hb01-tri-prof">
+                          <characteristics>
+                            <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+                            <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 3</characteristic>
+                            <characteristic name="Info" typeId="33e9-27bd-77e4-401d">The triskele can also be used as a power weapon in close combat.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Mirrorswords" hidden="false" id="hb01-ms-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Mirrorswords" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="hb01-ms-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Mirrorswords are a pair of power weapons. The wielder can re-roll failed hits in close combat.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -515,17 +802,198 @@
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="466d-43e8-da16-1b54" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
+      <rules>
+        <rule name="Wraithsight" id="wg01-ws-rule-bc6b" hidden="false">
+          <description>At the start of each Eldar turn, any Wraith unit that does not have a model within 12&quot; of a Spiritseer or Farseer must pass a Leadership test or do nothing that turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fearless" id="wg01-fear-link" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Transport" hidden="false" id="8fa6-1e1e-1fb2-e1d5" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
+        <entryLink import="true" name="Warlock" hidden="false" id="wg01-wl-link" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-wl-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Wraithguard" hidden="false" id="83af-8999-54fb-a887"/>
+        <selectionEntry type="model" import="true" name="Wraithguard" hidden="false" id="83af-8999-54fb-a887">
+          <profiles>
+            <profile name="Wraithguard" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="wg01-prof-7931-bc6b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">5</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">6</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="wg01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="wg01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wraithcannon" hidden="false" id="wg01-wc-01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="wg01-wc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-wc-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wraithcannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="wg01-wc-prof">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Wraithcannons wound on a 2+ against any target regardless of Toughness. Against vehicles, they roll 1D6 + the vehicle&apos;s highest armour value for the armour penetration roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wraithlord" hidden="false" id="4c1e-ba7f-6b45-0ce3">
+    <selectionEntry type="model" import="true" name="Wraithlord" hidden="false" id="4c1e-ba7f-6b45-0ce3">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="086b-237d-ae79-c7f5" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="90"/>
+      </costs>
+      <profiles>
+        <profile name="Wraithlord" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="wl01-prof-6b45-0ce3">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Monstrous Creature</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">10</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">8</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Wraithsight" id="wl01-ws-rule-0ce3" hidden="false">
+          <description>At the start of each Eldar turn, any Wraith unit that does not have a model within 12&quot; of a Spiritseer or Farseer must pass a Leadership test or do nothing that turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fearless" id="wl01-fear-link" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Secondary Weapons" id="wl01-secwpn-grp" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="wl01-secwpn-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wl01-secwpn-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Catapult and Flamer" hidden="false" id="wl01-scfl-01">
+              <profiles>
+                <profile name="Wraithlord Armament" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="wl01-scfl-prof">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">One shuriken catapult and one flamer.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Two Shuriken Catapults" hidden="false" id="wl01-2sc-01"/>
+            <selectionEntry type="upgrade" import="true" name="Two Flamers" hidden="false" id="wl01-2fl-01"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heavy Weapon 1" id="wl01-hw1-grp" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="wl01-hw1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wl01-hw1-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="wl01-hw1-sc">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="wl01-hw1-bl">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="wl01-hw1-sl">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="wl01-hw1-shc">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="wl01-hw1-eml">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Wraithsword" hidden="false" id="wl01-hw1-ws">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Wraithsword" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="wl01-ws-prof">
+                  <characteristics>
+                    <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A wraithsword gives the Wraithlord +1 Attack.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Heavy Weapon 2" id="wl01-hw2-grp" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wl01-hw2-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="wl01-hw2-sc">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="wl01-hw2-bl">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="40"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="wl01-hw2-sl">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="wl01-hw2-shc">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="wl01-hw2-eml">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warp Spiders" hidden="false" id="eb64-1909-424f-b4e5">
       <categoryLinks>
@@ -535,31 +1003,90 @@
         <infoLink name="Fleet" id="fdba-c4cd-ad62-504c" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="ba81-cd03-0488-4a29">
-          <entryLinks>
-            <entryLink import="true" name="Exarch Powers" hidden="false" id="f6cf-fe38-4506-6386" type="selectionEntryGroup" targetId="5d9a-6a0a-66b2-4fce" sortIndex="2"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="5245-d04a-f58d-abd7" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Exarch" id="6573-fd18-229d-7343" hidden="false" type="profile" targetId="6a53-093e-cc86-fd79"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="12"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
+        <selectionEntry type="model" import="true" name="Warp Spider" hidden="false" id="ws01-mod1-424f-b4e5">
+          <profiles>
+            <profile name="Warp Spider" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="ws01-prof-424f-b4e5">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jump Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="ba81-cd03-0488-4a29" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="ba81-cd03-0488-4a29" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="ba81-cd03-0488-4a29" shared="true" includeChildSelections="false"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="22"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ws01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="ws01-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Exarch" hidden="false" id="ws01-ex-link" type="selectionEntry" targetId="ba81-cd03-0488-4a29" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exarch Weapons" id="ws01-exwpn-grp" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ws01-exwpn-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Additional Death Spinner" hidden="false" id="ws01-ads-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Additional Death Spinner" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="ws01-ads-prof">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">An additional death spinner makes the Exarch&apos;s death spinner Assault 4 instead of Assault 2.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Spinneret Rifle" hidden="false" id="ws01-sr-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Spinneret Rifle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ws01-sr-prof">
+                          <characteristics>
+                            <characteristic name="Range" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                            <characteristic name="AP" typeId="4.1502323234441545e+23">1</characteristic>
+                            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1, Pinning</characteristic>
+                            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Powerblades" hidden="false" id="ws01-pb-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Powerblades" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="ws01-pb-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Powerblades are a pair of power weapons mounted on the wrists. The wielder gains +1 Attack.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -567,11 +1094,172 @@
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="73ad-79fa-0468-1bfe" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlock" hidden="false" id="gjb01-wl-link" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="gjb01-wl-max" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Guardian Jetbike" hidden="false" id="gjb01-mod1-ca90-ab90">
+          <profiles>
+            <profile name="Guardian Jetbike" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="gjb01-prof-ca90-ab90">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jetbikes</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">3</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">3</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3(4)</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="22"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="gjb01-min" includeChildSelections="false"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="gjb01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="gjb01-shc-01">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="gjb01-shc-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shuriken Cannon Upgrade" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="gjb01-shc-prof">
+                  <characteristics>
+                    <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Every third Guardian Jetbike may replace its twin-linked shuriken catapults with a single shuriken cannon at +10 points per model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vyper Squadron" hidden="false" id="5566-12cf-da3b-e5af">
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="8c33-1e3f-d342-aeae" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vyper" hidden="false" id="vyp01-mod1-da3b-e5af">
+          <profiles>
+            <profile name="Vyper" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="vyp01-prof-da3b-e5af">
+              <characteristics>
+                <characteristic name="Front" typeId="46726f6e7423232344415441232323">10</characteristic>
+                <characteristic name="Side" typeId="5.369646523232344e+27">10</characteristic>
+                <characteristic name="Rear" typeId="5.265617223232345e+27">10</characteristic>
+                <characteristic name="BS" typeId="a6a5-1595-da9e-6155">3</characteristic>
+                <characteristic name="Type" typeId="5.479706523232345e+27">Fast, Skimmer, Open-topped</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="45"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="vyp01-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="vyp01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull Weapon" id="vyp01-hull-grp" hidden="false" defaultSelectionEntryId="vyp01-hull-sc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="vyp01-hull-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="vyp01-hull-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked Shuriken Catapults" hidden="false" id="vyp01-hull-sc"/>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="vyp01-hull-shc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Turret Weapon" id="vyp01-turret-grp" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="vyp01-turret-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="vyp01-turret-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="vyp01-t-eml">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="vyp01-t-sl">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="vyp01-t-stc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="vyp01-t-shc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="vyp01-t-bl">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Vehicle Upgrades" id="vyp01-upgr-grp" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Vectored Engines" hidden="false" id="vyp01-ve">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="vyp01-ve-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Star Engines" hidden="false" id="vyp01-se">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="vyp01-se-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Holo-fields" hidden="false" id="vyp01-hf">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="vyp01-hf-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Spirit Stones" hidden="false" id="vyp01-ss">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="vyp01-ss-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Harlequin Troupe" hidden="false" id="55ea-5525-4d31-25af">
       <categoryLinks>
@@ -580,6 +1268,165 @@
       <infoLinks>
         <infoLink name="Fleet" id="2680-98f0-0d49-e5cc" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
       </infoLinks>
+      <rules>
+        <rule name="Dance of Death" id="hq01-dod-rule" hidden="false">
+          <description>Harlequins have the Hit and Run universal special rule. In addition, they always count as having assault grenades and frag grenades.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Harlequin" hidden="false" id="hq01-mod1-4d31-25af">
+          <profiles>
+            <profile name="Harlequin" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="hq01-prof-4d31-25af">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">6</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="18"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="hq01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="hq01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Harlequin&apos;s Kiss" hidden="false" id="hq01-hk-01">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="4"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hq01-hk-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Harlequin&apos;s Kiss" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="hq01-hk-prof">
+                  <characteristics>
+                    <characteristic name="Details" typeId="acf3-d214-6e51-29fe">Replaces close combat weapon. On a successful wound, the target must pass an Armour save or be killed outright regardless of remaining wounds.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fusion Pistol" hidden="false" id="hq01-fp-01">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hq01-fp-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Fusion Pistol" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="hq01-fp-prof">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">6&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">1</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Pistol, Melta</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Troupe Master" hidden="false" id="hq01-tm-01">
+          <profiles>
+            <profile name="Troupe Master" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="hq01-tm-prof">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">6</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hq01-tm-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Death Jester" hidden="false" id="hq01-dj-01">
+          <profiles>
+            <profile name="Death Jester" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="hq01-dj-prof">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">6</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hq01-dj-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Shrieker Cannon" hidden="false" id="hq01-dj-shc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="hq01-dj-shc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hq01-dj-shc-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Shrieker Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="hq01-dj-shc-prof">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 3, Pinning</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shadowseer" hidden="false" id="hq01-ss-01">
+          <profiles>
+            <profile name="Shadowseer" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="hq01-ss-prof">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">6</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="hq01-ss-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Phoenix Lord Asurmen" hidden="false" id="a7ca-4bf4-c6cf-32c8">
       <categoryLinks>
@@ -850,6 +1697,114 @@
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="fbc8-7bfc-1c85-a557" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
+      <rules>
+        <rule name="Scouts" id="ww01-scouts-rule" hidden="false">
+          <description>War Walkers have the Scouts universal special rule, allowing them to make a free move before the game begins.</description>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="War Walker" hidden="false" id="ww01-mod1-3c91-983d">
+          <profiles>
+            <profile name="War Walker" typeId="57616c6b657223232344415441232323" typeName="Walker" hidden="false" id="ww01-prof-3c91-983d">
+              <characteristics>
+                <characteristic name="Front" typeId="46726f6e7423232344415441232323">10</characteristic>
+                <characteristic name="Side" typeId="5.369646523232344e+27">10</characteristic>
+                <characteristic name="Rear" typeId="5.265617223232345e+27">10</characteristic>
+                <characteristic name="WS" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="BS" typeId="4253-2323-4441-5441">3</characteristic>
+                <characteristic name="S" typeId="5323-2344-4154-4123">5</characteristic>
+                <characteristic name="I" typeId="4923-2344-4154-4123">4</characteristic>
+                <characteristic name="A" typeId="4123-2344-4154-4123">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ww01-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ww01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon 1" id="ww01-w1-grp" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ww01-w1-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ww01-w1-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="ww01-w1-stc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="ww01-w1-eml">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="ww01-w1-sl">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="ww01-w1-shc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="ww01-w1-bl">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon 2" id="ww01-w2-grp" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ww01-w2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ww01-w2-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="ww01-w2-stc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="ww01-w2-eml">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="ww01-w2-sl">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="ww01-w2-shc">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Bright Lance" hidden="false" id="ww01-w2-bl">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spirit Stones" hidden="false" id="ww01-ss-01">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ww01-ss-max" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Reapers" hidden="false" id="28dc-35e1-5e46-fe23">
       <categoryLinks>
@@ -862,31 +1817,95 @@
         <entryLink import="true" name="Transport" hidden="false" id="9bbc-c295-e428-b58b" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="6758-d6ee-576b-3d96">
-          <entryLinks>
-            <entryLink import="true" name="Exarch Powers" hidden="false" id="53af-80a7-13e2-e9cc" type="selectionEntryGroup" targetId="5d9a-6a0a-66b2-4fce" sortIndex="2"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="b5c4-4365-0af2-0ddc" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Exarch" id="b6d8-a81b-14fe-e651" hidden="false" type="profile" targetId="6a53-093e-cc86-fd79"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="12"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
+        <selectionEntry type="model" import="true" name="Dark Reaper" hidden="false" id="dr01-mod1-5e46-fe23">
+          <profiles>
+            <profile name="Dark Reaper" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="dr01-prof-5e46-fe23">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="6758-d6ee-576b-3d96" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="6758-d6ee-576b-3d96" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="6758-d6ee-576b-3d96" shared="true" includeChildSelections="false"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="dr01-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="dr01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reaper Launcher" hidden="false" id="dr01-rl-01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dr01-rl-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dr01-rl-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Reaper Launcher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dr01-rl-prof">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">3</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Exarch" hidden="false" id="dr01-ex-link" type="selectionEntry" targetId="6758-d6ee-576b-3d96" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exarch Weapons" id="dr01-exwpn-grp" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dr01-exwpn-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="dr01-shc-01">
+                      <infoLinks>
+                        <infoLink name="Shuriken Cannon" id="dr01-shc-link" hidden="false" type="profile" targetId="1660-4be6-4cf0-ea59"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Eldar Missile Launcher" hidden="false" id="dr01-eml-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Tempest Launcher" hidden="false" id="dr01-tl-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Tempest Launcher" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="dr01-tl-prof">
+                          <characteristics>
+                            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                            <characteristic name="AP" typeId="4.1502323234441545e+23">3</characteristic>
+                            <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2, Blast</characteristic>
+                            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -894,47 +1913,256 @@
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="5943-752b-8dc5-9a3f" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlock" hidden="false" id="swb01-wl-link" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="swb01-wl-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Support Weapon" hidden="false" id="swb01-mod1-92ae-c3a7">
+          <profiles>
+            <profile name="Guardian Crew" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="swb01-prof-92ae-c3a7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Artillery</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">3</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">3</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="swb01-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="swb01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="swb01-wpn-grp" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="swb01-wpn-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="swb01-wpn-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="D-cannon" hidden="false" id="swb01-dc-01">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                  <profiles>
+                    <profile name="D-cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="swb01-dc-prof">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
+                        <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                        <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Blast</characteristic>
+                        <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Wounds on a 2+ regardless of Toughness. Against vehicles, roll 1D6 + highest armour value for penetration.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Vibro Cannon" hidden="false" id="swb01-vc-01">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Vibro Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="swb01-vc-prof">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">4</characteristic>
+                        <characteristic name="AP" typeId="4.1502323234441545e+23">-</characteristic>
+                        <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1</characteristic>
+                        <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Each additional vibro cannon in the battery that hits the same target adds +1S. Pinning.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shadow Weaver" hidden="false" id="swb01-sw-01">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Shadow Weaver" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="swb01-sw-prof">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">G48&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                        <characteristic name="AP" typeId="4.1502323234441545e+23">-</characteristic>
+                        <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Blast, Pinning</characteristic>
+                        <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Does not need line of sight to fire.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Shining Spears" hidden="false" id="b0bb-fc10-9a66-fd29">
+    <selectionEntry type="unit" import="true" name="Shining Spears" hidden="false" id="b0bb-fc10-9a66-fd29">
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="35fd-3ec5-60f9-9487" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Exarch" hidden="false" id="67cd-bdfb-e8af-bb1b">
-          <entryLinks>
-            <entryLink import="true" name="Exarch Powers" hidden="false" id="d40a-84b4-1c1b-0be4" type="selectionEntryGroup" targetId="5d9a-6a0a-66b2-4fce" sortIndex="2"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="cb53-6996-ae14-3273" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Exarch" id="1348-fca7-a2b1-26c6" hidden="false" type="profile" targetId="6a53-093e-cc86-fd79"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="12"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
+        <selectionEntry type="model" import="true" name="Shining Spear" hidden="false" id="ssp01-mod1-9a66-fd29">
+          <profiles>
+            <profile name="Shining Spear" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="ssp01-prof-9a66-fd29">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jetbikes</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3(4)</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="67cd-bdfb-e8af-bb1b" shared="true" includeChildSelections="true"/>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="67cd-bdfb-e8af-bb1b" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="67cd-bdfb-e8af-bb1b" shared="true" includeChildSelections="false"/>
                   </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ssp01-min" includeChildSelections="false"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="ssp01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Laser Lance" hidden="false" id="ssp01-ll-01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ssp01-ll-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ssp01-ll-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Laser Lance" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="ssp01-ll-prof">
+                  <characteristics>
+                    <characteristic name="Details" typeId="acf3-d214-6e51-29fe">On a turn the model charges, the laser lance gives the wielder +3 Strength and strikes at Initiative 6. It counts as a power weapon. In subsequent turns of the same combat, it counts as a normal close combat weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Exarch" hidden="false" id="ssp01-ex-link" type="selectionEntry" targetId="67cd-bdfb-e8af-bb1b" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Exarch Weapons" id="ssp01-exwpn-grp" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ssp01-exwpn-max" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="ssp01-shc-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="ssp01-pw-01">
+                      <profiles>
+                        <profile name="Power Weapon" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="ssp01-pw-prof">
+                          <characteristics>
+                            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Replaces laser lance with a power weapon (free).</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Star Lance" hidden="false" id="ssp01-sl-01">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+                      </costs>
+                      <profiles>
+                        <profile name="Star Lance" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="ssp01-sl-prof">
+                          <characteristics>
+                            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The star lance functions like a laser lance but has +6 Strength on the charge instead of +3.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rangers" hidden="false" id="40ee-2616-749a-6080">
+    <selectionEntry type="unit" import="true" name="Rangers" hidden="false" id="40ee-2616-749a-6080">
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="a06f-8b45-2510-c8c5" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Fleet" id="b4f6-8170-f43c-b77c" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
       </infoLinks>
+      <rules>
+        <rule name="Masters of Stealth" id="rng01-mos-rule" hidden="false">
+          <description>Rangers have the Infiltrate, Move Through Cover, and Stealth universal special rules.</description>
+        </rule>
+        <rule name="Pathfinders" id="rng01-path-rule" hidden="true">
+          <description>Pathfinders have an improved cover save of 2+ instead of the normal value. In addition, any To Hit roll of a 6 by a Pathfinder with a ranger long rifle is AP1.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="rng01-pf-01" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+      </rules>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ranger" hidden="false" id="rng01-mod1-749a-6080">
+          <profiles>
+            <profile name="Ranger" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="rng01-prof-749a-6080">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">3</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="19"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="rng01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="rng01-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Upgrade to Pathfinders" hidden="false" id="rng01-pf-01">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="rng01-pf-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="5" field="4deb-313d-6685-f48b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="rng01-mod1-749a-6080" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dire Avengers" hidden="false" id="1a08-dd2b-166c-47e9">
       <categoryLinks>
@@ -1151,9 +2379,128 @@
         <categoryLink name="HQ" hidden="false" id="711e-2f31-6014-1b8f" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="80bb-d7db-3b23-9571" targetId="c918-96c1-1ff1-3df1" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="210"/>
+      </costs>
+      <profiles>
+        <profile name="Eldrad Ulthran" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="b7e3-4c1a-9f2d-8a65">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">3</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Divination" id="a4b2-7c83-d1e5-f690" hidden="false">
+          <description>Eldrad may use up to three psychic powers per turn instead of the usual one.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink name="Fleet" id="cd91-8590-c3de-b887" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
+        <infoLink name="Fearless" id="e2a1-9c4b-3d7f-1082" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Staff of Ulthamar" hidden="false" id="d4a1-8b3c-5e7f-2091" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4a1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4a1-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Staff of Ulthamar" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="f3b2-a5c4-d7e8-9016">
+              <characteristics>
+                <characteristic name="Details" typeId="acf3-d214-6e51-29fe">The Staff of Ulthamar is a witchblade that also has the same effect as spirit stones.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shuriken Pistol" hidden="false" id="e5b3-9c4d-6a7f-3182" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5b3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5b3-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Shuriken Pistol" id="f6c4-ad5e-7b8f-4293" hidden="false" type="profile" targetId="f7cf-43c6-0b0b-5220"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ghosthelm" hidden="false" id="a7d4-be5f-8c9a-5374" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7d4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7d4-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Ghosthelm" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="b8e5-cf6a-9d0b-6485">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A ghosthelm contains a spirit stone that can absorb psychic energy. If the Farseer suffers a Perils of the Warp attack, the ghosthelm can absorb it on a 3+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rune Armour" hidden="false" id="c9f6-d07b-ae1c-7596" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9f6-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9f6-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Rune Armour" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="da07-e18c-bf2d-86a7">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Rune armour confers a 3+ Invulnerable Save.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Warlocks" hidden="false" id="e1a8-f29b-3c4d-5607" sortIndex="6">
+          <entryLinks>
+            <entryLink import="true" name="Warlock" hidden="false" id="f2b9-a3ce-4d5f-6718" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f2b9-min" includeChildSelections="false"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="f2b9-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Transport" hidden="false" id="a3ca-b4db-5e6c-7829" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Runes of Warding" hidden="false" id="b4db-c5ec-6f7d-893a" type="selectionEntry" targetId="3791-d7f7-2c65-f9da" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4db-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4db-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Runes of Witnessing" hidden="false" id="c5ec-d6fd-7a8e-904b" type="selectionEntry" targetId="ca01-3ea8-3ec4-2628" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5ec-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5ec-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Spirit Stones" hidden="false" id="d6fd-e70e-8b9f-a15c" type="selectionEntry" targetId="28a4-eba8-74ff-5e28" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6fd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6fd-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Witchblade" hidden="false" id="e70e-f81f-9c0a-b26d" type="selectionEntry" targetId="6f12-5e47-068c-6a44" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e70e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e70e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Farseer Powers" hidden="false" id="f81f-a920-bd1b-c37e" type="selectionEntryGroup" targetId="8b2e-13e5-347c-b405">
+          <modifiers>
+            <modifier type="set" value="4" field="3027-d1f4-826d-6eb2-eldrad">
+              <comment>Eldrad has all 5 powers pre-selected</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="The Avatar of Khaine" hidden="false" id="a181-9d61-7bd4-eafc">
       <categoryLinks>
@@ -1929,6 +3276,22 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warlock" hidden="false" id="e327-30c2-1b34-86e0">
+      <profiles>
+        <profile name="Warlock" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="c3a7-b559-f48c-0ae5">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
       </costs>
@@ -2402,6 +3765,32 @@ A model attacking with Haywire grenades may only make a single attack. If it hit
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lasblaster" hidden="false" id="sh-lasblaster-01">
+      <profiles>
+        <profile name="Lasblaster" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="sh-lasblaster-prof">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">3</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 2</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Death Spinner" hidden="false" id="sh-deathspinner-01">
+      <profiles>
+        <profile name="Death Spinner" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="sh-deathspinner-prof">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">-</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 2</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
