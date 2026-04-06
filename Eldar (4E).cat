@@ -1178,8 +1178,6 @@
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="gjb01-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Shuriken Cannon" hidden="false" id="gjb01-shc-01">
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
@@ -2863,7 +2861,7 @@
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82ca-3436-a7d1-48f4" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="82ca-3436-a7d1-48f4" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3027-d1f4-826d-6eb2" includeChildSelections="false"/>
       </constraints>
       <modifiers>
