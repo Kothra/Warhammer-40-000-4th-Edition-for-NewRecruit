@@ -4051,10 +4051,11 @@ A model attacking with Haywire grenades may only make a single attack. If it hit
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="wg01-troops-catlink" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="10" field="wg01-min"/>
-        <modifier type="set" value="1" field="wg01-wl-min"/>
-      </modifiers>
+      <constraints>
+        <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="wg01-min" includeChildSelections="false"/>
+        <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="wg01-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="wg01-wl-min" includeChildSelections="false"/>
+      </constraints>
       <profiles>
         <profile name="Wraithguard (Troops)" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="wg01-troops-info">
           <characteristics>
