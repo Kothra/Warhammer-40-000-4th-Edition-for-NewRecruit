@@ -798,124 +798,23 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wraithguard" hidden="false" id="db69-3314-7931-bc6b">
+    <entryLink import="true" name="Wraithguard" hidden="false" id="wg01-elites-link" type="selectionEntry" targetId="db69-3314-7931-bc6b">
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="466d-43e8-da16-1b54" targetId="39ab-2bcd-49d1-cfef" primary="true">
-          <modifiers>
-            <modifier type="set" value="false" field="primary">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="wg01-troops-upgrade" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="wg01-troops-upgrade" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
-        <categoryLink name="Troops" hidden="true" id="wg01-troops-link" targetId="23e2-2a28-50f4-a3c1" primary="false">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="wg01-troops-upgrade" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="true" field="primary">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="wg01-troops-upgrade" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="466d-43e8-da16-1b54" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
-      <rules>
-        <rule name="Wraithsight" id="wg01-ws-rule-bc6b" hidden="false">
-          <description>At the start of each Eldar turn, any Wraith unit that does not have a model within 12&quot; of a Spiritseer or Farseer must pass a Leadership test or do nothing that turn.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink name="Fearless" id="wg01-fear-link" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Transport" hidden="false" id="8fa6-1e1e-1fb2-e1d5" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
-        <entryLink import="true" name="Warlock" hidden="false" id="wg01-wl-link" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-wl-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Field as Troops" hidden="true" id="wg01-troops-upgrade">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-troops-upg-max" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="equalTo" value="10" field="selections" scope="parent" childId="83af-8999-54fb-a887" shared="true" includeChildSelections="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e369-146d-967c-5070" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Field as Troops" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="wg01-troops-upg-prof">
-              <characteristics>
-                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A unit of 10 Wraithguard led by a Spiritseer may be fielded as a Troops choice instead of Elites.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Wraithguard" hidden="false" id="83af-8999-54fb-a887">
-          <profiles>
-            <profile name="Wraithguard" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="wg01-prof-7931-bc6b">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
-                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
-                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
-                <characteristic name="S" typeId="5.323232344415441e+21">5</characteristic>
-                <characteristic name="T" typeId="5.423232344415441e+21">6</characteristic>
-                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
-                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
-                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
-                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="wg01-min" includeChildSelections="false"/>
-            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="wg01-max" includeChildSelections="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Wraithcannon" hidden="false" id="wg01-wc-01">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="wg01-wc-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-wc-max" includeChildSelections="false"/>
-              </constraints>
-              <profiles>
-                <profile name="Wraithcannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="wg01-wc-prof">
-                  <characteristics>
-                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
-                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
-                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
-                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1</characteristic>
-                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Wraithcannons wound on a 2+ against any target regardless of Toughness. Against vehicles, they roll 1D6 + the vehicle&apos;s highest armour value for the armour penetration roll.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
+    </entryLink>
+    <entryLink import="true" name="Wraithguard (Troops)" hidden="false" id="wg01-troops-link2" type="selectionEntry" targetId="db69-3314-7931-bc6b">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="wg01-troops-catlink" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Wraithguard (Troops)" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="wg01-troops-info">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A unit of 10 Wraithguard led by a Warlock with Spiritseer upgrade may be fielded as a Troops choice instead of Elites. The Warlock must be given the Spiritseer upgrade.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </entryLink>
     <selectionEntry type="model" import="true" name="Wraithlord" hidden="false" id="4c1e-ba7f-6b45-0ce3">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="086b-237d-ae79-c7f5" targetId="6a52-1951-5b0c-024e" primary="true"/>
@@ -3444,6 +3343,70 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Wraithguard" hidden="false" id="db69-3314-7931-bc6b">
+      <rules>
+        <rule name="Wraithsight" id="wg01-ws-rule-bc6b" hidden="false">
+          <description>At the start of each Eldar turn, any Wraith unit that does not have a model within 12&quot; of a Spiritseer or Farseer must pass a Leadership test or do nothing that turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fearless" id="wg01-fear-link" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Transport" hidden="false" id="8fa6-1e1e-1fb2-e1d5" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
+        <entryLink import="true" name="Warlock" hidden="false" id="wg01-wl-link" type="selectionEntry" targetId="e327-30c2-1b34-86e0">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-wl-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Wraithguard" hidden="false" id="83af-8999-54fb-a887">
+          <profiles>
+            <profile name="Wraithguard" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="wg01-prof-7931-bc6b">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">5</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">6</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="wg01-min" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="wg01-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wraithcannon" hidden="false" id="wg01-wc-01">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="wg01-wc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="wg01-wc-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wraithcannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="wg01-wc-prof">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 1</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Wraithcannons wound on a 2+ against any target regardless of Toughness. Against vehicles, they roll 1D6 + the vehicle&apos;s highest armour value for the armour penetration roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Falcon" hidden="false" id="803f-fd12-5a92-b508">
       <profiles>
         <profile name="Falcon" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="fal01-prof-5a92-b508">
