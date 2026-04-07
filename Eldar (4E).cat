@@ -798,27 +798,6 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <entryLink import="true" name="Wraithguard" hidden="false" id="wg01-elites-link" type="selectionEntry" targetId="db69-3314-7931-bc6b">
-      <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="466d-43e8-da16-1b54" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Wraithguard (Troops)" hidden="false" id="wg01-troops-link2" type="selectionEntry" targetId="db69-3314-7931-bc6b">
-      <categoryLinks>
-        <categoryLink name="Troops" hidden="false" id="wg01-troops-catlink" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" value="10" field="wg01-min"/>
-        <modifier type="set" value="1" field="wg01-wl-min"/>
-      </modifiers>
-      <profiles>
-        <profile name="Wraithguard (Troops)" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="wg01-troops-info">
-          <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Must be a unit of 10 Wraithguard led by a Warlock with Spiritseer upgrade.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </entryLink>
     <selectionEntry type="model" import="true" name="Wraithlord" hidden="false" id="4c1e-ba7f-6b45-0ce3">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="086b-237d-ae79-c7f5" targetId="6a52-1951-5b0c-024e" primary="true"/>
@@ -4063,6 +4042,27 @@ A model attacking with Haywire grenades may only make a single attack. If it hit
     <categoryEntry name="Phoenix Lord" id="d4b4-b1e7-a460-538c" hidden="false"/>
   </categoryEntries>
   <entryLinks>
+    <entryLink import="true" name="Wraithguard" hidden="false" id="wg01-elites-link" type="selectionEntry" targetId="db69-3314-7931-bc6b">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="466d-43e8-da16-1b54" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wraithguard (Troops)" hidden="false" id="wg01-troops-link2" type="selectionEntry" targetId="db69-3314-7931-bc6b">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="wg01-troops-catlink" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="10" field="wg01-min"/>
+        <modifier type="set" value="1" field="wg01-wl-min"/>
+      </modifiers>
+      <profiles>
+        <profile name="Wraithguard (Troops)" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="wg01-troops-info">
+          <characteristics>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Must be a unit of 10 Wraithguard led by a Warlock with Spiritseer upgrade.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </entryLink>
     <entryLink import="true" name="Falcon" hidden="false" id="03b9-1710-eaa0-5b9a" type="selectionEntry" targetId="803f-fd12-5a92-b508">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="407b-1b82-8b31-6d75" targetId="6a52-1951-5b0c-024e" primary="true"/>
