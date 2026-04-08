@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -8717,6 +8717,8 @@ May not use any Allies.</description>
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="39ab-2bcd-49d1-cfef" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cc82-1b5f-3ed2-487a" shared="true" childName="Terminator Squad"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bb8c-83a8-42b3-ef68" shared="true" childName="Terminator Assault Squad"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
