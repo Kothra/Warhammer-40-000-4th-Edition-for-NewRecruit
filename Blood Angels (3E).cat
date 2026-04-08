@@ -67,7 +67,7 @@
         </entryLink>
       </entryLinks>
       <rules>
-        <rule name="Death Company" id="b38e-27f6-e76a-3ca5" hidden="false">
+        <rule name="Death Company Retinue" id="b38e-27f6-e76a-3ca5" hidden="false">
           <description>Instead of an Honour Guard, a Blood Angels Chaplain is always accompanied by D3+3 Death Company Space Marines. If the Death Company are equipped with jump packs, the Chaplain must also be equipped with a jump pack.</description>
         </rule>
       </rules>
@@ -155,21 +155,9 @@
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a064-527a-94d9-01f6-min" includeChildSelections="false" automatic="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a064-527a-94d9-01f6-max" includeChildSelections="false"/>
       </constraints>
-      <rules>
-        <rule name="Death Company" id="25bb-32a8-3b83-761c" hidden="false">
-          <description>At the start of a battle, before the armies are deployed, you must determine how many wawrriors in your army have been infused with the Black Range and joined the Death Company.
-
-Fore each of the squads listed below, roll a D6 at the start of the battle. On a 1, 2 or 3 the squad fights normally. On a 4 or 5, one model (of your choice) from the squad becomes a Death Company Space Marine. On a 6 one of the models in the unit joins the Death Company and you must roll again (it is possible for two or more models from the same unit to join the Death Company if you roll successive 6s). If you have insufficient models to represent every Blood Angel who joins the Death Company, any excess models are simply lost.
-
-These are the squads from which the Death Company can be drawn:
-Honour Guard; Terminator Squad; Terminator Assault Squad; Veteran Squad; Veteran Assault Squad; Tactical Squad; Scout Squad; Assault Squad; Bike Squadron; Scout Bike Squadron; Devastator Squad
-(Note that when a model joins the Death Company its equipment is replaced with those in the Death Company army list entry).
-
-All Death Company Space Marines fight as one unit. If you have a Champion in your army, then extra Death Company Space Marines join the Death Company accompanying him.
-
-If you roll a 4+ for a squad led by a Veteran Sergeant (has terminator honours), he may also join the Death Company. He may be armed with a power weapon or power fist as noted in the Death Company army list entry.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink name="Death Company" id="df25-ef74-fe67-624a" hidden="false" type="rule" targetId="25bb-32a8-3b83-761c"/>
+      </infoLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
@@ -1875,11 +1863,25 @@ Blood Angels Dreadnoughts follow the Black rage special rules.
 Units that are Pinned, Falling Back, Locked in combat, or Stunned do not take Black Rage tests.
 If a unit is mounted in a transport vehicle, only the vehicle must test for Black Rage.
 
-
 At the start of every Blood Angels turn, roll a D6 for each Blood Angels unit in the army (including vehicles, vehicle squadrons, and independent characters). On a roll of 1, the unit moves D6&quot; forwards. This must be made towards the enemy (ie, the unit ends the move closer to the enemy than at the start). This extra move does not affect the unit&apos;s movement in the movement or assault phases, but the unit will count as moving for the purposes of firing rapid fire, pistol, and heavy weapons.</description>
     </rule>
   </sharedRules>
   <infoLinks>
     <infoLink name="The Black Rage" id="0dd0-1149-d587-4231" hidden="false" type="rule" targetId="9544-23e0-103a-385f"/>
   </infoLinks>
+  <rules>
+    <rule name="Death Company" id="25bb-32a8-3b83-761c" hidden="false">
+      <description>At the start of a battle, before the armies are deployed, you must determine how many warriors in your army have been infused with the Black Range and joined the Death Company.
+
+Fore each of the squads listed below, roll a D6 at the start of the battle. On a 1, 2 or 3 the squad fights normally. On a 4 or 5, one model (of your choice) from the squad becomes a Death Company Space Marine. On a 6 one of the models in the unit joins the Death Company and you must roll again (it is possible for two or more models from the same unit to join the Death Company if you roll successive 6s). If you have insufficient models to represent every Blood Angel who joins the Death Company, any excess models are simply lost.
+
+These are the squads from which the Death Company can be drawn:
+Honour Guard; Terminator Squad; Terminator Assault Squad; Veteran Squad; Veteran Assault Squad; Tactical Squad; Scout Squad; Assault Squad; Bike Squadron; Scout Bike Squadron; Devastator Squad
+(Note that when a model joins the Death Company its equipment is replaced with those in the Death Company army list entry).
+
+All Death Company Space Marines fight as one unit. If you have a Chaplain in your army, then extra Death Company Space Marines join the Death Company accompanying him.
+
+If you roll a 4+ for a squad led by a Veteran Sergeant (has terminator honours), he may also join the Death Company. He may be armed with a power weapon or power fist as noted in the Death Company army list entry.</description>
+    </rule>
+  </rules>
 </catalogue>
