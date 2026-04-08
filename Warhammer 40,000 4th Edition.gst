@@ -722,6 +722,7 @@ There are many variants of this rule: Fleet of Foot, Fleet of Claw, even Fleet o
       <description>This special rule is automatically lost by an independent character joining a unit that does not have this special rule, and vice versa.
 
 Models with this ability may choose to leave close combat. Declare this at the end of the Close Combat phase. The unit using the Hit &amp; Run ability must be involved in combat, and will immediately move 3D6&quot; in a straight line in any direction, ignoring the units they are locked with. This move may not be used to move into contact with any enemy models. The break-off move is automatically successful and is not subject to sweeping advance. The enemy can consolidate normally, however.</description>
+      <alias>Hit and Run</alias>
     </rule>
     <rule name="Move Through Cover" id="b24c-f56b-5867-01e7" hidden="false">
       <description>Some units of infantry are especially adept  at moving through difficult terrain. Accordingly, roll an extra D6 when rolling to move through difficult terrain. In most circumstances this will mean that they roll 3D6 and pick the dice with the highest score.</description>
@@ -930,7 +931,22 @@ When engaged in close combat, enemy units must allocate their attacks between th
     <rule name="One Shot" id="e2de-8008-3908-c406" hidden="false">
       <description>This weapon may only be used once per battle.</description>
     </rule>
-    <rule name="Mixed Armour" id="a3dd-5a9d-6871-ff4e" hidden="false"/>
+    <rule name="Mixed Armour" id="a3dd-5a9d-6871-ff4e" hidden="false">
+      <description>It&apos;s sometimes possible for some units to have models with different Armour Saves, and in these cases the normal casualty removal and Armour Save rules are modified slightly. The attacking player rolls hits and wounds for whichever unit he is attacking with as normal. However, when the player makes his Armour Saves, he must follow this procedure:
+
+
+1. Count up the number of models that have each type of armour. Only count models that could potentially be casualties.
+2. Determine which armour type is in the majority - if it is a tie then the worst type is assumed to be in the majority (it can be assumed that they are picked on by the enemy).
+3. Apply the wounding hits to the majority armour type first.
+4. If there are still more wounding hits to allocate, you can apply them to any remaining models. It is up to the owning player to decide who will save against which weapon. The only constraint is that the majority armour type must make saves before anyone else does.
+5. Incoming hits form &apos;sets&apos;, with a single set being all the wounds caused by the shooting of a single enemy unit, or by enemy models attacking the unit in close combat at a single initiative step. For each &apos;set&apos; of wounds, every model must be allocated one wound before any of them can be allocated a second wound, all models must receive a second wound before any can take a third, and so on. Unsaved wounding hits must be applied against models with the same armour type that was used for the save. If a unit receives more wounds than it has models, then the wounds &apos;wrap around&apos; and affect the majority type again.
+
+
+If special close combat attacks come into play against a unit with different Armour Saves, it is up to the owning player to decide which models make saves against the special attacks, subject to the rules detailed above. If any model has an Invulnerable Save they are, of course, at liberty to use it against a special attack.</description>
+    </rule>
+    <rule name="Eternal Warrior" id="37fd-2752-9b25-b99a" hidden="false">
+      <description>A model with the Eternal Warrior special rule is immune to Instant Death.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="2d20-fb36-3564-0dbe">
