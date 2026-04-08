@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9725-0eb8-9204-b3ba" name="Black Templars (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9725-0eb8-9204-b3ba" name="Black Templars (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="true" name="Chapter Chaplain" hidden="false" id="a247-e102-9aa7-aa56" type="selectionEntry" targetId="81e5-498e-ee8c-e348">
       <entryLinks>
@@ -773,6 +773,9 @@
           </costs>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Mixed Armour" id="c0d9-c6c4-aba1-326a" hidden="false" type="rule" targetId="a3dd-5a9d-6871-ff4e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Black Templars Assault Squad" hidden="false" id="3987-ef6e-7e6c-64f2">
       <categoryLinks>
@@ -1661,7 +1664,18 @@ In addition, any psychic powers targeted against any Black Templars unit of char
     <rule name="No Pity! No Remorse! No Fear!" id="3fb5-6b6d-0120-ccda" hidden="false">
       <description>When in an assault, all Black Templars units are Fearless.</description>
     </rule>
-    <rule name="Righteous Zeal" id="d22a-c950-bbf8-fb60" hidden="false"/>
+    <rule name="Righteous Zeal" id="d22a-c950-bbf8-fb60" hidden="false">
+      <description>In the Shooting phase, any Infantry unit (not Jump Infantry) that is not Pinned or Falling Back must take a Morale check if it suffers any casualties from enemy shooting, not just when it suffers 25% casualties. All other units in the Black Templars army check Morale and fall back as normal. Note that all Black Templars units take Pinning tests as normal.
+
+
+If an Infantry unit (including any attached characters) is called upon to make a Morale check and passes it, then the unit must move towards the nearest visible enemy unit. This is identical to a Consolidate move that has been achieved through a &apos;Massacre&apos; result and follows all normal rules given in the Warhammer 40,000 rulebook. Should the unit fail this Morale check, it will fall back as normal.
+
+
+Black Templars who pass a Last Man Standing test or are Tank Shocked and pass their test do not benefit from Righteous Zeal.</description>
+    </rule>
+    <rule name="Vows" id="fd73-16ef-4add-973f" hidden="false">
+      <description>Before battle, the Emperor&apos;s Champion leads his brethren in prayer and contemplation of their sacred duty to the Emperor. Roused to incredible heights of righteous zeal, the Black Templars swear mighty oaths to bring ruin upon the foes of the Emperor. An Emperor&apos;s Champion leads the the rest of the warriors in swearing this oath and must choose one of the vows of the Black Templars at the points cost indicated. This points cost is added to the cost of the Emperor&apos;s Champion when you pick your army. Black Templars do not lose the benefits of their vow if the Emperor&apos;s Champion is slain.</description>
+    </rule>
   </rules>
   <infoLinks>
     <infoLink name="Mixed Armour" id="483f-aeee-5c3d-b6f4" hidden="false" type="rule" targetId="a3dd-5a9d-6871-ff4e"/>
