@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -5402,6 +5402,7 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
     <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="dcea-afce-6ef5-36b2" sortIndex="24">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="e76c-4618-61b3-de67" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Land Raider" hidden="false" id="2737-ebd7-d40c-2cfc" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Land Raider Crusader" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="ca30-26f9-36de-2ceb">
@@ -7870,8 +7871,8 @@ If you select a named chapter from above and choose to use codex divergent trait
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f0dd-db2d-3fc8-f8b7" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf0b-0171-f99b-fa4d" shared="true" childName="Land Raider"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9266,6 +9267,7 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
     <entryLink import="true" name="Land Raider" hidden="false" id="00f5-2494-713d-8c74" type="selectionEntry" targetId="29de-e7fe-1741-d490" sortIndex="23">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="98ee-4333-b4b0-1ccb" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Land Raider" hidden="false" id="7e75-2f96-b928-07b5" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="214a-f777-29f9-3f7f" includeChildSelections="false"/>
@@ -9407,6 +9409,7 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Dreadnought" id="5330-7b73-1fd2-d75f" hidden="false"/>
+    <categoryEntry name="Land Raider" id="cf0b-0171-f99b-fa4d" hidden="false"/>
   </categoryEntries>
   <infoLinks>
     <infoLink name="And They Shall Know No Fear" id="9d0f-b0cd-b7f8-ebf0" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
