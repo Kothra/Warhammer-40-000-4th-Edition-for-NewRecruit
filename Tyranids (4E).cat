@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5180-44f1-ff06-8e4c" name="Tyranids (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5180-44f1-ff06-8e4c" name="Tyranids (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Synapse Creature" id="30f9-213c-a231-1221" hidden="false">
       <description>Any Tyranid broods with a model within 12&quot; of a Synapse Creature (including the Synapse Creature itself) never fall back and are assumed to automatically pass any Leadership-based test they are called upon to make, other than Psychic tests and those called upon for target selection. Note that since regrouping only takes place at the start of the turn, a Tyranid unit that falls back can be destroyed by pursuers or by becoming trapped. A Tyranid brood that enters the Synapse range may rally regardless of the usual restrictions (enemy models within 6&quot;, etc).
@@ -2190,6 +2190,11 @@ Movement: Spore Mine Clusters drift D6&quot; in the direction rolled on a Scatte
                 <entryLink import="true" name="Lash Whip" hidden="false" id="84dc-7dfd-b5e0-1a04" type="selectionEntry" targetId="fc83-f8a5-d3cd-2cd5">
                   <costs>
                     <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Crushing Claws" hidden="false" id="a111-a82b-eee6-3c42" type="selectionEntry" targetId="f6b3-de8e-1595-6464">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
                   </costs>
                 </entryLink>
               </entryLinks>
