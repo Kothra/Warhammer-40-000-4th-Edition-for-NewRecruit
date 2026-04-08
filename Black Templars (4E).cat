@@ -1518,7 +1518,7 @@
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Master" hidden="false" id="4754-17c2-f5e6-f099" sortIndex="2">
               <profiles>
-                <profile name="Master" typeId="556e697423232344415441232323" typeName="Unit" hidden="true" id="4a9e-705e-1dfd-bfc6" publicationId="e1e7-bf54-15e0-5ded" page="28">
+                <profile name="Master" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4a9e-705e-1dfd-bfc6" publicationId="e1e7-bf54-15e0-5ded" page="28">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
                     <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>

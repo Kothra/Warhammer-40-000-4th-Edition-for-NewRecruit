@@ -146,7 +146,27 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Bolt Pistol &amp; Close combat weapon" hidden="false" id="a953-1ef7-5da9-c7d2" type="selectionEntry" targetId="7f30-e510-d3b1-0acf" sortIndex="2" defaultAmount="1"/>
+                <entryLink import="true" name="Bolt Pistol &amp; Close combat weapon" hidden="false" id="a953-1ef7-5da9-c7d2" type="selectionEntry" targetId="7f30-e510-d3b1-0acf" sortIndex="2" defaultAmount="1">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="16bd-1997-ce61-f3ce" shared="true" childName="Tactical Squad"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="e09c-86b2-ab2b-a901" shared="true" childName="Take the Fight to Them" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9a67-bbf2-d922-2bc9" shared="true" childName="Devastator Squad"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Special Weapons" id="6b3b-d1f8-2d5f-f808" hidden="false" sortIndex="2">
@@ -807,7 +827,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Master" hidden="false" id="9a66-b0e3-9de5-db79" sortIndex="2">
               <profiles>
-                <profile name="Master" typeId="556e697423232344415441232323" typeName="Unit" hidden="true" id="eda7-d3c5-9c19-fa09" publicationId="e1e7-bf54-15e0-5ded" page="28">
+                <profile name="Master" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="eda7-d3c5-9c19-fa09" publicationId="e1e7-bf54-15e0-5ded" page="28">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
                     <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
@@ -6846,6 +6866,11 @@ If you select a named chapter from above and choose to use codex divergent trait
             <entryLink import="true" name="Auspex" hidden="false" id="cf32-e44d-15bb-e5d6" type="selectionEntry" targetId="654e-4eb2-8af2-248b"/>
             <entryLink import="true" name="Bionics" hidden="false" id="f9df-8c19-cd83-9af2" type="selectionEntry" targetId="566d-c785-7272-4aeb"/>
             <entryLink import="true" name="Sword of Secrets" hidden="false" id="f6e3-ad74-1fac-6dd8" type="selectionEntry" targetId="d5a6-316e-fdc4-b81c"/>
+            <entryLink import="true" name="Teleport Homer" hidden="false" id="6762-54ec-e9bf-e024" type="selectionEntry" targetId="dd3f-0eb3-b1b7-3bf4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6ce-03dd-aade-987d" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Familiar" hidden="false" id="0002-6fa1-2d05-0d72">
@@ -6891,6 +6916,9 @@ If you select a named chapter from above and choose to use codex divergent trait
               <infoLinks>
                 <infoLink name="Master-crafted" id="ab8c-b0bd-7dfd-fa03" hidden="false" type="rule" targetId="55c5-f2b8-a4a7-b734"/>
               </infoLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="271a-e6ed-6f20-9d95" includeChildSelections="false" automatic="true"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Death Mask" hidden="true" id="7788-cf1a-c4a3-3e02">
               <costs>
