@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Space Marines (4E)" id="92c6-d8b3-84b5-653e" importRootEntries="false" targetId="c99d-b51f-afe5-22cb"/>
   </catalogueLinks>
@@ -1403,7 +1403,7 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="Terminator Honours" hidden="false" id="b2fc-9075-1368-c9a6" type="selectionEntry" targetId="7461-f70a-5205-fe07" sortIndex="2"/>
-        <entryLink import="true" name="Armoury" hidden="false" id="b1ba-e3e5-ea99-ce06" type="selectionEntryGroup" targetId="armoury1" sortIndex="3">
+        <entryLink import="true" name="Armoury" hidden="false" id="b1ba-e3e5-ea99-ce06" type="selectionEntryGroup" targetId="armoury1" sortIndex="4">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1422,6 +1422,18 @@
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="863d-19c9-8105-067f" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="e974-7a33-1307-d34d" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="0746-b70a-bdfe-d8a7" type="selectionEntry" targetId="b4d3-5dc3-8317-362c"/>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="b896-e971-fbed-90c9" type="selectionEntry" targetId="a936-e00e-833c-89aa"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51ae-8e0e-2730-87ed-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51ae-8e0e-2730-87ed-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ravenwing Biker" hidden="false" id="acc9-58de-e8fa-06c2">
       <profiles>
@@ -1454,15 +1466,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f432-f784-6d0e-2ec4" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Bolt Pistol" hidden="false" id="5fff-e469-c786-1014" type="selectionEntry" targetId="b4d3-5dc3-8317-362c" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90ee-c218-4205-a98f-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90ee-c218-4205-a98f-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" id="6c97-da1c-1bf4-3191" hidden="false" flatten="true" sortIndex="3">
+        <selectionEntryGroup name="Weapons" id="6c97-da1c-1bf4-3191" hidden="false" flatten="true" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Special Weapons" id="0035-e332-a6b2-93ba" hidden="false">
               <entryLinks>
@@ -1484,6 +1490,16 @@
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="root-entry" shared="true" id="a2f1-b9a9-e781-b991" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapons" id="6e79-d0d0-f734-8e1e" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="5fff-e469-c786-1014" type="selectionEntry" targetId="b4d3-5dc3-8317-362c"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="0d3d-cb59-8ba4-397a" type="selectionEntry" targetId="a936-e00e-833c-89aa"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2758-ae3f-0da3-26b4-min" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2758-ae3f-0da3-26b4-max" includeChildSelections="false" automatic="true"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
