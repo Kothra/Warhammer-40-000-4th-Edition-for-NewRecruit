@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Ethereal" hidden="false" id="e1f9-3763-f9f9-9013">
       <categoryLinks>
@@ -594,8 +594,8 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6426-e16b-bc83-7fca" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Team Leader" hidden="false" id="5874-3a70-5118-257e" type="selectionEntry" targetId="f31f-8c00-4eb1-3fb5" sortIndex="1"/>
-            <entryLink import="true" name="Railgun" hidden="false" id="8d66-ec9d-0c3e-42c9" type="selectionEntry" targetId="3502-4f4b-614d-507e" sortIndex="2">
+            <entryLink import="true" name="Team Leader" hidden="false" id="5874-3a70-5118-257e" type="selectionEntry" targetId="f31f-8c00-4eb1-3fb5" sortIndex="1" exportable="false"/>
+            <entryLink import="true" name="Railgun" hidden="false" id="8d66-ec9d-0c3e-42c9" type="selectionEntry" targetId="3502-4f4b-614d-507e" sortIndex="3">
               <modifiers>
                 <modifier type="prepend" value="Twin-linked" field="name"/>
                 <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon"/>
@@ -606,14 +606,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baca-600b-a591-6d0e-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Wargear" hidden="false" id="324e-8eb0-4ccf-3d7c" type="selectionEntryGroup" targetId="dc6a-6928-1132-646c" sortIndex="5"/>
-            <entryLink import="true" name="Support Systems" hidden="false" id="d882-36d7-e9b7-8fd4" type="selectionEntryGroup" targetId="373f-e5d6-64cc-bd2b" sortIndex="4">
+            <entryLink import="true" name="Wargear" hidden="false" id="324e-8eb0-4ccf-3d7c" type="selectionEntryGroup" targetId="dc6a-6928-1132-646c" sortIndex="6"/>
+            <entryLink import="true" name="Support Systems" hidden="false" id="d882-36d7-e9b7-8fd4" type="selectionEntryGroup" targetId="373f-e5d6-64cc-bd2b" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="848f-cf49-eb2a-d541-min" includeChildSelections="false" automatic="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="848f-cf49-eb2a-d541-max" includeChildSelections="false" automatic="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Drones" hidden="true" id="a766-e6ec-f577-e914" type="selectionEntryGroup" targetId="3d5e-2bb6-9ad8-6d06" sortIndex="6">
+            <entryLink import="true" name="Drones" hidden="true" id="a766-e6ec-f577-e914" type="selectionEntryGroup" targetId="3d5e-2bb6-9ad8-6d06" sortIndex="7">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -627,9 +627,10 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Shas&apos;vre" hidden="false" id="a69a-e7b2-090a-a9ce" type="selectionEntry" targetId="7c19-8d66-b1c8-3f7a" sortIndex="2"/>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Secondary Weapons" id="0ef7-70d4-d15d-8875" hidden="false" sortIndex="3" flatten="true">
+            <selectionEntryGroup name="Secondary Weapons" id="0ef7-70d4-d15d-8875" hidden="false" sortIndex="4" flatten="true">
               <entryLinks>
                 <entryLink import="true" name="Smart Missile System" hidden="false" id="8aa8-ac15-ee9f-5173" type="selectionEntry" targetId="97ca-2a28-52fb-8d1b" sortIndex="1"/>
                 <entryLink import="true" name="Plasma Rifle" hidden="false" id="edb1-a171-5ca8-fdd8" type="selectionEntry" targetId="016e-11e7-08f3-84bd" sortIndex="2">
@@ -679,13 +680,13 @@
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Battlesuit Armoury" hidden="false" id="a13d-1f04-15b8-b45b" type="selectionEntryGroup" targetId="6d57-c632-518c-022d" sortIndex="2"/>
-            <entryLink import="true" name="Team Leader" hidden="false" id="dba7-0620-f3f5-2ffc" type="selectionEntry" targetId="f31f-8c00-4eb1-3fb5" sortIndex="1">
+            <entryLink import="true" name="Battlesuit Armoury" hidden="false" id="a13d-1f04-15b8-b45b" type="selectionEntryGroup" targetId="6d57-c632-518c-022d" sortIndex="3"/>
+            <entryLink import="true" name="Team Leader" hidden="false" id="dba7-0620-f3f5-2ffc" type="selectionEntry" targetId="f31f-8c00-4eb1-3fb5" sortIndex="1" exportable="false">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="192f-1ccb-2db1-7177" includeChildSelections="true" automatic="true"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Drones" hidden="true" id="d689-b3de-3de2-fdcb" type="selectionEntryGroup" targetId="3d5e-2bb6-9ad8-6d06" sortIndex="3">
+            <entryLink import="true" name="Drones" hidden="true" id="d689-b3de-3de2-fdcb" type="selectionEntryGroup" targetId="3d5e-2bb6-9ad8-6d06" sortIndex="4">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -699,6 +700,7 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Shas&apos;vre" hidden="false" id="f307-9f49-64ee-8543" type="selectionEntry" targetId="7c19-8d66-b1c8-3f7a" sortIndex="2"/>
           </entryLinks>
           <profiles>
             <profile name="Crisis Shas&apos;ui" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="d805-8c3c-b4ea-8695">
@@ -1090,7 +1092,7 @@
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="deab-f291-5e57-134f" hidden="false" sortIndex="2" defaultSelectionEntryId="3689-cd30-e614-f6bc">
+            <selectionEntryGroup name="Weapons" id="deab-f291-5e57-134f" hidden="false" sortIndex="4" defaultSelectionEntryId="3689-cd30-e614-f6bc">
               <entryLinks>
                 <entryLink import="true" name="Burst Cannon" hidden="false" id="3689-cd30-e614-f6bc" type="selectionEntry" targetId="d55e-1958-0701-6340"/>
                 <entryLink import="true" name="Fusion Blaster" hidden="false" id="064e-628c-5573-1e52" type="selectionEntry" targetId="6253-6b4c-d446-c2e4">
@@ -1116,13 +1118,13 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Stealth Field Generator" hidden="false" id="9cbe-e009-6ef6-6fe7" type="selectionEntry" targetId="67b4-7cd5-763a-68c5" sortIndex="3">
+            <entryLink import="true" name="Stealth Field Generator" hidden="false" id="9cbe-e009-6ef6-6fe7" type="selectionEntry" targetId="67b4-7cd5-763a-68c5" sortIndex="5">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d62b-94a1-c1ca-cc34-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d62b-94a1-c1ca-cc34-max" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Support Systems" hidden="false" id="9ccb-f40c-c4f6-d926" type="selectionEntryGroup" targetId="373f-e5d6-64cc-bd2b" sortIndex="4">
+            <entryLink import="true" name="Support Systems" hidden="false" id="9ccb-f40c-c4f6-d926" type="selectionEntryGroup" targetId="373f-e5d6-64cc-bd2b" sortIndex="6">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5eed-c36a-2047-be54" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f46-e6bc-6b1a-fafe" includeChildSelections="false" automatic="true"/>
@@ -1135,20 +1137,9 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Team Leader" hidden="false" id="c571-a278-e9cf-9b43" type="selectionEntry" targetId="f31f-8c00-4eb1-3fb5" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="Markerlight" hidden="false" id="e04a-7dc3-3d03-cf4f" type="selectionEntry" targetId="5314-caf2-3c5d-b57b">
-                  <costs>
-                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b808-c343-95c7-27de" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Wargear" hidden="false" id="3a39-4bce-da64-ac71" type="selectionEntryGroup" targetId="dc6a-6928-1132-646c" sortIndex="5"/>
-            <entryLink import="true" name="Drones" hidden="true" id="1c8f-7f1c-50d4-eba4" type="selectionEntryGroup" targetId="3d5e-2bb6-9ad8-6d06" sortIndex="6">
+            <entryLink import="true" name="Team Leader" hidden="false" id="c571-a278-e9cf-9b43" type="selectionEntry" targetId="f31f-8c00-4eb1-3fb5" sortIndex="1" exportable="false"/>
+            <entryLink import="true" name="Wargear" hidden="false" id="3a39-4bce-da64-ac71" type="selectionEntryGroup" targetId="dc6a-6928-1132-646c" sortIndex="7"/>
+            <entryLink import="true" name="Drones" hidden="true" id="1c8f-7f1c-50d4-eba4" type="selectionEntryGroup" targetId="3d5e-2bb6-9ad8-6d06" sortIndex="8">
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditionGroups>
@@ -1162,6 +1153,22 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Markerlight" hidden="true" id="e04a-7dc3-3d03-cf4f" type="selectionEntry" targetId="5314-caf2-3c5d-b57b" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b808-c343-95c7-27de" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="f31f-8c00-4eb1-3fb5" shared="true" childName="Team Leader"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Shas&apos;vre" hidden="false" id="63d4-3a31-dadd-ea6f" type="selectionEntry" targetId="7c19-8d66-b1c8-3f7a" sortIndex="2" exportable="false"/>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="21a6-ef30-52f7-e301" includeChildSelections="false"/>
@@ -2387,35 +2394,13 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Team Leader" hidden="false" id="f31f-8c00-4eb1-3fb5">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Shas&apos;vre" hidden="false" id="7c19-8d66-b1c8-3f7a">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80db-92d5-d75f-82b2" includeChildSelections="true" automatic="true"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Team Leader" hidden="false" id="f31f-8c00-4eb1-3fb5" exportable="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="f1af-48aa-f68a-501d" includeChildSelections="true" automatic="true"/>
       </constraints>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
       </costs>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <modifiers>
-            <modifier type="increment" value="1" field="4.923232344415441e+21" affects="profiles.Unit" arg="Shas&apos;ui" scope="parent"/>
-            <modifier type="replace" value="Shas&apos;vre" field="name" affects="profiles.Unit" arg="Shas&apos;ui" scope="parent"/>
-            <modifier type="increment" value="1" field="5.753232323444154e+23" affects="profiles.Unit" arg="Shas&apos;ui" scope="parent"/>
-          </modifiers>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c19-8d66-b1c8-3f7a" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifierGroup>
-      </modifierGroups>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -2427,6 +2412,7 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" value="Team Leader" field="name" scope="parent"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shas&apos;ui Team Leader" hidden="false" id="e576-0ae0-5c5e-43f9" defaultAmount="0">
@@ -2460,7 +2446,7 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Fire Warrior" hidden="false" id="2b78-488b-b6e4-fe60">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon" id="c999-7283-6eef-985c" hidden="false" flatten="true" defaultSelectionEntryId="7697-3a41-4434-c136" sortIndex="2">
+        <selectionEntryGroup name="Weapon" id="c999-7283-6eef-985c" hidden="false" flatten="true" defaultSelectionEntryId="7981-8b7c-a6d3-2cd3" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Pulse Rifle" hidden="false" id="7981-8b7c-a6d3-2cd3" type="selectionEntry" targetId="03c2-7ba2-3a3d-b5c1" sortIndex="1"/>
             <entryLink import="true" name="Pulse Carbine" hidden="false" id="f7da-ab63-9706-427e" type="selectionEntry" targetId="362b-a6ec-e98c-4e6a" sortIndex="2"/>
@@ -2509,6 +2495,13 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
         </entryLink>
         <entryLink import="true" name="Infantry Armoury" hidden="false" id="fa57-e792-d848-73fe" type="selectionEntryGroup" targetId="062e-01f5-2570-d3ae" sortIndex="3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Shas&apos;ui Team Leader" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e576-0ae0-5c5e-43f9" shared="true" childName="Shas&apos;ui Team Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Veteran Fire Warrior" hidden="false" id="03c2-66b2-06b1-41a7">
       <selectionEntryGroups>
@@ -2561,6 +2554,41 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
         </entryLink>
         <entryLink import="true" name="Infantry Armoury" hidden="false" id="8208-3e69-4072-ed78" type="selectionEntryGroup" targetId="062e-01f5-2570-d3ae" sortIndex="3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="append" value="Shas&apos;ui Team Leader" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="e576-0ae0-5c5e-43f9" shared="true" childName="Shas&apos;ui Team Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shas&apos;vre" hidden="true" id="7c19-8d66-b1c8-3f7a" exportable="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80db-92d5-d75f-82b2" includeChildSelections="true" automatic="true"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="f31f-8c00-4eb1-3fb5" shared="true" childName="Team Leader"/>
+          </conditions>
+        </modifier>
+        <modifier type="replace" value="Shas&apos;vre" field="name" arg="Shas&apos;ui" scope="parent"/>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="increment" value="1" field="4.923232344415441e+21" affects="profiles.Unit" arg="Shas&apos;ui" scope="parent"/>
+            <modifier type="replace" value="Shas&apos;vre" field="name" affects="profiles.Unit" arg="Shas&apos;ui" scope="parent"/>
+            <modifier type="increment" value="1" field="5.753232323444154e+23" affects="profiles.Unit" arg="Shas&apos;ui" scope="parent"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c19-8d66-b1c8-3f7a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
