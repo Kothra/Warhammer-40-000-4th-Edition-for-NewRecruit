@@ -934,13 +934,11 @@ When engaged in close combat, enemy units must allocate their attacks between th
     <rule name="Mixed Armour" id="a3dd-5a9d-6871-ff4e" hidden="false">
       <description>It&apos;s sometimes possible for some units to have models with different Armour Saves, and in these cases the normal casualty removal and Armour Save rules are modified slightly. The attacking player rolls hits and wounds for whichever unit he is attacking with as normal. However, when the player makes his Armour Saves, he must follow this procedure:
 
-
 1. Count up the number of models that have each type of armour. Only count models that could potentially be casualties.
 2. Determine which armour type is in the majority - if it is a tie then the worst type is assumed to be in the majority (it can be assumed that they are picked on by the enemy).
 3. Apply the wounding hits to the majority armour type first.
 4. If there are still more wounding hits to allocate, you can apply them to any remaining models. It is up to the owning player to decide who will save against which weapon. The only constraint is that the majority armour type must make saves before anyone else does.
 5. Incoming hits form &apos;sets&apos;, with a single set being all the wounds caused by the shooting of a single enemy unit, or by enemy models attacking the unit in close combat at a single initiative step. For each &apos;set&apos; of wounds, every model must be allocated one wound before any of them can be allocated a second wound, all models must receive a second wound before any can take a third, and so on. Unsaved wounding hits must be applied against models with the same armour type that was used for the save. If a unit receives more wounds than it has models, then the wounds &apos;wrap around&apos; and affect the majority type again.
-
 
 If special close combat attacks come into play against a unit with different Armour Saves, it is up to the owning player to decide which models make saves against the special attacks, subject to the rules detailed above. If any model has an Invulnerable Save they are, of course, at liberty to use it against a special attack.</description>
     </rule>
@@ -1325,7 +1323,7 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
       <profiles>
         <profile name="Dreadnought close combat weapon" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="6eff-6aa7-a3a5-34d3">
           <characteristics>
-            <characteristic name="Details" typeId="acf3-d214-6e51-29fe"/>
+            <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A dreadnought close combat weapon doubles the walker&apos;s Strength in close combat (to a maximum of 10) and ignores Armour Saving throws. A Dreadnought armed with two close combat weapons gains an extra Attack. If one of the weapons is destroyed, the bonus attack is lost. Further Weapon Destroyed results do not affect the walker&apos;s Attacks characteristic, but will prevent it gaining the benefits of Dreadnought close combat weapons if that weapon is destroyed (so, the walker will fight at its base Strength, and wounded enemies will be allowed to take their Armour Saves).</characteristic>
           </characteristics>
         </profile>
       </profiles>
