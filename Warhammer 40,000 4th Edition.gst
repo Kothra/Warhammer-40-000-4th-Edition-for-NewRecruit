@@ -1328,7 +1328,8 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         </profile>
       </profiles>
       <modifiers>
-        <modifier type="append" value="(10)" field="c10b-81fc-f48d-cb9c" scope="root-entry" affects="profiles.Walker"/>
+        <modifier type="append" value="(10)" field="c10b-81fc-f48d-cb9c" scope="parent" affects="profiles.Walker"/>
+        <modifier type="replace" value="(10)" field="c10b-81fc-f48d-cb9c" scope="parent" affects="profiles.Walker" arg="(10) (10)"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Grenades" hidden="false" id="07ae-f0c7-b277-fb93">
