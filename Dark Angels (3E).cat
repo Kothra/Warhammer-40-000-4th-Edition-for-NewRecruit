@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="5813-70d9-ad1a-07f5">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Space Marines (4E)" id="92c6-d8b3-84b5-653e" importRootEntries="false" targetId="c99d-b51f-afe5-22cb"/>
   </catalogueLinks>

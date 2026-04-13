@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="ab6a-fac1-8384-4c1f">
   <entryLinks>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="1c6a-4f6b-9265-e6ee" type="selectionEntry" targetId="16bd-1997-ce61-f3ce" sortIndex="13">
       <categoryLinks>
