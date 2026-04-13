@@ -1475,7 +1475,7 @@ One crewman may fire the platform instead of his shuriken catapult, the other ma
                 <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                 <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                 <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="Sv" typeId="5.361766523232344e+27">5+</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4636,6 +4636,7 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
         </modifier>
         <modifier type="set" value="Jetbike" field="556e6974205479706523232344415441232323" scope="parent" affects="profiles.Unit"/>
         <modifier type="set" value="3 (4)" field="5.423232344415441e+21" scope="parent" affects="profiles.Unit"/>
+        <modifier type="set" value="3+" field="5.361766523232344e+27" affects="profiles.Unit" scope="parent"/>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Shuriken Catapult" hidden="false" id="b3ef-c8ff-e269-0c35" type="selectionEntry" targetId="e564-1262-1623-a522">
