@@ -1273,9 +1273,6 @@ One crewman may fire the platform instead of his shuriken catapult, the other ma
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="998c-a1d2-e471-7943" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Fleet" id="fdba-c4cd-ad62-504c" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
-      </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Warp Spider" hidden="false" id="d5c6-0761-8dfe-6e53" sortIndex="1">
           <costs>
