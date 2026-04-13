@@ -4221,6 +4221,9 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="b969-84c9-a87b-e1e9" hidden="false" type="rule" targetId="bbf5-b1c2-49b0-f3c2"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Withdraw" hidden="false" id="ee09-daa6-18fe-a7f7">
               <constraints>
@@ -4830,9 +4833,6 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
       <modifiers>
         <modifier type="set" value="Jump Infantry" field="556e6974205479706523232344415441232323" scope="parent" affects="profiles.Unit"/>
       </modifiers>
-      <infoLinks>
-        <infoLink name="Deep Strike" id="110d-f063-d1e7-a3d9" hidden="false" type="rule" targetId="bbf5-b1c2-49b0-f3c2"/>
-      </infoLinks>
       <profiles>
         <profile name="Warp Jump Generator" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="fb44-0eea-e221-818e">
           <characteristics>
