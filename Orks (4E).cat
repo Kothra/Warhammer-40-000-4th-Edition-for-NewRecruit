@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
+<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="c786-be8b-b307-da9a">
       <infoLinks>
@@ -2124,7 +2124,7 @@ D6 Result
                   <modifiers>
                     <modifier type="increment" value="1" field="5d40-ca38-b826-d2ee">
                       <repeats>
-                        <repeat value="10" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model"/>
+                        <repeat value="10" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
                       </repeats>
                     </modifier>
                   </modifiers>
