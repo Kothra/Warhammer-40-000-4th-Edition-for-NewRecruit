@@ -4265,7 +4265,7 @@ D6 Result
         <constraint type="max" value="1" field="selections" scope="force" shared="false" id="045b-3919-6719-d13d" includeChildSelections="false"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Deff Dread" hidden="false" id="6f39-533c-d12a-ec68" type="selectionEntry" targetId="7755-041c-6788-ec28">
+    <entryLink import="true" name="Deff Dread" hidden="true" id="6f39-533c-d12a-ec68" type="selectionEntry" targetId="7755-041c-6788-ec28">
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="db2e-d53d-29ec-cf10" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
@@ -4279,11 +4279,6 @@ D6 Result
           </conditions>
         </modifier>
         <modifier type="remove" value="6a52-1951-5b0c-024e" field="category"/>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="fc13-7031-891e-5a41" shared="true" includeChildSelections="true" childName="Big Mek"/>
-          </conditions>
-        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Warbikers" hidden="true" id="0b7e-bfdb-22e3-76f0" type="selectionEntry" targetId="b65a-54b2-f758-29d8">
