@@ -1539,6 +1539,9 @@ One crewman may fire the platform instead of his shuriken catapult, the other ma
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a6-a12f-64e1-76fc-min" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72a6-a12f-64e1-76fc-max" includeChildSelections="false" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="prepend" value="Turret-mounted" field="name" affects="self.entries.profiles.Weapon"/>
+              </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Hull Weapon" id="baae-0521-472f-3248" hidden="false" defaultSelectionEntryId="af84-c76a-a91b-d1f7">
               <entryLinks>
@@ -4462,6 +4465,9 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06f9-f774-2658-f82f-min" includeChildSelections="false" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06f9-f774-2658-f82f-max" includeChildSelections="false" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Turret-mounted" field="name" affects="self.entries.profiles.Weapon"/>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
@@ -5076,6 +5082,42 @@ A model attacking with Haywire grenades may only make a single attack. If it hit
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26db-2915-8896-dddb" includeChildSelections="false" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="096c-4f00-b1b2-0103" includeChildSelections="false" automatic="true"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Turret-mounted Secondary Weapon" id="d3a9-78c3-352f-3bbb" hidden="false" defaultSelectionEntryId="none" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Starcannon" hidden="false" id="4cdb-e063-4afb-a5d7" type="selectionEntry" targetId="08d8-e8dd-7374-8cc2" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Eldar Missile Launcher" hidden="false" id="7af2-1e0c-818c-2282" type="selectionEntry" targetId="4354-4046-ea78-3472" sortIndex="1">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Scatter Laser" hidden="false" id="8673-84aa-6cfa-0d8b" type="selectionEntry" targetId="d59e-b4e3-1ed0-16de" sortIndex="2">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Shuriken Cannon" hidden="false" id="1424-0311-803d-14dd" type="selectionEntry" targetId="8c91-f646-f1fd-b315" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Bright Lance" hidden="false" id="7ce2-e489-7ec7-bc47" type="selectionEntry" targetId="c3f3-eed1-a1b9-dd19" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc73-310e-3be6-088f" includeChildSelections="false" automatic="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fdc-d7d0-1a41-2d20" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Turret-mounted" field="name" affects="self.entries.profiles.Weapon"/>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <profiles>
