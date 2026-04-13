@@ -1399,7 +1399,7 @@ Remember that cover only counts in the first round of close combat and subsequen
       <profiles>
         <profile name="Rune Priest" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a984-f61b-5dd6-95eb">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>

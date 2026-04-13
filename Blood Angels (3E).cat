@@ -1655,9 +1655,9 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d86-3ad8-5e00-3d7a" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Commander Dante, Lord of the Blood Angels" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="3e75-4ef7-f7aa-6e9f">
+        <profile name="Chief Librarian Mephiston, Lord of Death" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="3e75-4ef7-f7aa-6e9f">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">6</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>

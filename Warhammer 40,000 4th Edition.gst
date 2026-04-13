@@ -59,6 +59,8 @@
     <publication name="Imperial Armour Update 2004" id="c147-595d-57b4-1b9e" hidden="false" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Update_2004" publisher="Imperial Armour Update 2004" shortName="IA04" publicationDate="2004"/>
     <publication name="Imperial Armour - Imperial Vehicles" id="454c-836b-89a0-27a9" hidden="false" publisher="Imperial Armour - Imperial Vehicles for Warhammer 40,000" shortName="IA1" publicationDate="2000" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_-_Imperial_Vehicles_for_Warhammer_40,000"/>
     <publication name="Imperial Armour II - Ork, Eldar and Dark Eldar " id="138a-0b3f-cad7-1794" hidden="false" publisher="Imperial Armour II - Ork, Eldar and Dark Eldar Vehicles for Warhammer 40,000" shortName="IA2" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_II_-_Ork,_Eldar_and_Dark_Eldar_Vehicles_for_Warhammer_40,000" publicationDate="2001"/>
+    <publication name="Codex: Orks (2008)" id="4f2e-0482-0981-cdae" hidden="false" publicationDate="2008/01" publisherUrl="https://wh40k.lexicanum.com/wiki/Codex:_Orks_(4th_Edition)" publisher="Codex: Orks" shortName="OR08"/>
+    <publication name="Codex: Chaos Space Marines (2007)" id="3c33-edbb-79d5-85d1" hidden="false" shortName="CSM07" publisher="Codex: Chaos Space Marines" publicationDate="2007/09" publisherUrl="https://wh40k.lexicanum.com/wiki/Codex:_Chaos_Space_Marines_(4th_Edition)"/>
   </publications>
   <costTypes>
     <costType name="Points" id="4deb-313d-6685-f48b" defaultCostLimit="-1"/>
@@ -117,12 +119,6 @@
         <characteristicType name="Combat Role" id="d477-c087-173f-9f1c"/>
         <characteristicType name="Pursuit" id="e04d-332e-8b52-0071"/>
         <characteristicType name="Agility" id="ae34-f5c0-19af-4883"/>
-      </characteristicTypes>
-    </profileType>
-    <profileType name="Psyker" id="bc97-dea9-9e88-bb7d" hidden="false" sortIndex="13">
-      <characteristicTypes>
-        <characteristicType name="Mastery Level" id="ca56-02c3-af4b-ea2a"/>
-        <characteristicType name="Disciplines" id="ea53-f5c7-08e4-980c"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Psychic Power" id="ae70-4738-0161-bec0" hidden="false" sortIndex="8">
@@ -944,6 +940,15 @@ If special close combat attacks come into play against a unit with different Arm
     </rule>
     <rule name="Eternal Warrior" id="37fd-2752-9b25-b99a" hidden="false">
       <description>A model with the Eternal Warrior special rule is immune to Instant Death.</description>
+    </rule>
+    <rule name="Psyker" id="cfa5-875e-3f68-8b2b" hidden="false">
+      <alias>psychic power</alias>
+      <alias>psychic test</alias>
+      <description>In order to use one of his powers, a Psyker must make a Psychic test by rolling equal to or under his Leadership on 2D6. If he fails, then his concentration is broken and he cannot use the power that turn. A pass means the power me be used as described in the special rules for the Psyker in his Codex.
+Unless specified otherwise, psychic abilities are subject to the usual Shooting rules, so the Psyker must be able to see the target, all attacks must be directed against a single target unit, etc. While most psychic powers are used instead of shooting, there are a number of psychic abilities that may take effect in other phases.
+
+
+If a Psyker rolls a 2 or 12 when making their Psychic test, the Psyker is subject to Perils of the Warp - he suffers one automatic hit at Strength 6 with no saves (of any sort) allowed. Note that on a Psychic test roll of a 2 the psychic power still works, even though the Psyker has been attacked or killed.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="c786-be8b-b307-da9a">
       <infoLinks>
@@ -1189,7 +1189,7 @@ Roll 2D6 to determine the Strength after placing the template but before rolling
       <profiles>
         <profile name="Weirdboy" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="ed0e-2634-c039-51e2">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">2</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
@@ -4146,7 +4146,7 @@ Note that no more than one Waaagh! can be called per turn, so Ghazhgkull cannot 
       <profiles>
         <profile name="Old Zogwort" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="08fe-3cf3-909b-6590">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">0</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>

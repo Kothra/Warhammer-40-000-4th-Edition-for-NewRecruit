@@ -255,7 +255,7 @@ One crewman may fire the platform instead of his shuriken catapult, the other ma
       <profiles>
         <profile name="Farseer" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4b56-cf4e-76db-0a6b">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
@@ -3449,7 +3449,7 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
       <profiles>
         <profile name="Eldrad Ulthran" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a06a-8716-4781-69c2">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
@@ -4606,7 +4606,7 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
       <profiles>
         <profile name="Warlock" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="eb4a-5750-8a11-2142">
           <characteristics>
-            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
             <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
             <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
