@@ -241,11 +241,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="4+" field="5.361766523232344e+27" affects="self.entries.profiles.Unit" arg="Infantry" scope="parent">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="e6d9-96eb-9fa5-acb6" shared="true" childName="Warboss"/>
-          </conditions>
-        </modifier>
+        <modifier type="set" value="4+" field="5.361766523232344e+27" affects="self.entries.profiles.Unit" arg="Infantry" scope="parent"/>
       </modifiers>
       <rules>
         <rule name="Exhaust Cloud" id="c186-8a11-f3a3-a9ba" hidden="false">
@@ -607,7 +603,7 @@ Unique characters can not be given cybork bodies.</characteristic>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ec-07ce-316a-ad3d" includeChildSelections="false"/>
       </constraints>
       <modifiers>
-        <modifier type="replace" value="" field="5.479706523232345e+27" scope="parent" affects="self.entries.profiles.Vehicle" arg="Open-topped"/>
+        <modifier type="replace" field="5.479706523232345e+27" scope="parent" affects="self.entries.profiles.Vehicle" arg="Open-topped"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Runtherd" hidden="false" id="5cf9-21a3-8d27-df49">
@@ -961,7 +957,7 @@ Unique characters can not be given cybork bodies.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Stikkbomb" hidden="false" id="c0ed-c30c-7b36-8dc7" type="selectionEntry" targetId="605a-d7f5-928a-797e" sortIndex="5">
+        <entryLink import="true" name="Stikkbombz" hidden="false" id="c0ed-c30c-7b36-8dc7" type="selectionEntry" targetId="605a-d7f5-928a-797e" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b409-c8de-5f94-db72-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b409-c8de-5f94-db72-max" includeChildSelections="false"/>
@@ -1033,8 +1029,7 @@ Unique characters can not be given cybork bodies.</characteristic>
                   <profiles>
                     <profile name="Shokk Attack Gun" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="a9ba-1e54-65f4-377d">
                       <characteristics>
-                        <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;
-</characteristic>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">60&quot;</characteristic>
                         <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2D6</characteristic>
                         <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
                         <characteristic name="Type" typeId="8b10-045a-f593-605e">Ordance 1, Large Blast</characteristic>
@@ -1046,10 +1041,7 @@ Roll 2D6 to determine the Strength after placing the template but before rolling
 4,4 - Sploosh: Resolve the attack upon the target, but use the small template. Any hits are resolved with a Strength and AP of 6.
 5,5 - Zoink: No shot is fired. Immediately place the Mek in base contact with the target, and treat him as if he had initiated an assault that turn.
 5,6 - Bzzap: Only the model under the template hole is hit, but the shot is Strength 10. The gun may not fire next turn.
-6,6 - Raargh: Any model hit by the gun from this turn is removed from play. Vehicles take an automatic penetrating hit.
-
-
-</characteristic>
+6,6 - Raargh: Any model hit by the gun from this turn is removed from play. Vehicles take an automatic penetrating hit.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -2935,7 +2927,7 @@ D6 Result
                     <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
                     <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2D6</characteristic>
                     <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
-                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1 </characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1</characteristic>
                     <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Each time a zzap gun battery is fired, after declaring a target but before rolling to hit, roll 2D6 to determine its Strength. If the roll is above 10, one of the Gretchin crew is killed but the shot is still fired, counting as Strength 10. When they score glancing or penetrating hits against vehicles, zzap guns automatically cause a Crew Shaken result in addition to any other effects.
 On vehicles, zzap guns are never counted as defensive weapons. If the Strength roll is higher than 10 there are no negative effects.</characteristic>
                   </characteristics>
@@ -3076,7 +3068,7 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
             <characteristic name="Type" typeId="5.479706523232345e+27">Tank, Open-topped</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="replace" value="" field="5.479706523232345e+27" arg="Open-topped">
+            <modifier type="replace" field="5.479706523232345e+27" arg="Open-topped">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="2f6c-b721-d7b2-b800" shared="true" childName="&apos;Ard Case"/>
               </conditions>
@@ -3632,7 +3624,7 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
                 <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
                 <characteristic name="Strength" typeId="537472656e67746823232344415441232323">2D6</characteristic>
                 <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
-                <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1 </characteristic>
+                <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1</characteristic>
                 <characteristic name="Info" typeId="33e9-27bd-77e4-401d">Each time a zzap gun battery is fired, after declaring a target but before rolling to hit, roll 2D6 to determine its Strength. If the roll is above 10, one of the Gretchin crew is killed but the shot is still fired, counting as Strength 10. When they score glancing or penetrating hits against vehicles, zzap guns automatically cause a Crew Shaken result in addition to any other effects.
 On vehicles, zzap guns are never counted as defensive weapons. If the Strength roll is higher than 10 there are no negative effects.</characteristic>
               </characteristics>
@@ -3998,6 +3990,14 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c00-52c7-c0f2-60c8-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c00-52c7-c0f2-60c8-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ammo Runt" hidden="false" id="f171-b357-0198-82a5" type="selectionEntry" targetId="36b0-62a1-c139-b975">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="770a-fbd3-cb13-0e2c" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
