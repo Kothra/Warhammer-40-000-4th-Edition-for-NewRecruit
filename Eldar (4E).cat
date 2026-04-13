@@ -722,9 +722,6 @@ One crewman may fire the platform instead of his shuriken catapult, the other ma
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="0e36-95bb-14f6-06a0" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Fleet" id="9bbe-0500-f788-3644" hidden="false" type="rule" targetId="56d8-9340-2dc6-cd37"/>
-      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Transport" hidden="false" id="5284-026e-d33f-080b" type="selectionEntryGroup" targetId="0825-f8ff-182e-4e81"/>
       </entryLinks>
