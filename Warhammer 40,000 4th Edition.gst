@@ -1213,30 +1213,28 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <infoLink name="Bolter" id="67b9-a4e2-7d2e-148c" hidden="false" type="profile" targetId="fa34-07ff-1a5d-fe9f"/>
         <infoLink name="Meltagun" id="b97f-7570-c4a7-8a14" hidden="false" type="profile" targetId="4771-d658-dd0f-2ccb">
           <modifiers>
-            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", ">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1738-0373-fa71-f97b" shared="true"/>
-              </conditions>
-            </modifier>
+            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
           </modifiers>
         </infoLink>
         <infoLink name="Combi-weapon" id="53bf-e1b5-ccbf-2ba6" hidden="false" type="rule" targetId="0c5f-0c8f-a76b-1245"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="prepend" value="Combi-melta" field="name" join=" - " affects="profiles.Weapon"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combi-plasma" hidden="false" id="a177-d140-7d8c-4d42">
       <infoLinks>
         <infoLink name="Plasma Gun" id="b751-55b0-312c-96d5" hidden="false" type="profile" targetId="45fb-35fd-3a93-bc60">
           <modifiers>
-            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", ">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1738-0373-fa71-f97b" shared="true"/>
-              </conditions>
-            </modifier>
+            <modifier type="append" value="One Shot" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
           </modifiers>
         </infoLink>
         <infoLink name="Bolter" id="0dbc-dad3-e73e-48cd" hidden="false" type="profile" targetId="fa34-07ff-1a5d-fe9f"/>
         <infoLink name="Combi-weapon" id="d02a-c3fe-87fd-84bb" hidden="false" type="rule" targetId="0c5f-0c8f-a76b-1245"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="prepend" value="Combi-plasma" field="name" join=" - " affects="profiles.Weapon"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combi-flamer" hidden="false" id="1738-0373-fa71-f97b">
       <infoLinks>
@@ -1248,6 +1246,9 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         </infoLink>
         <infoLink name="Combi-weapon" id="0ca0-6139-4f75-a6e9" hidden="false" type="rule" targetId="0c5f-0c8f-a76b-1245"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="prepend" value="Combi-flamer" field="name" join=" - " affects="profiles.Weapon"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="b28f-478a-74fb-ec87">
       <infoLinks>
