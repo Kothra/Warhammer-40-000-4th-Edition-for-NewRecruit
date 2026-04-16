@@ -4573,7 +4573,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
         <categoryLink name="Heavy Support" hidden="false" id="c727-1a6d-34bd-6ce7" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Chaos Havoc" hidden="false" id="9693-9e48-d0cd-b74e" type="selectionEntry" targetId="35f2-d304-5aa8-ce4a">
+        <entryLink import="true" name="Chaos Space Marine" hidden="false" id="9693-9e48-d0cd-b74e" type="selectionEntry" targetId="35f2-d304-5aa8-ce4a">
           <entryLinks>
             <entryLink import="true" name="Aspiring Champion" hidden="false" id="68bd-d62e-85e3-5f0b" type="selectionEntry" targetId="649d-2c57-7679-e4ce" sortIndex="1">
               <costs>
@@ -4846,8 +4846,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                 <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                 <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
                 <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                <characteristic name="Sv" typeId="5.361766523232344e+27">2+
-</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5861,6 +5860,9 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="160"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f5a-21fd-6954-d378" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Typhus" hidden="false" id="a928-042f-e47e-a8e8">
       <categoryLinks>
@@ -6028,6 +6030,9 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
           </characteristics>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9e71-9044-0651-585b" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>
