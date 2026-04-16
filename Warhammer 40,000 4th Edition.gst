@@ -15,6 +15,7 @@
     <categoryEntry name="Death Company" id="0589-7c29-bfa2-d566" hidden="false"/>
     <categoryEntry name="Blood Angel" id="e39c-0852-74f1-402d" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
+    <categoryEntry name="Daemons" id="101e-2bbf-9209-2825" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Warhammer 40,000 4th Edition Rulebook" id="c0d3-c074-f54c-9ec4" hidden="false" shortName="BRB" publisher="Warhammer 40,000 4th Edition Rulebook" publicationDate="2004/08/28" publisherUrl="https://wh40k.lexicanum.com/wiki/Warhammer_40,000_4th_Edition_Rulebook"/>
@@ -286,6 +287,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Daemons" hidden="false" id="25c3-907e-4dc9-f255" targetId="101e-2bbf-9209-2825"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -550,6 +552,15 @@
     <profile name="Witchblade" typeId="b729-49a4-4123-cf00" typeName="Melee Weapon" hidden="false" id="0448-9b63-d2b2-7082">
       <characteristics>
         <characteristic name="Details" typeId="acf3-d214-6e51-29fe">A Witchblade inflicts wounds on a roll of 2+, regardless of the target&apos;s Toughness, though Armour Saves are taken as normal. Against vehicles, the wielder of a witchblade triples his Strength (up to S10).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Battle Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="ef13-5d02-562d-ef4b">
+      <characteristics>
+        <characteristic name="Range" typeId="52616e676523232344415441232323">72&quot;</characteristic>
+        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+        <characteristic name="AP" typeId="4.1502323234441545e+23">3</characteristic>
+        <characteristic name="Type" typeId="8b10-045a-f593-605e">Ordnance 1, Large Blast</characteristic>
+        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -983,7 +994,7 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a8a-6839-b4ec-bd8b" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Melta Bombs" hidden="false" id="a1bb-d7bf-d627-b59f" sortIndex="0">
+    <selectionEntry type="upgrade" import="true" name="Melta Bombs" hidden="false" id="a1bb-d7bf-d627-b59f" sortIndex="">
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
       </costs>
@@ -1347,6 +1358,11 @@ Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteris
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Battle Cannon" hidden="false" id="2120-c091-5f03-76a7">
+      <infoLinks>
+        <infoLink name="Battle Cannon" id="abb2-142d-4d55-8da7" hidden="false" type="profile" targetId="ef13-5d02-562d-ef4b"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <conditions>
