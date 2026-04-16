@@ -838,6 +838,7 @@ If the target is in range and can be seen, roll the Scatter dice and a D6 to see
 Models whose bases are partially covered by the marker are hit on a D6 roll of 4 ore more, models whose bases are completely covered are hit automatically. The defending player may remove any casualties inflicted from the unit as a whole, not just from models beneath the blast marker.
 
 If a unit is firing multiple blasts, just place one marker after another, resolving the casualties from each blast before placing the next. Remember, casualties can come from anywhere in the unit, not just under the marker.</description>
+      <alias>Large Blast</alias>
     </rule>
     <rule name="Gets Hot" id="45fa-59ad-0b91-07f6" hidden="false">
       <description>When firing a weapon with this rule, if you roll a 1 to hit, the weapon has overheated and injured the model firing it. The model must take an Armour Save and if it suffers a wound (an exception to the normal Casualty Removal rules) - the model with the overheating weapon must take the wound. Weapons on vehicles are not affected by overheating. It is possible for a model to hit with shots that also result in an overheat - the hits are still resolved as normal, even if the firer also falls victim to his own weapon.
@@ -994,7 +995,7 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a8a-6839-b4ec-bd8b" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Melta Bombs" hidden="false" id="a1bb-d7bf-d627-b59f" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Melta Bombs" hidden="false" id="a1bb-d7bf-d627-b59f">
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
       </costs>
