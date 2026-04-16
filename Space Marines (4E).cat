@@ -1065,7 +1065,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1086,7 +1086,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                     <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3301,7 +3301,7 @@ Every Space Marine non-vehicle model used must have this ability if any do. The 
                     <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3336,7 +3336,7 @@ Every Space Marine non-vehicle model used must have this ability if any do. The 
                     <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">2+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4531,7 +4531,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
                 <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                 <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                 <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4577,7 +4577,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
                 <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
                 <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                 <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="Save" typeId="5.361766523232344e+27">3+</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5362,9 +5362,6 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
                 <characteristic name="Type" typeId="8b10-045a-f593-605e">Ordnance barrage, Large Blast</characteristic>
                 <characteristic name="Info" typeId="33e9-27bd-77e4-401d">You must decide before the game begins which missiles the Whirlwind is fitted with and ensure that your opponent is aware of your choice. You may not switch missiles during a game.</characteristic>
               </characteristics>
-              <attributes>
-                <attribute name="Type" typeId="cc01-ccb3-a01f-add2">Ordance 1, Large Blast</attribute>
-              </attributes>
             </profile>
             <profile name="Castellan Missiles" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="02f9-b9a0-9b4d-1881">
               <characteristics>
@@ -6889,7 +6886,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                     <characteristic name="I" typeId="4.923232344415441e+21">3</characteristic>
                     <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
                     <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
-                    <characteristic name="Save" typeId="5.361766523232344e+27">6+</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">6+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
