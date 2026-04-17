@@ -964,8 +964,8 @@ A model with a Plaguebringer has Poisoned Attacks that wound on a 4+.</character
       <entryLinks>
         <entryLink import="true" name="Twin-linked Bolter" hidden="false" id="0936-d1f7-ba26-6dd3" type="selectionEntry" targetId="c28e-8813-043b-f0df" sortIndex="1">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="691a-75b5-03bc-eecd-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="691a-75b5-03bc-eecd-max" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="691a-75b5-03bc-eecd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="691a-75b5-03bc-eecd-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Smoke Launchers" hidden="false" id="907d-55db-175b-cb2f" type="selectionEntry" targetId="4aad-7fe7-9acb-1ad4" sortIndex="2">
