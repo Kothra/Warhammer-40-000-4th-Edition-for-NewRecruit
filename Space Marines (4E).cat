@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -1832,7 +1832,7 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
       <profiles>
         <profile name="Jump Pack" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="aba5-7b7a-df9e-ded7">
           <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models equipped with Jump Packs are Jump Infantry. Space Marines wearing jump packs can be kept in reserve and arrive using the Deep Strike rules, but only if the mission allows for Deep Strike to be used.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2677,7 +2677,7 @@ Drop pods may be used in Standard Missions without your opponent&apos;s agreemen
         <profile name="Terminator Armour" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="3f6b-ceec-fad3-5e44">
           <characteristics>
             <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">A model wearing Terminator armour has a 2+ Armour Save and a 5+ Invulnerable Save. The wearer automatically has Terminator Honours at no additional cost.
-Any model wearing Terminator armour can be teleported onto the battlefield and set up using the Deep Strike rules, but only if the mission allows for Deep Strike to be used. If the mission does not allow Deep Strike then the model must set up normally with the rest of the army.</characteristic>
+Any model wearing Terminator armour can be teleported onto the battlefield. They can start the battle in Reserve and arrive using the Deep Strike special rule, even if it is not part of the mission being played.</characteristic>
           </characteristics>
         </profile>
         <profile name="Terminator Honours" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="c41a-ad49-3fd1-c456">
@@ -2728,6 +2728,9 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="df59-66b5-014b-9b1e" hidden="false" type="rule" targetId="bbf5-b1c2-49b0-f3c2"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Artificier Armour" hidden="false" id="ca63-bf9b-91fe-f3d0">
       <costs>
@@ -2809,7 +2812,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield and s
       <profiles>
         <profile name="Space Marine Bike" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="5894-2942-8bd2-7f7d">
           <characteristics>
-            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323"/>
+            <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Models with Space Marine Bikes follow all rules for Bikes and are equipped with twin-linked bolters.</characteristic>
           </characteristics>
         </profile>
       </profiles>
