@@ -4514,7 +4514,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Spawn" hidden="false" id="708f-b16e-59bd-d079">
       <categoryLinks>
-        <categoryLink name="Daemons" hidden="false" id="ddd3-bd92-bec6-4c34" targetId="101e-2bbf-9209-2825" primary="true"/>
+        <categoryLink name="Additional Units" hidden="false" id="bfc7-9cf8-6b3a-0eba" targetId="0589-7c29-bfa2-d566" primary="true"/>
       </categoryLinks>
       <rules>
         <rule name="Chaos Spawn" id="97ae-a5e0-f3cc-ad36" hidden="false">
@@ -5282,7 +5282,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Summoned Greater Daemon" hidden="false" id="2ed3-48f2-29fd-5bad">
       <categoryLinks>
-        <categoryLink name="Daemons" hidden="false" id="f98b-4f3f-8363-7c9c" targetId="101e-2bbf-9209-2825" primary="true"/>
+        <categoryLink name="Additional Units" hidden="false" id="a47b-7344-797b-8314" targetId="0589-7c29-bfa2-d566" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Summoned Greater Daemon" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="5be1-86b4-bd4a-2ed2">
@@ -5334,7 +5334,7 @@ If there are no suitable models on the table at the time the Greater Daemon beco
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Summoned Lesser Daemons" hidden="false" id="a55d-9e17-0304-8bc4">
       <categoryLinks>
-        <categoryLink name="Daemons" hidden="false" id="8d0c-cb52-7849-6246" targetId="101e-2bbf-9209-2825" primary="true"/>
+        <categoryLink name="Additional Units" hidden="false" id="74b1-4d39-2465-a580" targetId="0589-7c29-bfa2-d566" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Summoned Lesser Daemon" hidden="false" id="8c31-3c65-d08e-e7db">

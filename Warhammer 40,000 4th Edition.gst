@@ -12,10 +12,9 @@
         <infoLink name="Character" id="ef1a-f9b1-cc1d-691d" hidden="false" type="rule" targetId="ff9d-2579-a056-981b"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry name="Death Company" id="0589-7c29-bfa2-d566" hidden="false"/>
+    <categoryEntry name="Additional Units" id="0589-7c29-bfa2-d566" hidden="false"/>
     <categoryEntry name="Blood Angel" id="e39c-0852-74f1-402d" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
-    <categoryEntry name="Daemons" id="101e-2bbf-9209-2825" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Warhammer 40,000 4th Edition Rulebook" id="c0d3-c074-f54c-9ec4" hidden="false" shortName="BRB" publisher="Warhammer 40,000 4th Edition Rulebook" publicationDate="2004/08/28" publisherUrl="https://wh40k.lexicanum.com/wiki/Warhammer_40,000_4th_Edition_Rulebook"/>
@@ -193,20 +192,6 @@
     <forceEntry name="Standard Mission Force Organization Chart" id="916a-7942-cedc-170c" hidden="false" sortIndex="1">
       <categoryLinks>
         <categoryLink name="Force Customization" hidden="false" id="2536-580a-6798-ea9f" targetId="7466-cf81-3a11-64ab"/>
-        <categoryLink name="Death Company" hidden="false" id="127f-8dd1-cf9d-64c0" targetId="0589-7c29-bfa2-d566">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1456-5870-a9bd-3017" shared="true" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e39c-0852-74f1-402d" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </categoryLink>
         <categoryLink name="HQ" hidden="false" id="7d81-9036-eb2e-ffe7" targetId="0d45-9523-cfd8-4efd">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d15d-13be-9af4-458c" includeChildSelections="true"/>
@@ -214,29 +199,34 @@
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="9ef5-4149-cac9-87bb">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true" childName="Command Squad" includeChildSelections="true"/>
+                  </conditions>
+                  <repeats>
+                    <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="d15d-13be-9af4-458c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <repeats>
+                    <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </repeats>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="2" field="9ef5-4149-cac9-87bb">
               <conditions>
                 <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true"/>
               </conditions>
-            </modifier>
-            <modifier type="increment" value="1" field="9ef5-4149-cac9-87bb">
-              <repeats>
-                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" value="1" field="d15d-13be-9af4-458c">
-              <repeats>
-                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </repeats>
             </modifier>
             <modifier type="set" value="1" field="d15d-13be-9af4-458c">
               <conditions>
@@ -245,6 +235,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Death Company" hidden="false" id="127f-8dd1-cf9d-64c0" targetId="0589-7c29-bfa2-d566"/>
         <categoryLink name="Elites" hidden="false" id="9adf-cce0-a1a7-22e2" targetId="39ab-2bcd-49d1-cfef">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d518-1c27-da4e-764e" includeChildSelections="true"/>
@@ -287,7 +278,6 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Daemons" hidden="false" id="25c3-907e-4dc9-f255" targetId="101e-2bbf-9209-2825"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -961,6 +951,9 @@ Unless specified otherwise, psychic abilities are subject to the usual Shooting 
 
 
 If a Psyker rolls a 2 or 12 when making their Psychic test, the Psyker is subject to Perils of the Warp - he suffers one automatic hit at Strength 6 with no saves (of any sort) allowed. Note that on a Psychic test roll of a 2 the psychic power still works, even though the Psyker has been attacked or killed.</description>
+    </rule>
+    <rule name="Assault Vehicle" id="9b2f-9ece-4171-4f3b" hidden="false">
+      <description>Models disembarking from any access point may launch an assault on the turn they do so.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>

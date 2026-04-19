@@ -150,7 +150,7 @@
         <categoryLink name="Blood Angel" hidden="false" id="591b-16b8-7904-ab34" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Death Company" hidden="false" id="d7ce-cbda-0cad-7d24" type="selectionEntry" targetId="7205-9c16-857d-ba53" sortIndex="6">
+    <entryLink import="true" name="Death Company" hidden="false" id="d7ce-cbda-0cad-7d24" type="selectionEntry" targetId="7205-9c16-857d-ba53" sortIndex="6" defaultAmount="1">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a064-527a-94d9-01f6-min" includeChildSelections="false" automatic="true"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a064-527a-94d9-01f6-max" includeChildSelections="false"/>
@@ -158,6 +158,9 @@
       <infoLinks>
         <infoLink name="Death Company" id="df25-ef74-fe67-624a" hidden="false" type="rule" targetId="25bb-32a8-3b83-761c"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Additional Units" hidden="false" id="91c5-3c93-248d-0857" targetId="0589-7c29-bfa2-d566" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
@@ -900,7 +903,6 @@
     <selectionEntry type="unit" import="true" name="Death Company" hidden="false" id="7205-9c16-857d-ba53">
       <categoryLinks>
         <categoryLink name="Blood Angel" hidden="false" id="6f43-529d-753d-b839" targetId="e39c-0852-74f1-402d" primary="false"/>
-        <categoryLink name="Death Company" hidden="false" id="cd1b-8421-c771-b32e" targetId="3c1a-0f72-de9c-14e3" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Death Company Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="dd25-f50e-61a7-e7aa">
