@@ -2275,6 +2275,11 @@ Movement: Spore Mine Clusters drift D6&quot; in the direction rolled on a Scatte
             <condition type="lessThan" value="1500" field="4deb-313d-6685-f48b" scope="force" childId="any" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="Carnifex Elites can only be taken in armies of at least 1500 points." field="error">
+          <conditions>
+            <condition type="lessThan" value="1500" field="4deb-313d-6685-f48b" scope="force" childId="any" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Tyranid Warrior Brood" hidden="false" id="4051-ca69-6e83-3c04" type="selectionEntry" targetId="15e4-ce88-e0c8-ab8d">
