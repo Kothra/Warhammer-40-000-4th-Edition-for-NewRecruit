@@ -2376,7 +2376,7 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
         <profile name="Rhino" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="4030-4eab-a6d8-779e" publicationId="e1e7-bf54-15e0-5ded" page="35">
           <characteristics>
             <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">10 Space Marines</characteristic>
-            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">2</characteristic>
+            <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">2 (Top hatch)</characteristic>
             <characteristic name="Access Points" typeId="d17b-0342-b1dc-b8e7">Sides, Rear</characteristic>
           </characteristics>
         </profile>
@@ -4410,7 +4410,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
       </selectionEntries>
       <rules>
         <rule name="Blessing of the Omnissiah" id="58fd-958f-7113-5603" hidden="false">
-          <description>If a Space Marine vehicle has suffered an Immobilsed or Weapon Destroyed result then there is a change the Techmarine can rekindle its angered war spirit. To do this the Techmarine must start the Movement phase of the Space Marine turn in contact with the damaged vehicle and not be inside it (although he can disembark and begin the repairs), Falling Back, Locked in combat, or Pinned. Roll a D6 and if the result is a 6 then either a Weapon Destroyed or Immobilised result (owning player&apos;s choice) will be repaired. Both the vehicle and the Techmarine (including any unit he leads or has joined) must remain stationary for the entire Movement phase. The repair attempt will be complete before the Shooting phase begins.</description>
+          <description>If a Space Marine vehicle has suffered an Immobilsed or Weapon Destroyed result then there is a change the Techmarine can rekindle its angered war spirit and return it to the fight. To do this the Techmarine must start the Movement phase of the Space Marine turn in contact with the damaged vehicle and not be inside it (although he can disembark and begin the repairs), Falling Back, Locked in combat, or Pinned. Roll a D6 and if the result is a 6 then either a Weapon Destroyed or Immobilised result (owning player&apos;s choice) will be repaired. Both the vehicle and the Techmarine (including any unit he leads or has joined) must remain stationary for the entire Movement phase. The repair attempt will be complete before the Shooting phase begins.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5487,9 +5487,22 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb9-baa9-0fbc-1d70-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Frag Assault Launchers" hidden="false" id="e7c5-b9ff-1f07-e7a6" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8fa-76b8-bdf7-e3cb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8fa-76b8-bdf7-e3cb-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Frag Assault Launchers" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="5a80-685a-41aa-3861">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Any unit which charges into close combat on the same turn as it disembarks from the Crusader counts as having frag grenades.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Power of the Machine Spirit" hidden="false" id="0300-c42f-8443-42eb" type="selectionEntry" targetId="f0dd-db2d-3fc8-f8b7" sortIndex="4">
+        <entryLink import="true" name="Power of the Machine Spirit" hidden="false" id="0300-c42f-8443-42eb" type="selectionEntry" targetId="f0dd-db2d-3fc8-f8b7" sortIndex="5">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36e2-6fce-2fc9-eeca-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36e2-6fce-2fc9-eeca-max" includeChildSelections="false"/>

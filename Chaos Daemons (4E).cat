@@ -1008,13 +1008,13 @@ If the Daemon is an Independent Character and joins a unit, it can choose differ
                 <rule name="The Tally of Pestilence" id="8523-22da-d9de-a3bf" hidden="false">
                   <description>Whilst Epidemius is on the table, keep a count of all models killed by followers of Nurgle (i.e. any Daemon of Nurgle or model with the Mark of Nurgle, both friends and enemies) anywhere on the table. At the start of each of your turns, consult the table below to determine the effect of the Tally of Pestilence. From the beginning of that turn, and as long as Epidemius is on the table, these cumulative bonuses affect all followers of Nurgle (friend and foe).
 
-
-Casualties - Effect
-1-4:      None
-5-9:      All Plagueswords now wound on 3+
-10-14:  All followers of Nurgle have Noxious Touch
-15-19:  If a follower of Nurgle has Feel no Pain, it now saves on 3+
-20+:     All attacks from followers of Nurgle ignore armour saves</description>
+|Casualties|Effect|
+|:----:|:----:|
+|1-4|None|
+|5-9|All Plagueswords now wound on 3+|
+|10-14|All followers of Nurgle have Noxious Touch|
+|15-19|If a follower of Nurgle has Feel no Pain, it now saves on 3+|
+|20+|All attacks from followers of Nurgle ignore armour saves|</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -1657,6 +1657,11 @@ Casualties - Effect
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <rules>
+        <rule name="Daemonic Heralds" id="ae73-9f3c-fc6c-eb6a" hidden="false">
+          <description>A single HQ choice allows you to include up to two Daemonic Heralds.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Great Unclean One" hidden="false" id="bc4d-332d-0ab1-6015">
       <costs>
