@@ -203,7 +203,6 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true" childName="Command Squad" includeChildSelections="true"/>
                   </conditions>
                   <repeats>
                     <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
@@ -948,7 +947,6 @@ If special close combat attacks come into play against a unit with different Arm
       <alias>psychic test</alias>
       <description>In order to use one of his powers, a Psyker must make a Psychic test by rolling equal to or under his Leadership on 2D6. If he fails, then his concentration is broken and he cannot use the power that turn. A pass means the power me be used as described in the special rules for the Psyker in his Codex.
 Unless specified otherwise, psychic abilities are subject to the usual Shooting rules, so the Psyker must be able to see the target, all attacks must be directed against a single target unit, etc. While most psychic powers are used instead of shooting, there are a number of psychic abilities that may take effect in other phases.
-
 
 If a Psyker rolls a 2 or 12 when making their Psychic test, the Psyker is subject to Perils of the Warp - he suffers one automatic hit at Strength 6 with no saves (of any sort) allowed. Note that on a Psychic test roll of a 2 the psychic power still works, even though the Psyker has been attacked or killed.</description>
     </rule>
