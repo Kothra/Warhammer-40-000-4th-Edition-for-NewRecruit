@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="5180-44f1-ff06-8e4c" name="Tyranids (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="5180-44f1-ff06-8e4c" name="Tyranids (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedRules>
     <rule name="Synapse Creature" id="30f9-213c-a231-1221" hidden="false">
       <description>Any Tyranid broods with a model within 12&quot; of a Synapse Creature (including the Synapse Creature itself) never fall back and are assumed to automatically pass any Leadership-based test they are called upon to make, other than Psychic tests and those called upon for target selection. Note that since regrouping only takes place at the start of the turn, a Tyranid unit that falls back can be destroyed by pursuers or by becoming trapped. A Tyranid brood that enters the Synapse range may rally regardless of the usual restrictions (enemy models within 6&quot;, etc).
@@ -942,7 +942,7 @@ Movement: Spore Mine Clusters drift D6&quot; in the direction rolled on a Scatte
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Genestealer Brood" hidden="false" id="3e98-352c-b832-ff8e">
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="0120-a979-899b-2b33" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Troops" hidden="false" id="8a75-31e4-c80e-93d4" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorphs" id="2e65-3ff4-13a3-6c64" hidden="false">
