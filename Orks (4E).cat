@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
+<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="c786-be8b-b307-da9a">
       <infoLinks>
@@ -1477,6 +1477,36 @@ D6 Result
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8d6e-3033-53d8-7e06" includeChildSelections="false"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="549c-5e75-2614-56a1" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mega Armour" hidden="false" id="4ea9-25da-95e9-697e" type="selectionEntry" targetId="8f4c-4e24-b9b2-a895">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d51-fb8d-eb0f-c0fc-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d51-fb8d-eb0f-c0fc-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbombz" hidden="false" id="0a6c-a1a0-85bf-d2b3" type="selectionEntry" targetId="605a-d7f5-928a-797e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="efbd-44c2-4575-e9b9-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="efbd-44c2-4575-e9b9-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Meganob" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="09e1-fa2a-2392-fcf2">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">2</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">2</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">3</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1486,6 +1516,7 @@ D6 Result
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Cybork Bodies" hidden="false" id="1a18-d2ee-d0bb-3ccf" type="selectionEntry" targetId="866a-9bb3-3f78-4db2" sortIndex="2"/>
+        <entryLink import="true" name="Transport" hidden="false" id="7c43-2450-d8a2-7783" type="selectionEntryGroup" targetId="107b-62a0-6e13-9fec"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Burna Boyz" hidden="false" id="66b9-c3ae-6787-eb21">
