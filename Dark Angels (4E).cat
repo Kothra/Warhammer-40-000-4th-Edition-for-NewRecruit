@@ -1787,7 +1787,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Terminator Weapons" id="073e-8353-1b91-4a63" hidden="false">
+            <selectionEntryGroup name="Terminator Weapons" id="073e-8353-1b91-4a63" hidden="false" flatten="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapons" id="eede-4e9f-6db6-ffef" hidden="false">
                   <selectionEntryGroups>
@@ -1910,7 +1910,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Terminator Weapons" id="1b77-e94f-9797-ead9" hidden="false" sortIndex="4">
+            <selectionEntryGroup name="Terminator Weapons" id="1b77-e94f-9797-ead9" hidden="false" sortIndex="4" flatten="true">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Melee Weapons" id="6cb5-e708-af9c-204e" hidden="false" sortIndex="1">
                   <selectionEntryGroups>
