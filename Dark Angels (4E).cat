@@ -3882,7 +3882,7 @@ Pick an enemy model within 18&quot; and in the line of sight of the Librarian. I
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Master Belial of the Deathwing" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a565-3c29-df90-ed77">
+        <profile name="Belial, Master of the Deathwing" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="a565-3c29-df90-ed77">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
