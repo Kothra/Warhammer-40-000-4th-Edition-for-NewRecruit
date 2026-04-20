@@ -2450,6 +2450,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
+        <entryLink import="true" name="Transport" hidden="false" id="a555-d33e-45e5-822b" type="selectionEntryGroup" targetId="f85f-f109-4063-7376"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="edd9-d4b5-2543-14e4" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
@@ -4287,6 +4288,7 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f616-bbe1-e45a-37d9" shared="true" includeChildSelections="true" childName="Scout Squad"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="48de-3b25-36a0-0650" shared="true" includeChildSelections="true" childName="Dreadnought"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="02a6-2e6b-2188-d725" shared="true" childName="Assault Squad"/>
+                    <condition type="greaterThan" value="6" field="selections" scope="root-entry" childId="model" shared="true" childName="model" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
