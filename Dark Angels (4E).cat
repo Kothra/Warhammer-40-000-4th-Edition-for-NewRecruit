@@ -393,7 +393,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
             <entryLink import="true" name="Sergeant Weapons" hidden="false" id="1128-5c3c-70fc-56db" type="selectionEntryGroup" targetId="e665-481e-a14a-f87e"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Space Marine" hidden="false" id="234f-1f0b-f651-2c51" type="selectionEntry" targetId="cd67-abd5-6070-b08a" sortIndex="2" step="" defaultAmount="4" collective="true">
+        <entryLink import="true" name="Space Marine" hidden="false" id="234f-1f0b-f651-2c51" type="selectionEntry" targetId="cd67-abd5-6070-b08a" sortIndex="2" defaultAmount="4" collective="true">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="82b8-c1cf-aa40-6f64-min" includeChildSelections="false" automatic="false"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="82b8-c1cf-aa40-6f64-max" includeChildSelections="false" automatic="false"/>
@@ -445,7 +445,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
         </entryLink>
         <entryLink import="true" name="Additional Space Marines" hidden="false" id="af28-862a-708b-6dc3" type="selectionEntry" targetId="96c0-2232-82cf-08ad" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Space Marine" hidden="false" id="509d-aa9a-34d6-976b" type="selectionEntry" targetId="cd67-abd5-6070-b08a" step="" defaultAmount="" collective="true">
+            <entryLink import="true" name="Space Marine" hidden="false" id="509d-aa9a-34d6-976b" type="selectionEntry" targetId="cd67-abd5-6070-b08a" collective="true">
               <constraints>
                 <constraint type="min" value="5" field="selections" scope="parent" shared="false" id="fe63-5ea7-1faf-474a-min" includeChildSelections="false" automatic="false"/>
                 <constraint type="max" value="5" field="selections" scope="parent" shared="false" id="fe63-5ea7-1faf-474a-max" includeChildSelections="false" automatic="false"/>
@@ -543,10 +543,22 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c26-53bf-96fe-d779-min" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c26-53bf-96fe-d779-max" includeChildSelections="false" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="6c26-53bf-96fe-d779-min">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="6c26-53bf-96fe-d779-max">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Combat Shield" hidden="false" id="9951-bc74-efd2-886e" type="selectionEntry" targetId="7f9c-fe6e-9acb-7e6d" sortIndex="7">
               <costs>
-                <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd56-45b9-4ddd-231b" includeChildSelections="false"/>
@@ -580,6 +592,18 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="14fb-ee26-0e44-e791-min" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14fb-ee26-0e44-e791-max" includeChildSelections="false" automatic="true"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="14fb-ee26-0e44-e791-min">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="14fb-ee26-0e44-e791-max">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink import="true" name="Chainsword" hidden="false" id="feb1-dced-a26b-d84a" type="selectionEntry" targetId="086b-3597-a6b2-62db" sortIndex="1">
               <constraints>
@@ -614,7 +638,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
-        <entryLink import="true" name="Additional Space Marines" hidden="false" id="96eb-2f65-229e-94ea" type="selectionEntry" targetId="96c0-2232-82cf-08ad">
+        <entryLink import="true" name="Additional Space Marines" hidden="false" id="96eb-2f65-229e-94ea" type="selectionEntry" targetId="96c0-2232-82cf-08ad" sortIndex="3">
           <entryLinks>
             <entryLink import="true" name="Space Marine" hidden="false" id="0ef1-83a0-062b-b887" type="selectionEntry" targetId="cd67-abd5-6070-b08a">
               <entryLinks>
@@ -623,6 +647,18 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78a7-9697-cbb9-4968-min" includeChildSelections="false" automatic="true"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78a7-9697-cbb9-4968-max" includeChildSelections="false" automatic="true"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="78a7-9697-cbb9-4968-min">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="0" field="78a7-9697-cbb9-4968-max">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink import="true" name="Chainsword" hidden="false" id="8b7a-1fe7-b9a5-44b9" type="selectionEntry" targetId="086b-3597-a6b2-62db" sortIndex="1">
                   <constraints>
@@ -641,12 +677,28 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="110"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Transport" hidden="true" id="1a57-9dd3-6214-31e9" type="selectionEntryGroup" targetId="f85f-f109-4063-7376">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="cb2c-b94f-23d9-4ee3" shared="true" childName="Remove Jump Packs" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="And They Shall Know No Fear" id="19af-c7b7-a4ef-fdda" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
         <infoLink name="Combat Squads" id="196e-44c3-b3a5-c1f4" hidden="false" type="rule" targetId="1e13-5a27-bd9e-b0ed"/>
       </infoLinks>
       <comment>Dark Angels 4E</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Remove Jump Packs" hidden="false" id="cb2c-b94f-23d9-4ee3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f581-5788-9bd4-1230" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scout Squad" hidden="false" id="f616-bbe1-e45a-37d9">
       <costs>
@@ -2911,8 +2963,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Sv" typeId="5.361766523232344e+27">2+
-</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3063,8 +3114,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
-            <characteristic name="Sv" typeId="5.361766523232344e+27">3+
-</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3183,8 +3233,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Sv" typeId="5.361766523232344e+27">3+
-</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3644,8 +3693,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Sv" typeId="5.361766523232344e+27">2+
-</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4052,8 +4100,7 @@ Pick an enemy model within 18&quot; and in the line of sight of the Librarian. I
             <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Sv" typeId="5.361766523232344e+27">2+
-</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4157,6 +4204,11 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" value="0" field="4deb-313d-6685-f48b">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="02a6-2e6b-2188-d725" shared="true" childName="Assault Squad"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
@@ -4219,6 +4271,7 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
                     <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="96c0-2232-82cf-08ad" shared="true" includeChildSelections="true" childName="Additional Space Marines"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f616-bbe1-e45a-37d9" shared="true" includeChildSelections="true" childName="Scout Squad"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="48de-3b25-36a0-0650" shared="true" includeChildSelections="true" childName="Dreadnought"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="02a6-2e6b-2188-d725" shared="true" childName="Assault Squad"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4327,6 +4380,13 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
               <description>Drop Pods enter play using the Deep Strike rules. They may always enter play using Deep Strike, even in missions where Deep Strike may not normally be used. In addition, should a Drop Pod scatter on top of impassable terrain or another model, then reduce the scatter distance by the minimum required in order to avoid the obstacle.</description>
             </rule>
           </rules>
+          <modifiers>
+            <modifier type="set" value="0" field="4deb-313d-6685-f48b">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="02a6-2e6b-2188-d725" shared="true" childName="Assault Squad"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
