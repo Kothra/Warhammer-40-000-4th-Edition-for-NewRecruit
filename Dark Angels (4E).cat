@@ -875,6 +875,10 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="48e5-e55b-aa49-5a8d-min" includeChildSelections="false"/>
+                <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="48e5-e55b-aa49-5a8d-max" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
           </entryLinks>
           <costs>
