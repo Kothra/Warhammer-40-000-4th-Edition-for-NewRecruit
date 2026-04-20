@@ -178,6 +178,18 @@ For victory point purposes, each Combat squad is worth a number of victory point
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd50-d153-c958-e5de-min" includeChildSelections="false" automatic="true"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd50-d153-c958-e5de-max" includeChildSelections="false" automatic="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="bd50-d153-c958-e5de-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e345-0a7c-70bf-c79e" shared="true" childName="Heavy Weapons"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="bd50-d153-c958-e5de-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e345-0a7c-70bf-c79e" shared="true" childName="Heavy Weapons"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
