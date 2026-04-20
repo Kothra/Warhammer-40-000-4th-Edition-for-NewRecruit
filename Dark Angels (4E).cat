@@ -1122,7 +1122,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
         <categoryLink name="Heavy Support" hidden="false" id="2866-61b8-2914-21a1" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Predator Annihilator" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="1998-d37b-615e-2076">
+        <profile name="Predator" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="1998-d37b-615e-2076">
           <characteristics>
             <characteristic name="Front" typeId="46726f6e7423232344415441232323">13</characteristic>
             <characteristic name="Side" typeId="5.369646523232344e+27">11</characteristic>
