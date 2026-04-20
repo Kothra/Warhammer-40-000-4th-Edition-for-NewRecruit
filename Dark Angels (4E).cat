@@ -2350,7 +2350,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="3" field="selections" scope="root-entry" shared="true" id="9d3f-6eaf-1405-3f95" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="3" field="selections" scope="root-entry" shared="true" id="9d3f-6eaf-1405-3f95" includeChildSelections="true" automatic="true"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Special Weapons" id="1c9e-0d38-8609-08fe" hidden="false" sortIndex="8">
