@@ -3017,6 +3017,22 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <profiles>
+                <profile name="Servitor" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="9928-8862-6b0b-70bd">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry</characteristic>
+                    <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                    <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                    <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                    <characteristic name="T" typeId="5.423232344415441e+21">3</characteristic>
+                    <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                    <characteristic name="I" typeId="4.923232344415441e+21">3</characteristic>
+                    <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
