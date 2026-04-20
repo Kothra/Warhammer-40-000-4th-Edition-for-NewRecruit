@@ -2495,7 +2495,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">10</characteristic>
                 <characteristic name="Side" typeId="5.369646523232344e+27">10</characteristic>
                 <characteristic name="Rear" typeId="5.265617223232345e+27">10</characteristic>
-                <characteristic name="BS" typeId="a6a5-1595-da9e-6155">10</characteristic>
+                <characteristic name="BS" typeId="a6a5-1595-da9e-6155">4</characteristic>
                 <characteristic name="Type" typeId="5.479706523232345e+27">Skimmer, Fast</characteristic>
               </characteristics>
             </profile>
@@ -2931,7 +2931,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 <characteristic name="Front" typeId="46726f6e7423232344415441232323">10</characteristic>
                 <characteristic name="Side" typeId="5.369646523232344e+27">10</characteristic>
                 <characteristic name="Rear" typeId="5.265617223232345e+27">10</characteristic>
-                <characteristic name="BS" typeId="a6a5-1595-da9e-6155">10</characteristic>
+                <characteristic name="BS" typeId="a6a5-1595-da9e-6155">4</characteristic>
                 <characteristic name="Type" typeId="5.479706523232345e+27">Skimmer, Fast</characteristic>
               </characteristics>
             </profile>
