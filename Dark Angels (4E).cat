@@ -3707,6 +3707,22 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
         <infoLink name="Fearless" id="8de5-6511-740c-9379" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
         <infoLink name="Psyker" id="d3b1-340b-b787-0a6e" hidden="false" type="rule" targetId="cfa5-875e-3f68-8b2b"/>
       </infoLinks>
+      <profiles>
+        <profile name="Librarian" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="b939-817a-5e7b-26ff">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
+            <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
+            <characteristic name="BS" typeId="4.2532323234441546e+23">5</characteristic>
+            <characteristic name="S" typeId="5.323232344415441e+21">4</characteristic>
+            <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+            <characteristic name="W" typeId="5.723232344415441e+21">2</characteristic>
+            <characteristic name="I" typeId="4.923232344415441e+21">5</characteristic>
+            <characteristic name="A" typeId="4.123232344415441e+21">3</characteristic>
+            <characteristic name="LD" typeId="4c4423232344415441232323">9</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ezekiel, Grand Master of Librarians" hidden="false" id="c11f-d2c4-3a46-ecb1">
       <categoryLinks>
