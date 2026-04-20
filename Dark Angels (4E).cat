@@ -4701,9 +4701,14 @@ The Lion Helm is carried by the Helmet Bearer, which is represented on the table
             <selectionEntryGroup name="Melee Weapons" id="14fb-1e9e-fdca-224c" hidden="false" sortIndex="2" flatten="true">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="59b9-1e8a-b938-06c6" shared="true" childName="Company Master"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="dab4-a96f-abb0-52d4" shared="true" childName="Librarian"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="59b9-1e8a-b938-06c6" shared="true" childName="Company Master"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <entryLinks>
