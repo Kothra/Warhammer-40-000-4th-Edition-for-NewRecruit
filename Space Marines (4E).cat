@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -2167,17 +2167,7 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
                 </modifier>
               </modifiers>
             </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Fist" id="e3d4-743e-56bb-07f7" hidden="false" defaultSelectionEntryId="f1cd-2eb9-8d8b-c6f0" flatten="true" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Power Fist" hidden="false" id="b483-a10c-00df-2564" type="selectionEntry" targetId="57ca-c59f-1fa9-e1b5" sortIndex="1"/>
-                <entryLink import="true" name="Chainfist" hidden="false" id="e4a4-8014-96a8-bd19" type="selectionEntry" targetId="fe39-28ae-f570-e2f5" sortIndex="2">
-                  <costs>
-                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+            <entryLink import="true" name="Power Weapon" hidden="false" id="b2d7-0a1c-f588-336c" type="selectionEntry" targetId="b28f-478a-74fb-ec87" sortIndex="2">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38d6-8222-4afe-f761-min" includeChildSelections="false" automatic="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38d6-8222-4afe-f761-max" includeChildSelections="false" automatic="true"/>
@@ -2207,7 +2197,9 @@ In NewRecruit these bonuses should be automatically applied to a unit&apos;s pro
                   </conditionGroups>
                 </modifier>
               </modifiers>
-            </selectionEntryGroup>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
             <selectionEntryGroup name="Assault Terminator Weapons" id="9889-575b-24fa-818f" hidden="false" flatten="true" sortIndex="3" defaultSelectionEntryId="ec0e-1228-763d-22b8">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Paired Lightning Claws" hidden="true" id="7955-27b4-cdef-6ac5" sortIndex="2">
