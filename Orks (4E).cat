@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
+<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="c786-be8b-b307-da9a">
       <infoLinks>
@@ -3455,8 +3455,6 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28b2-0551-a5d2-af0c-min" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28b2-0551-a5d2-af0c-max" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b323-5ac2-0a0b-e87e-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b323-5ac2-0a0b-e87e-max" includeChildSelections="false"/>
                   </constraints>
                   <profiles>
                     <profile name="Da Rippa" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="5ec2-c4e4-d9cf-c2ad">
@@ -3533,6 +3531,16 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
               </rules>
               <modifiers>
                 <modifier type="set" value="6" field="537472656e67746823232344415441232323" affects="self.entries.recursive.df45-1722-654d-fdef.profiles.Weapon" scope="parent"/>
+                <modifier type="increment" value="5" field="4deb-313d-6685-f48b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="6c64-b7f2-4f14-8750" shared="true" roundUp="false" includeChildSelections="true" childName="Flash Git"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="5" field="4deb-313d-6685-f48b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="99d6-44be-18d9-3770" shared="true" roundUp="false" includeChildSelections="true" childName="Painboy"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e13-7c7a-099b-d66a" includeChildSelections="false"/>
@@ -3546,6 +3554,16 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
               </rules>
               <modifiers>
                 <modifier type="set" value="Assault 2" field="8b10-045a-f593-605e" affects="self.entries.recursive.df45-1722-654d-fdef.profiles.Weapon" scope="parent"/>
+                <modifier type="increment" value="5" field="4deb-313d-6685-f48b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="6c64-b7f2-4f14-8750" shared="true" roundUp="false" includeChildSelections="true" childName="Flash Git"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="5" field="4deb-313d-6685-f48b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="99d6-44be-18d9-3770" shared="true" roundUp="false" includeChildSelections="true" childName="Painboy"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea34-dfff-3ada-2e70" includeChildSelections="false"/>
@@ -3560,6 +3578,16 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
               <modifiers>
                 <modifier type="append" value="-1" field="4.1502323234441545e+23" affects="self.entries.recursive.df45-1722-654d-fdef.profiles.Weapon" scope="parent" join=""/>
                 <modifier type="append" value="Gets Hot!" field="8b10-045a-f593-605e" affects="self.entries.recursive.df45-1722-654d-fdef.profiles.Weapon" scope="parent" join=", "/>
+                <modifier type="increment" value="5" field="4deb-313d-6685-f48b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="6c64-b7f2-4f14-8750" shared="true" roundUp="false" includeChildSelections="true" childName="Flash Git"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="5" field="4deb-313d-6685-f48b">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="99d6-44be-18d9-3770" shared="true" roundUp="false" includeChildSelections="true" childName="Painboy"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="057a-e21c-b0ab-5664" includeChildSelections="false"/>
