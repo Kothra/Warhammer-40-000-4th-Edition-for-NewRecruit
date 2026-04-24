@@ -126,11 +126,18 @@
       <modifiers>
         <modifier type="set" value="5" field="4deb-313d-6685-f48b">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e6d9-96eb-9fa5-acb6" shared="true" includeChildSelections="true" childName="Warboss"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fc13-7031-891e-5a41" shared="true" includeChildSelections="true" childName="Big Mek"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f60b-c820-bccc-c8f2" shared="true" includeChildSelections="true" childName="Weirdboy"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e6d9-96eb-9fa5-acb6" shared="true" includeChildSelections="true" childName="Warboss"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fc13-7031-891e-5a41" shared="true" includeChildSelections="true" childName="Big Mek"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f60b-c820-bccc-c8f2" shared="true" includeChildSelections="true" childName="Weirdboy"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4eac-7590-c747-4341" shared="true" childName="Mad Dok Grotsnik" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1408,6 +1415,9 @@ D6 Result
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="746f-920b-f33d-c2c1" includeChildSelections="true"/>
               </constraints>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <selectionEntries>
