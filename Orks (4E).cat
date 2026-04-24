@@ -451,6 +451,16 @@ Ammo runt models are purely decorative and are always ignored for game purposes.
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Grot Orderly" hidden="false" id="1a75-7bff-977d-5dd7" type="selectionEntry" targetId="bc0e-e29f-98c6-5715">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c622-358d-0fd4-e595" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grot Orderly" hidden="false" id="bc0e-e29f-98c6-5715">
       <profiles>
@@ -3612,6 +3622,9 @@ On vehicles, zzap guns are never counted as defensive weapons. If the Strength r
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c9c9-5327-f1c3-e623" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntry>
