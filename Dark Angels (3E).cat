@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="5813-70d9-ad1a-07f5">
+<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="5813-70d9-ad1a-07f5">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Space Marines (4E)" id="92c6-d8b3-84b5-653e" importRootEntries="false" targetId="c99d-b51f-afe5-22cb"/>
   </catalogueLinks>
@@ -759,6 +759,11 @@
       <entryLinks>
         <entryLink import="true" name="Ravenwing Biker Sergeant" hidden="false" id="5915-26fe-5c38-2079" type="selectionEntry" targetId="6673-fdad-40ba-79a1" sortIndex="1"/>
         <entryLink import="true" name="Ravenwing Biker" hidden="false" id="b692-ba3d-4dcd-5964" type="selectionEntry" targetId="acc9-58de-e8fa-06c2" sortIndex="2"/>
+        <entryLink import="true" name="Ravenwing Attack Bike" hidden="false" id="484e-8d92-813f-3e91" type="selectionEntry" targetId="c49d-e497-0e00-cde8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ecb1-131f-1fc6-ca19" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Ravenwing" id="c115-0553-2077-b0ed" hidden="false" type="rule" targetId="fbf9-5752-f4f1-414a"/>
@@ -789,7 +794,12 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Ravenwing Attack Bike" hidden="false" id="6902-a412-bcc8-b18b" type="selectionEntry" targetId="c49d-e497-0e00-cde8"/>
+        <entryLink import="true" name="Ravenwing Attack Bike" hidden="false" id="6902-a412-bcc8-b18b" type="selectionEntry" targetId="c49d-e497-0e00-cde8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b00e-dd29-fa70-6d69" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="746f-674d-6e22-d0d6" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1470,7 +1480,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="6c97-da1c-1bf4-3191" hidden="false" flatten="true" sortIndex="2">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Special Weapons" id="0035-e332-a6b2-93ba" hidden="false">
+            <selectionEntryGroup name="Special Weapons" id="0035-e332-a6b2-93ba" hidden="false" defaultSelectionEntryId="none">
               <entryLinks>
                 <entryLink import="true" name="Plasma Gun" hidden="false" id="2e20-c9fe-3bf9-2c14" type="selectionEntry" targetId="31e2-9687-ef98-263e" sortIndex="3">
                   <costs>
@@ -1492,19 +1502,16 @@
                 <constraint type="max" value="2" field="selections" scope="root-entry" shared="true" id="a2f1-b9a9-e781-b991" includeChildSelections="true"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Weapons" id="6e79-d0d0-f734-8e1e" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Weapons" id="6e79-d0d0-f734-8e1e" hidden="false" sortIndex="1" defaultSelectionEntryId="5fff-e469-c786-1014">
               <entryLinks>
                 <entryLink import="true" name="Bolt Pistol" hidden="false" id="5fff-e469-c786-1014" type="selectionEntry" targetId="b4d3-5dc3-8317-362c"/>
                 <entryLink import="true" name="Close Combat Weapon" hidden="false" id="0d3d-cb59-8ba4-397a" type="selectionEntry" targetId="a936-e00e-833c-89aa"/>
               </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2758-ae3f-0da3-26b4-min" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2758-ae3f-0da3-26b4-max" includeChildSelections="false" automatic="true"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b4-4ef4-4ea3-de88" automatic="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="92b4-4ef4-4ea3-de88-min" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92b4-4ef4-4ea3-de88-max" automatic="true"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1568,10 +1575,6 @@
         <infoLink name="Turbo-Boosters" id="6076-25c1-ef6f-47bf" hidden="false" type="rule" targetId="793e-3ba7-feb3-8ad4"/>
         <infoLink name="Ravenwing" id="793f-56eb-706b-41d3" hidden="false" type="rule" targetId="fbf9-5752-f4f1-414a"/>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b00e-dd29-fa70-6d69" includeChildSelections="false"/>
-        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="746f-674d-6e22-d0d6" includeChildSelections="false"/>
-      </constraints>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="55"/>
       </costs>
