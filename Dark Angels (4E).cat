@@ -366,7 +366,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="96c0-2232-82cf-08ad" exportable="false">
+    <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="96c0-2232-82cf-08ad">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90cf-6319-05bc-5d68" includeChildSelections="false"/>
       </constraints>
