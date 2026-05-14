@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="5346-564f-637a-87d4" exportable="false">
+    <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="5346-564f-637a-87d4">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b78a-d78e-08cc-de7e" includeChildSelections="false"/>
       </constraints>
@@ -775,7 +775,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
             </rule>
           </rules>
           <profiles>
-            <profile name="Blood Angels Rhino" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="e585-7d5c-68ec-5ad9" page="">
+            <profile name="Blood Angels Rhino" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="e585-7d5c-68ec-5ad9">
               <characteristics>
                 <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">10 Space Marines</characteristic>
                 <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">2 (Top hatch)</characteristic>
@@ -844,7 +844,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                 <characteristic name="Type" typeId="5.479706523232345e+27">Tank</characteristic>
               </characteristics>
             </profile>
-            <profile name="Razorback" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="108c-03b6-387c-4a79" page="">
+            <profile name="Razorback" typeId="307d-047f-ca13-706b" typeName="Transport" hidden="false" id="108c-03b6-387c-4a79">
               <characteristics>
                 <characteristic name="Capacity" typeId="8285-4205-b6cd-8473">6 Space Marines</characteristic>
                 <characteristic name="Fire Points" typeId="b270-a7f9-22b2-3702">None</characteristic>
@@ -4676,8 +4676,7 @@ that provides the model holding the Grail with a 4+ invulnerable save.</charact
             <characteristic name="I" typeId="4.923232344415441e+21">6</characteristic>
             <characteristic name="A" typeId="4.123232344415441e+21">4</characteristic>
             <characteristic name="LD" typeId="4c4423232344415441232323">10</characteristic>
-            <characteristic name="Sv" typeId="5.361766523232344e+27">2+
-</characteristic>
+            <characteristic name="Sv" typeId="5.361766523232344e+27">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
