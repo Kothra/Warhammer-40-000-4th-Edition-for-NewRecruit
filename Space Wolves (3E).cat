@@ -2739,7 +2739,7 @@ A model equipped with an iron wolf amulet gets a 4+ Invulnerable Save that may b
     <selectionEntry type="unit" import="true" name="Blood Claws Assault Pack" hidden="true" id="306b-b963-a849-17fc">
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="bab4-4622-87c5-4f56" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
-        <categoryLink name="Space Wolf" hidden="false" id="b4b1-65ef-f69d-06c3" targetId="407e-febc-7e2c-0621" primary="false"/>
+        <categoryLink name="Space Wolf" hidden="false" id="f27c-a71a-915f-b9d6" targetId="407e-febc-7e2c-0621" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Wolf Guard" hidden="false" id="7794-9ab4-f551-084a" type="selectionEntry" targetId="25c7-25b6-1ff6-df6b" sortIndex="1">
@@ -3121,7 +3121,7 @@ You may not pick Logan Grimnar or Ragnar Blackmane for this bonus.</description>
     </entryLink>
     <entryLink import="true" name="Predator Annihilator" hidden="false" id="2aa7-7ddd-596d-d273" type="selectionEntry" targetId="7737-f7b1-95b7-acab">
       <categoryLinks>
-        <categoryLink name="Space Wolf" hidden="false" id="d9c8-75f3-234a-e9a4" targetId="407e-febc-7e2c-0621" primary="false"/>
+        <categoryLink name="Space Wolf" hidden="false" id="92f9-1af2-506e-fe6c" targetId="407e-febc-7e2c-0621" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Predator Destructor" hidden="false" id="f2ea-9f3c-7c18-c348" type="selectionEntry" targetId="3f4c-2d7d-e1b4-59cd">

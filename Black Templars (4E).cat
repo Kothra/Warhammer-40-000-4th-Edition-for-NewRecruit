@@ -568,7 +568,7 @@
       <categoryLinks>
         <categoryLink name="Character" hidden="false" id="aa29-4fce-5c73-0449" targetId="c918-96c1-1ff1-3df1" primary="false"/>
         <categoryLink name="Black Templar" hidden="false" id="0789-c73f-f901-098a" targetId="9936-1255-bf77-b8fe" primary="false"/>
-        <categoryLink name="HQ" hidden="false" id="9245-410c-c3d2-0182" targetId="0d45-9523-cfd8-4efd" primary="true"/>
+        <categoryLink name="HQ" hidden="false" id="f6dc-b636-3d19-fc00" targetId="0d45-9523-cfd8-4efd" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="1" field="09ad-de68-a24a-c650">

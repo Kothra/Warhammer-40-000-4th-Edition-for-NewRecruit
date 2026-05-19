@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="3" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
+<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
   <categoryEntries>
     <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
     <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
@@ -194,47 +194,43 @@
         <categoryLink name="Force Customization" hidden="false" id="2536-580a-6798-ea9f" targetId="7466-cf81-3a11-64ab"/>
         <categoryLink name="HQ" hidden="false" id="7d81-9036-eb2e-ffe7" targetId="0d45-9523-cfd8-4efd">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d15d-13be-9af4-458c" includeChildSelections="true"/>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9ef5-4149-cac9-87bb" includeChildSelections="true"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b6a4-21a2-f8d1-a5ed" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1d22-b166-75a7-cd9d" includeChildSelections="true"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="1" field="9ef5-4149-cac9-87bb">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <repeats>
-                    <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="increment" value="1" field="d15d-13be-9af4-458c">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="3d97-8e4b-f2f4-5ead" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <repeats>
-                    <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="force" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                  </repeats>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="2" field="9ef5-4149-cac9-87bb">
+            <modifier type="set" value="1" field="b6a4-21a2-f8d1-a5ed">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="1" field="d15d-13be-9af4-458c">
+            <modifier type="set" value="2" field="1d22-b166-75a7-cd9d">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="1d22-b166-75a7-cd9d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b6a4-21a2-f8d1-a5ed">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b6a4-21a2-f8d1-a5ed">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="any" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="1d22-b166-75a7-cd9d">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="any" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="Death Company" hidden="false" id="127f-8dd1-cf9d-64c0" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Additional Units" hidden="false" id="127f-8dd1-cf9d-64c0" targetId="0589-7c29-bfa2-d566"/>
         <categoryLink name="Elites" hidden="false" id="9adf-cce0-a1a7-22e2" targetId="39ab-2bcd-49d1-cfef">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d518-1c27-da4e-764e" includeChildSelections="true"/>
