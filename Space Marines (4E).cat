@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -7534,7 +7534,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="100" field="4deb-313d-6685-f48b" scope="parent" shared="true" id="df86-f6ed-e1f0-0263" includeChildSelections="false"/>
+            <constraint type="max" value="100" field="4deb-313d-6685-f48b" scope="parent" shared="false" id="df86-f6ed-e1f0-0263" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="65" field="df86-f6ed-e1f0-0263">
