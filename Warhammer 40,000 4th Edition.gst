@@ -220,12 +220,12 @@
             </modifier>
             <modifier type="increment" value="1" field="b6a4-21a2-f8d1-a5ed">
               <repeats>
-                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="any" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" value="1" field="1d22-b166-75a7-cd9d">
               <repeats>
-                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="any" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
               </repeats>
             </modifier>
           </modifiers>
