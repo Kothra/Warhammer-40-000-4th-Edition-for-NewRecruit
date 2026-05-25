@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
+<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="5" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="c786-be8b-b307-da9a">
       <infoLinks>
@@ -4306,10 +4306,15 @@ D6 Result
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="39ab-2bcd-49d1-cfef" field="category"/>
-        <modifier type="set" value="0" field="bfc2-26b9-96d7-33f0">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="ebef-ef9d-15d0-1a80" shared="true" includeChildSelections="true" childName="Nobz"/>
-          </conditions>
+        <modifier type="decrement" value="1" field="bfc2-26b9-96d7-33f0">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="ebef-ef9d-15d0-1a80" shared="true" roundUp="false" includeChildSelections="true" childName="Nobz"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="bfc2-26b9-96d7-33f0">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="e6d9-96eb-9fa5-acb6" shared="true" roundUp="false" includeChildSelections="true" childName="Warboss"/>
+          </repeats>
         </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -4318,24 +4323,25 @@ D6 Result
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bfc2-26b9-96d7-33f0" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="bfc2-26b9-96d7-33f0" includeChildSelections="false"/>
       </constraints>
+      <comment>Troops</comment>
     </entryLink>
     <entryLink import="true" name="Nobz" hidden="true" id="ebef-ef9d-15d0-1a80" type="selectionEntry" targetId="1513-d3b2-cb07-d54a">
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="f93d-897e-c3d3-a484" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="e6d9-96eb-9fa5-acb6" shared="true" includeChildSelections="true" childName="Warboss"/>
-          </conditions>
-        </modifier>
         <modifier type="remove" value="39ab-2bcd-49d1-cfef" field="category"/>
-        <modifier type="set" value="0" field="045b-3919-6719-d13d">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="4c80-d9d9-7679-e74c" shared="true" includeChildSelections="true" childName="Meganobz"/>
-          </conditions>
+        <modifier type="decrement" value="1" field="045b-3919-6719-d13d">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4c80-d9d9-7679-e74c" shared="true" roundUp="false" includeChildSelections="true" childName="Meganobz"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="045b-3919-6719-d13d">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="e6d9-96eb-9fa5-acb6" shared="true" roundUp="false" includeChildSelections="true" childName="Warboss"/>
+          </repeats>
         </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -4344,8 +4350,9 @@ D6 Result
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="false" id="045b-3919-6719-d13d" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="045b-3919-6719-d13d" includeChildSelections="false"/>
       </constraints>
+      <comment>Troops</comment>
     </entryLink>
     <entryLink import="true" name="Deff Dread" hidden="true" id="6f39-533c-d12a-ec68" type="selectionEntry" targetId="7755-041c-6788-ec28">
       <categoryLinks>
