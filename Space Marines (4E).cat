@@ -2865,20 +2865,13 @@ If taken as Elites, these squads must take the Furious Assault skill at 3 points
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="Heed the Wisdom of the Ancients" hidden="false" id="5129-52fb-efe2-22a3">
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="0c93-a62b-3e9d-5872" includeChildSelections="true" automatic="true"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7243-6d3a-fc63-c807" includeChildSelections="true" automatic="true"/>
       </constraints>
       <rules>
         <rule name="Heed the Wisdom of the Ancients" id="7226-5252-295b-3afa" hidden="false">
           <description>Dreadnoughts may be taken as Heavy Support or as Elites. Any Dreadnoughts selected as Elites must be Venerable and the 0-1 limit is removed. May not be selected by a Chapter that has taken Aspire to Glory.</description>
         </rule>
       </rules>
-      <modifiers>
-        <modifier type="set" value="0" field="0c93-a62b-3e9d-5872">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="8f0b-efba-7e72-b45c" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="false" name="Honour Your Wargear" hidden="false" id="6f60-acfa-eb6a-9242">
       <constraints>
@@ -5746,6 +5739,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>Imperial Fists</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5759,6 +5753,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>Raven Guard</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5772,6 +5767,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>Salamanders</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5785,6 +5781,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>White Scars</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5798,6 +5795,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>Crimson Fists</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5811,6 +5809,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>Iron Hands</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5824,6 +5823,7 @@ If you select a named chapter from above and choose to use codex divergent trait
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <comment>Blood Ravens</comment>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -8025,7 +8025,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             </selectionEntryGroup>
             <selectionEntryGroup name="Wise" id="c3d7-73c7-189f-1b8d" hidden="false" sortIndex="4">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="820b-2193-733e-fd38" includeChildSelections="true" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="force" shared="false" id="820b-2193-733e-fd38" includeChildSelections="true" automatic="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Heed the Wisdom of the Ancients" hidden="false" id="b036-fc6b-a439-5183" type="selectionEntry" targetId="5129-52fb-efe2-22a3" sortIndex="1">
@@ -8057,7 +8057,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             </selectionEntryGroup>
             <selectionEntryGroup name="Courageous" id="42a0-707f-12ed-2a6b" hidden="false" sortIndex="5">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b721-3317-afc1-35db" includeChildSelections="true" automatic="true"/>
+                <constraint type="max" value="2" field="selections" scope="force" shared="true" id="b721-3317-afc1-35db" includeChildSelections="true" automatic="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="See, But Don&apos;t Be Seen" hidden="false" id="ac61-38c3-fb48-bf17" type="selectionEntry" targetId="64e8-ca83-52d8-7a57" sortIndex="1">
@@ -8200,7 +8200,7 @@ If you select a named chapter from above and choose to use codex divergent trait
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="c06d-575b-84ca-079b" includeChildSelections="true" automatic="true"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="false" id="c06d-575b-84ca-079b" includeChildSelections="true" automatic="true"/>
           </constraints>
           <modifiers>
             <modifier type="set" value="1" field="c06d-575b-84ca-079b">
@@ -8246,6 +8246,32 @@ May not take Terminator armour as wargear.
 May not take any relics or artefacts from the Armoury.</description>
                     </rule>
                   </rules>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c372-d8eb-2314-bb37" automatic="true"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4c1f-9f7c-0c2a-1210" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="c372-d8eb-2314-bb37">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="5129-52fb-efe2-22a3" shared="true" includeChildSelections="true" childName="Heed the Wisdom of the Ancients"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1028-7523-6719-7232" shared="true" includeChildSelections="true" childName="Scions of Mars"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="add" value="Aspire to Glory may not be selected along with Heed the Wisdom of the Ancients" field="info">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="5129-52fb-efe2-22a3" shared="true" includeChildSelections="true" childName="Heed the Wisdom of the Ancients"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="add" value="Aspire to Glory may not be selected along with Scions of Mars" field="info">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1028-7523-6719-7232" shared="true" includeChildSelections="true" childName="Scions of Mars"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Eye to Eye" hidden="false" id="2607-0199-232f-a932" sortIndex="2">
                   <rules>
@@ -8264,7 +8290,11 @@ May only take 0-1 selection in total from the following list: Land Speeder Squad
                         <condition type="atLeast" value="1" field="selections" scope="force" childId="45de-058b-6030-eb48" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </modifier>
-                    <modifier type="add" value="Eye to Eye may not be selected along with Be Swift as the Wind" field="info"/>
+                    <modifier type="add" value="Eye to Eye may not be selected along with Be Swift as the Wind" field="info">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="45de-058b-6030-eb48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
                     <modifier type="set" value="1" field="d842-9f4a-98d9-2955">
                       <conditionGroups>
                         <conditionGroup type="or">
@@ -8305,50 +8335,26 @@ Each transport option selected uses up a Fast Attack slot on the Force Organisat
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8cff-ff81-825b-161b-min" automatic="true"/>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8cff-ff81-825b-161b-max" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8cff-ff81-825b-161b-min" automatic="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8cff-ff81-825b-161b-max" automatic="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="8cff-ff81-825b-161b-min">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="170f-bb30-148a-f029" shared="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="3331-4dc7-5867-8ece" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="c6ce-3375-4a70-ff88" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="79c2-088e-02c4-f2b9" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="c3d7-73c7-189f-1b8d" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="42a0-707f-12ed-2a6b" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="b106-9a2a-7d68-82a8" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="b160-9d27-4bb4-c9c5" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="ee70-bfb4-458e-a629" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="170f-bb30-148a-f029" shared="true"/>
+                  </conditions>
                 </modifier>
                 <modifier type="set" value="1" field="8cff-ff81-825b-161b-max">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="170f-bb30-148a-f029" shared="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="3331-4dc7-5867-8ece" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="c6ce-3375-4a70-ff88" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="79c2-088e-02c4-f2b9" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="c3d7-73c7-189f-1b8d" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="42a0-707f-12ed-2a6b" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="b106-9a2a-7d68-82a8" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="b160-9d27-4bb4-c9c5" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="ee70-bfb4-458e-a629" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                  <conditions>
+                    <condition type="atLeast" value="2" field="selections" scope="aea3-96a9-868a-3701" childId="170f-bb30-148a-f029" shared="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
             <selectionEntryGroup name="Minor" id="06c3-ac6f-f3a2-4461" hidden="false" sortIndex="2">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b942-e2a9-d8e6-25fa-min" includeChildSelections="false" automatic="false"/>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b942-e2a9-d8e6-25fa-max" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b942-e2a9-d8e6-25fa-max" includeChildSelections="false" automatic="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="1" field="b942-e2a9-d8e6-25fa-min">
