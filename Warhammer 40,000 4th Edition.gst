@@ -189,7 +189,7 @@
     </profileType>
   </profileTypes>
   <forceEntries>
-    <forceEntry name="Standard Mission Force Organization Chart" id="916a-7942-cedc-170c" hidden="false" sortIndex="1">
+    <forceEntry name="Standard Mission" id="916a-7942-cedc-170c" hidden="false" sortIndex="1">
       <categoryLinks>
         <categoryLink name="Force Customization" hidden="false" id="2536-580a-6798-ea9f" targetId="7466-cf81-3a11-64ab"/>
         <categoryLink name="HQ" hidden="false" id="7d81-9036-eb2e-ffe7" targetId="0d45-9523-cfd8-4efd">
@@ -273,6 +273,523 @@
             </modifier>
           </modifiers>
         </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Combat Patrol" id="2832-d19a-d1f8-0cf5" hidden="true" sortIndex="9">
+      <constraints>
+        <constraint type="max" value="400" field="4deb-313d-6685-f48b" scope="roster" shared="true" id="09ce-d3c4-346c-604e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="e4ca-4226-9f1a-3f6c" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a483-4e42-a5b8-3273"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="a586-a29b-a217-f90f" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bd4-aafa-ffa0-feda"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="532e-6ebb-c487-dc5b" targetId="39ab-2bcd-49d1-cfef"/>
+        <categoryLink name="Fast Attack" hidden="false" id="f24b-158c-431c-87c9" targetId="11cf-dc94-5c14-2c2a"/>
+        <categoryLink name="Heavy Support" hidden="false" id="f69b-463e-4b7d-68d3" targetId="6a52-1951-5b0c-024e"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Battle Mission - Attacker" id="9cb1-1b49-9de4-2daa" hidden="false" sortIndex="2">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="e3a7-48b1-68ce-a031" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="2801-71d6-0e0c-3a96" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="10af-e430-0879-8adb" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3bc3-96db-2c33-0816" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="10af-e430-0879-8adb">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="3bc3-96db-2c33-0816">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="3bc3-96db-2c33-0816">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="10af-e430-0879-8adb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="10af-e430-0879-8adb">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="3bc3-96db-2c33-0816">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Additional Units" hidden="false" id="a83b-59c4-7635-dcbf" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="a1ce-105d-2439-cad4" targetId="39ab-2bcd-49d1-cfef">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a3f0-e919-42a8-f60b" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="a3f0-e919-42a8-f60b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="5460-f559-20e0-5bd9" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d49d-e86e-ae88-6ae8" includeChildSelections="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4ff7-e05c-7cab-4788" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="d42d-39fa-edb6-36dc" targetId="11cf-dc94-5c14-2c2a">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2615-3bd3-4974-14b3" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="2615-3bd3-4974-14b3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="10d0-7d67-f95a-e7b8" targetId="6a52-1951-5b0c-024e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5933-3947-1e3e-9589" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97c9-c3b4-07d6-7a74" automatic="false" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5933-3947-1e3e-9589">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Raid Mission - Defender" id="4001-8a94-23a3-d72c" hidden="false" sortIndex="5">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="235f-eb2d-560b-0309" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="a213-1915-1e86-cbdc" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8c7f-1ab9-79c7-6384" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9d2c-9275-a142-ea85" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="9d2c-9275-a142-ea85">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="9d2c-9275-a142-ea85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8c7f-1ab9-79c7-6384">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8c7f-1ab9-79c7-6384">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="9d2c-9275-a142-ea85">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Additional Units" hidden="false" id="abf4-be50-88e9-e6a6" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="971f-49bd-d483-2f9f" targetId="39ab-2bcd-49d1-cfef">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ce0-9aad-368b-4a18" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="cc07-bf12-addb-fdb7" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5813-42e6-8af8-5394" includeChildSelections="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="460d-baba-9852-0951" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="875c-f097-be63-2afe" targetId="11cf-dc94-5c14-2c2a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3db1-883e-3b7b-ac43" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="10a5-b68e-b473-1cba" targetId="6a52-1951-5b0c-024e">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c769-dac5-d5ff-830c" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="c769-dac5-d5ff-830c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Battle Mission - Defender" id="8559-6eda-091c-c37a" hidden="false" sortIndex="3">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="3b5f-e91f-a234-f229" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="8f5e-10c1-0a84-60c4" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="03ff-f5e0-2541-e5de" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8043-5482-f9c4-8a4f" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="03ff-f5e0-2541-e5de">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="8043-5482-f9c4-8a4f">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8043-5482-f9c4-8a4f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="03ff-f5e0-2541-e5de">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="03ff-f5e0-2541-e5de">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="8043-5482-f9c4-8a4f">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Additional Units" hidden="false" id="8b88-1666-6880-c7ee" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="c31e-981a-4c2d-20ec" targetId="39ab-2bcd-49d1-cfef">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="98c9-5b11-6172-9d62" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="98c9-5b11-6172-9d62">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="9213-cf21-e97b-2973" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8e30-4dd7-5bad-dd35" includeChildSelections="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ef3d-6ec1-7b0a-709f" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="4fd3-3c6c-ef8a-b917" targetId="11cf-dc94-5c14-2c2a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fe37-1b6b-de9b-fffa" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="fe37-1b6b-de9b-fffa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="532f-48b7-2f8f-273b" targetId="6a52-1951-5b0c-024e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7959-470f-0354-edfc" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="7959-470f-0354-edfc">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Raid Mission - Attacker" id="3475-8b1d-88af-e539" hidden="false" sortIndex="4">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="3567-dd51-3e0e-73f1" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="f548-d695-01a0-f79a" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2444-9e3f-b770-cead" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2158-7e09-6dfa-3f43" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="2444-9e3f-b770-cead">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="2158-7e09-6dfa-3f43">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="2158-7e09-6dfa-3f43">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="2444-9e3f-b770-cead">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="2444-9e3f-b770-cead">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="2158-7e09-6dfa-3f43">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Additional Units" hidden="false" id="4f34-3bfa-393e-0bb9" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="c3ca-6ad2-fb89-7473" targetId="39ab-2bcd-49d1-cfef">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5984-62d8-f398-f6bf" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="355d-faf9-053c-bdcd" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5984-62d8-f398-f6bf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="1ab8-98f1-f622-09f0" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="11bc-5e61-45e3-6382" includeChildSelections="true"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="db71-62ab-0a95-310e" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="aad1-51ec-44b2-8f68" targetId="11cf-dc94-5c14-2c2a">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="26d3-6772-1493-1aa4" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="26d3-6772-1493-1aa4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="d418-3165-6917-d226" targetId="6a52-1951-5b0c-024e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a123-1527-7a1e-f33c" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Breakthrough Mission - Defender" id="3678-eca4-4b81-3a61" hidden="false" sortIndex="7">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="abd6-ad76-87ff-f4f4" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="6b9f-3833-71da-cf27" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f397-c64c-7526-2854" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a0d0-bbcd-0678-26ba" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="f397-c64c-7526-2854">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="a0d0-bbcd-0678-26ba">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="a0d0-bbcd-0678-26ba">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f397-c64c-7526-2854">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="f397-c64c-7526-2854">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="a0d0-bbcd-0678-26ba">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Additional Units" hidden="false" id="06ba-8569-3a27-0cd9" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="822a-cdf2-74a6-eda5" targetId="39ab-2bcd-49d1-cfef">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="91ec-1294-a105-6bf2" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="91ec-1294-a105-6bf2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="4ec3-da10-a0eb-57e3" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6347-41f7-6a10-4c9a" includeChildSelections="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="da6d-ab5c-f8ec-514e" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="0c46-047c-e57a-a750" targetId="11cf-dc94-5c14-2c2a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="538c-a1e7-261f-08d5" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="dbc4-ddba-c31c-999b" targetId="6a52-1951-5b0c-024e">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="345d-9f64-d221-6141" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="345d-9f64-d221-6141">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Breakthrough Mission - Attacker" id="f61c-13ef-c795-4c65" hidden="false" sortIndex="6">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="7d1d-7b92-70c0-a442" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="4919-7b2a-4a08-c456" targetId="0d45-9523-cfd8-4efd">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1037-956b-8250-6290" includeChildSelections="true"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="93b8-e517-ca64-0687" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1037-956b-8250-6290">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="93b8-e517-ca64-0687">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="407e-febc-7e2c-0621" shared="true" includeChildSelections="true" childName="Space Wolf"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="93b8-e517-ca64-0687">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="1037-956b-8250-6290">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3d97-8e4b-f2f4-5ead" shared="true" childName="The Emperor&apos;s Champion"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="1037-956b-8250-6290">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="93b8-e517-ca64-0687">
+              <repeats>
+                <repeat value="750" repeats="1" field="4deb-313d-6685-f48b" scope="parent" childId="407e-febc-7e2c-0621" shared="true" roundUp="true" childName="Space Wolf" includeChildSelections="true" percentValue="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Additional Units" hidden="false" id="538a-2d66-5c33-a50f" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="53fe-cd18-e527-20ab" targetId="39ab-2bcd-49d1-cfef">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a8ac-eaac-5eb3-a62b" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ada0-7dc0-c17b-e1dc" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="a8ac-eaac-5eb3-a62b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="b862-7cf8-d86b-feec" targetId="23e2-2a28-50f4-a3c1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b759-97f2-8c32-adf8" includeChildSelections="true"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="9646-a1cb-ec7f-a46d" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="ef35-6f43-79b9-2cbd" targetId="11cf-dc94-5c14-2c2a">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9366-fdac-1e01-2e15" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="9366-fdac-1e01-2e15">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="1ba5-6443-0f1d-a10e" targetId="6a52-1951-5b0c-024e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e6be-352d-e86a-866c" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="e6be-352d-e86a-866c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="93eb-aee0-ad90-7026" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Free Build" id="a10c-7154-23a7-a010" hidden="false" sortIndex="8">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="a275-e95d-8e82-d4e3" targetId="7466-cf81-3a11-64ab"/>
+        <categoryLink name="HQ" hidden="false" id="ad3a-4848-cb4f-28de" targetId="0d45-9523-cfd8-4efd"/>
+        <categoryLink name="Additional Units" hidden="false" id="3bb3-f75c-7798-1da9" targetId="0589-7c29-bfa2-d566"/>
+        <categoryLink name="Elites" hidden="false" id="0dd4-8d2a-afda-615a" targetId="39ab-2bcd-49d1-cfef"/>
+        <categoryLink name="Troops" hidden="false" id="83e7-224d-5ea3-a816" targetId="23e2-2a28-50f4-a3c1"/>
+        <categoryLink name="Fast Attack" hidden="false" id="784c-d5dc-9b84-f9f6" targetId="11cf-dc94-5c14-2c2a"/>
+        <categoryLink name="Heavy Support" hidden="false" id="0f30-754e-9f53-cef4" targetId="6a52-1951-5b0c-024e"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1167,11 +1684,7 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <infoLink name="Autocannon" id="18ca-59f8-b9db-3f02" hidden="false" type="profile" targetId="7d29-c50b-9499-c31b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="958c-db25-e5af-3db5">
-      <infoLinks>
-        <infoLink name="Assault Cannon" id="0331-0faa-303a-0db2" hidden="false" type="profile" targetId="d4c2-a3d4-540a-5585"/>
-      </infoLinks>
-    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="958c-db25-e5af-3db5"/>
     <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="31e2-9687-ef98-263e">
       <infoLinks>
         <infoLink name="Plasma Gun" id="23d9-1386-5c5f-5292" hidden="false" type="profile" targetId="45fb-35fd-3a93-bc60"/>
