@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="ab6a-fac1-8384-4c1f">
+<catalogue library="false" id="1456-5870-a9bd-3017" name="Blood Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="5" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="ab6a-fac1-8384-4c1f">
   <entryLinks>
     <entryLink import="true" name="Tactical Squad" hidden="false" id="1c6a-4f6b-9265-e6ee" type="selectionEntry" targetId="16bd-1997-ce61-f3ce" sortIndex="13">
       <categoryLinks>
@@ -1296,7 +1296,7 @@
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="156"/>
       </costs>
       <profiles>
-        <profile name="Brother Corbulo, Bearer of the Red Grail" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0e48-5a61-1405-37b2">
+        <profile name="Brother Corbulo" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0e48-5a61-1405-37b2">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
@@ -1395,7 +1395,7 @@
         <categoryLink name="Blood Angel" hidden="false" id="6210-a8a2-ca76-fe86" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <profiles>
-        <profile name="Chaplain Lemartes, Guardian of the Lost" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4da7-c80d-2c2a-a9b9">
+        <profile name="Chaplain Lemartes" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="4da7-c80d-2c2a-a9b9">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
@@ -1657,7 +1657,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d86-3ad8-5e00-3d7a" includeChildSelections="true"/>
       </constraints>
       <profiles>
-        <profile name="Chief Librarian Mephiston, Lord of Death" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="3e75-4ef7-f7aa-6e9f">
+        <profile name="Chief Librarian Mephiston" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="3e75-4ef7-f7aa-6e9f">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character, Psyker</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">6</characteristic>
@@ -1755,7 +1755,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
         <categoryLink name="Blood Angel" hidden="false" id="2ed1-ad71-cc91-35a5" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <profiles>
-        <profile name="Brother-Captain Tycho, Commander of the Blood Angels Third Company" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0d91-ac69-c328-5df5">
+        <profile name="Brother-Captain Tycho" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="0d91-ac69-c328-5df5">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Infantry, Character</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">5</characteristic>
@@ -1854,6 +1854,112 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
         </rule>
         <rule name="Hates Orks" id="41fe-6833-ce94-5631" hidden="false">
           <description>When fighting against Orks, Tycho and any squad he leads automatically pass any Morale checks they are required to make. In close combat against Orks, Tycho always hits on a 3+ regardless of Weapon Skill, etc.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Moriar the Chosen, Death Company Dreadnought" hidden="false" id="9a73-07b8-062e-8433">
+      <profiles>
+        <profile name="Moriar the Chosen" typeId="57616c6b657223232344415441232323" typeName="Walker" hidden="false" id="4306-7f22-44cd-08b1">
+          <characteristics>
+            <characteristic name="Front" typeId="2c29-350b-f248-dd77">12</characteristic>
+            <characteristic name="Side" typeId="0420-dd4d-5193-9751">12</characteristic>
+            <characteristic name="Rear" typeId="261f-f688-43d2-6426">10</characteristic>
+            <characteristic name="WS" typeId="cdb5-5759-7ba6-4165">5</characteristic>
+            <characteristic name="BS" typeId="c2d0-06f8-ae22-6c79">4</characteristic>
+            <characteristic name="S" typeId="c10b-81fc-f48d-cb9c">6</characteristic>
+            <characteristic name="I" typeId="d3ac-4b4f-59d3-54d0">4</characteristic>
+            <characteristic name="A" typeId="dd6f-2402-7687-9468">D6+2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="31df-64db-f40d-f73d" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon 1" id="92c5-24ec-7538-dfff" hidden="false" defaultSelectionEntryId="271b-32b1-d9ab-6fae" sortIndex="1" flatten="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1792-c5db-6ff1-e812" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bdb-2ffa-9a97-b34a" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadnought close combat weapon" hidden="false" id="d110-9a06-65c9-395f" type="selectionEntry" targetId="271b-32b1-d9ab-6fae" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Built-in Weapon" id="dfa8-17f1-58f9-ac90" hidden="false" defaultSelectionEntryId="022c-c996-9e11-7a62">
+                  <entryLinks>
+                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="1073-8c89-a1e0-7c7f" type="selectionEntry" targetId="681f-43e9-f3d6-73e0" sortIndex="2">
+                      <costs>
+                        <cost name="Points" typeId="4deb-313d-6685-f48b" value="0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5897-5210-004c-06d7" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d98f-cf9b-b906-af7c" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon 2" id="9f2f-b06d-4a03-34e1" hidden="false" defaultSelectionEntryId="271b-32b1-d9ab-6fae" sortIndex="2" flatten="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d888-71e1-a637-9258" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="039c-c995-af0b-1c1a" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Dreadnought close combat weapon" hidden="false" id="c89b-0631-2116-d0d7" type="selectionEntry" targetId="271b-32b1-d9ab-6fae" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Built-in Weapon" id="2fac-c8bc-ed5d-9f49" hidden="false" defaultSelectionEntryId="022c-c996-9e11-7a62">
+                  <entryLinks>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="a25d-021a-1579-6cc4" type="selectionEntry" targetId="58bb-9069-868e-4a79" defaultAmount="1" sortIndex="1"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e9b-af96-160a-15b1" includeChildSelections="false" automatic="true"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce3-822c-65aa-54e8" includeChildSelections="false" automatic="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="144"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5757-2ee0-f747-fa53" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="append" value="The bonus attack for having two dreadnought close combat weapons is included in Moriar&apos;s profile." field="acf3-d214-6e51-29fe" affects="self.entries.271b-32b1-d9ab-6fae.profiles.Melee Weapon" join="
+
+"/>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Smoke Launchers" hidden="false" id="0ad0-8dfa-cd4e-6f6d" type="selectionEntry" targetId="4aad-7fe7-9acb-1ad4" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1006-b2db-e474-eba5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1006-b2db-e474-eba5-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlight" hidden="false" id="077c-dad3-4077-08eb" type="selectionEntry" targetId="f9e5-52e8-1300-2a4a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e39-00b2-0f35-3dfc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e39-00b2-0f35-3dfc-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Tear Attack" id="eca8-d62d-d23e-4894" hidden="false">
+          <description>Moriar rolls 2D6+Strength when working out armour penetration against vehicles.</description>
+        </rule>
+        <rule name="Battle-Frenzied" id="68ea-7046-fdbc-bb06" hidden="false">
+          <description>For each round of combat that Moriar is fighting, roll D6+2 to determine the number of Attacks he can make. This includes his bonus attack for the two Dreadnought close combat weapons, but if he charges then he gains the additional +1 Attack as normal.</description>
+        </rule>
+        <rule name="Black Rage" id="e856-514e-78f6-641c" hidden="false">
+          <description>Moriar must always move towards the enemy as fast as possible, and must assault an enemy within range in the assault phase.</description>
+        </rule>
+        <rule name="Rampage" id="4f75-5845-4d11-2bda" hidden="false">
+          <description>Moriar ignores any &apos;Crew Shaken&apos; and &apos;Crew Stunned&apos; results on the vehicle damage table.</description>
         </rule>
       </rules>
     </selectionEntry>
