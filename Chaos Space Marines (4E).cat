@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0ec4-29f4-dcb0-0107" name="Chaos Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" publicationId="3c33-edbb-79d5-85d1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0ec4-29f4-dcb0-0107" name="Chaos Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" publicationId="3c33-edbb-79d5-85d1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Icon of Chaos" id="837c-b0d9-39a1-ff07" hidden="false">
       <selectionEntries>
@@ -4008,8 +4008,8 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
         <entryLink import="true" name="Transport" hidden="false" id="b84b-5e3e-900b-27d5" type="selectionEntryGroup" targetId="32c6-23b0-5f64-6459"/>
       </entryLinks>
       <modifiers>
-        <modifier type="set" value="3" field="4.1502323234441545e+23" affects="self.entries.recursive.b4d3-5dc3-8317-362c.profiles.Weapon" scope="parent"/>
-        <modifier type="set" value="3" field="4.1502323234441545e+23" affects="self.entries.recursive.1fcb-2c8e-4cc2-c033.profiles.Weapon" scope="parent"/>
+        <modifier type="set" value="3" field="4.1502323234441545e+23" affects="self.entries.recursive.b4d3-5dc3-8317-362c.profiles.Weapon"/>
+        <modifier type="set" value="3" field="4.1502323234441545e+23" affects="self.entries.recursive.1fcb-2c8e-4cc2-c033.profiles.Weapon"/>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Bikers" hidden="false" id="9a47-3a13-4c26-89d5">
@@ -5623,7 +5623,7 @@ Abaddon get and additional +D6 Attacks from his Daemon Weapon</characteristic>
         </rule>
       </rules>
       <modifiers>
-        <modifier type="set" value="3" field="4.1502323234441545e+23" affects="self.entries.recursive.b4d3-5dc3-8317-362c.profiles.Weapon" scope="parent"/>
+        <modifier type="set" value="3" field="4.1502323234441545e+23" affects="self.entries.recursive.b4d3-5dc3-8317-362c.profiles.Weapon"/>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4983-9b72-3786-1d50" includeChildSelections="true"/>
