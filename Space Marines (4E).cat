@@ -3575,8 +3575,8 @@ Every Space Marine non-vehicle model used must have this ability if any do. The 
             <conditionGroup type="and">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a66-b0e3-9de5-db79" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="a10d-d7dd-4f63-b6a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="6673-2bce-9ffb-26cf" shared="true" childName="Commander"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9a66-b0e3-9de5-db79" shared="true" childName="Master" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3612,7 +3612,8 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
             <conditionGroup type="and">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9862-c761-5bd2-ffc7" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="9a66-b0e3-9de5-db79" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="6673-2bce-9ffb-26cf" shared="true" childName="Commander"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="9a66-b0e3-9de5-db79" shared="true" childName="Master" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
