@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="5346-564f-637a-87d4">
       <constraints>
@@ -2764,34 +2764,6 @@ You can have 1 Death Company model for each of the following units included in 
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Bolter" hidden="false" id="64ca-e73c-501c-3cbe" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033" sortIndex="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e66c-5230-4809-ddcd" includeChildSelections="false" automatic="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c2d-896c-0794-a6fa" includeChildSelections="false" automatic="true"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="e66c-5230-4809-ddcd">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9cb9-02c7-b2d5-ee40" shared="true" childName="Replace Bolter"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="174e-40f0-9789-96a9" shared="true" childName="Special Weapons"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="0" field="1c2d-896c-0794-a6fa">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9cb9-02c7-b2d5-ee40" shared="true" childName="Replace Bolter"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="174e-40f0-9789-96a9" shared="true" childName="Special Weapons"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink import="true" name="Melta Bombs" hidden="false" id="e402-931c-f40f-59ba" type="selectionEntry" targetId="a1bb-d7bf-d627-b59f" sortIndex="6">
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="5"/>
@@ -2821,7 +2793,6 @@ You can have 1 Death Company model for each of the following units included in 
               <selectionEntryGroups>
                 <selectionEntryGroup name="Replace Bolter" id="9cb9-02c7-b2d5-ee40" hidden="false" sortIndex="1">
                   <entryLinks>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="e476-730b-8a70-0cda" type="selectionEntry" targetId="cbc3-7958-6f52-a59e" sortIndex="1"/>
                     <entryLink import="true" name="Combi-melta" hidden="false" id="892d-c918-6ff2-13dc" type="selectionEntry" targetId="41b7-2235-bd40-76d3" sortIndex="4">
                       <costs>
                         <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
@@ -2953,6 +2924,38 @@ You can have 1 Death Company model for each of the following units included in 
                   </costs>
                 </entryLink>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Main Weapon" id="1dbe-83f3-c481-0407" hidden="false" sortIndex="1" flatten="true">
+              <entryLinks>
+                <entryLink import="true" name="Bolter" hidden="false" id="64ca-e73c-501c-3cbe" type="selectionEntry" targetId="1fcb-2c8e-4cc2-c033"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="e476-730b-8a70-0cda" type="selectionEntry" targetId="cbc3-7958-6f52-a59e"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e66c-5230-4809-ddcd-min" includeChildSelections="false" automatic="true"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e66c-5230-4809-ddcd-max" includeChildSelections="false" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="e66c-5230-4809-ddcd-min">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9cb9-02c7-b2d5-ee40" shared="true" childName="Replace Bolter"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="174e-40f0-9789-96a9" shared="true" childName="Special Weapons"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="e66c-5230-4809-ddcd-max">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="9cb9-02c7-b2d5-ee40" shared="true" childName="Replace Bolter"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="174e-40f0-9789-96a9" shared="true" childName="Special Weapons"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
