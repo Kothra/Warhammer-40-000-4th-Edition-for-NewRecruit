@@ -1577,7 +1577,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="3b51-2480-5a6f-3d60" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="9996-88e2-8ff9-a37c" shared="true" roundUp="false" includeChildSelections="true"/>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c171-abee-04ba-97cc" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c171-abee-04ba-97cc" shared="true" roundUp="false" includeChildSelections="true" childName="Neophyte"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1600,7 +1600,7 @@ He may treat any friendly non-vehicle model within 6&quot; of him. In the enemy 
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="3b51-2480-5a6f-3d60" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="e43e-477a-16b4-cf94" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="9996-88e2-8ff9-a37c" shared="true" roundUp="false" includeChildSelections="true"/>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c171-abee-04ba-97cc" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c171-abee-04ba-97cc" shared="true" roundUp="false" includeChildSelections="true" childName="Neophyte"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -3721,7 +3721,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
         </entryLink>
       </entryLinks>
       <categoryLinks>
-        <categoryLink name="Troops" hidden="false" id="a25d-04e3-8d8e-12bb" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
+        <categoryLink name="Troops" hidden="false" id="4481-2e8c-3e65-66df" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Assault Squad" hidden="false" id="1841-812c-ce41-981f" sortIndex="13">
@@ -3793,7 +3793,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
         <entryLink import="true" name="True Grit &amp; Counter-Attack" hidden="false" id="d9f7-e466-5fe0-0d3b" type="selectionEntry" targetId="52fc-b5e0-4a5a-59ca"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink name="Fast Attack" hidden="false" id="9490-4d4e-44f4-cdb8" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
+        <categoryLink name="Fast Attack" hidden="false" id="ee6b-cd77-388c-58fe" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Jump Packs" hidden="false" id="0dd7-5b1d-713c-3818" sortIndex="3" defaultAmount="1">
@@ -3851,7 +3851,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
         <entryLink import="true" name="Transport" hidden="false" id="4eb0-7b6a-df36-40a0" type="selectionEntryGroup" targetId="f59a-7dd6-663f-131b"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="33a4-9d84-c65e-7424" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Elites" hidden="false" id="9639-dc9b-70cf-e60f" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Terminators" id="8f98-42cf-8f0c-9374" hidden="false" sortIndex="2" defaultSelectionEntryId="524e-8576-e61b-f878">
@@ -3966,7 +3966,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
         <entryLink import="true" name="Transport" hidden="false" id="a2b3-74aa-d291-a0b9" type="selectionEntryGroup" targetId="f59a-7dd6-663f-131b"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="2635-bed4-ccfc-654a" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Elites" hidden="false" id="8bb1-7d1a-a316-c188" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -3985,7 +3985,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scout Squad" hidden="false" id="8a0f-5a7a-17cb-568f" sortIndex="12">
       <categoryLinks>
-        <categoryLink name="Troops" hidden="false" id="4f86-a84a-88e6-ab28" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
+        <categoryLink name="Troops" hidden="false" id="c44b-5815-bf73-c870" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Scout Sergeant" hidden="false" id="dacf-9064-7f46-a0db" type="selectionEntry" targetId="4147-17d1-1cda-a597" sortIndex="1">
@@ -4015,7 +4015,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="97a4-2744-2cf2-8f2f" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="97a4-2744-2cf2-8f2f" shared="true" childName="Veteran Sergeant Naaman"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4093,8 +4093,8 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="105"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="829c-4249-81a8-8b62" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
         <categoryLink name="Dreadnought" hidden="false" id="0473-8a46-4eb0-a905" targetId="5330-7b73-1fd2-d75f" primary="false"/>
+        <categoryLink name="Elites" hidden="false" id="6ac0-c8dd-7d95-09cc" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Special Skills" hidden="true" id="5fdc-5bca-4b75-fed1" type="selectionEntryGroup" targetId="ac78-e6e9-a411-196a" sortIndex="4">
@@ -4258,8 +4258,8 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Techmarine" hidden="false" id="926d-0021-c465-da7c" sortIndex="10">
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="0b0d-e0e8-a0ec-f129" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
         <categoryLink name="Character" hidden="false" id="fbcb-343d-3cb6-5015" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="Elites" hidden="false" id="24c8-b09b-f314-966a" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="65"/>
@@ -4408,7 +4408,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Devastator Squad" hidden="false" id="9a67-bbf2-d922-2bc9" sortIndex="18">
       <categoryLinks>
-        <categoryLink name="Heavy Support" hidden="false" id="6e66-2fb0-5bae-9dd5" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Heavy Support" hidden="false" id="9afc-87bc-f5c4-78be" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Space Marine Sergeant" hidden="false" id="c2e3-1ae3-7d79-b27c" type="selectionEntry" targetId="sergeant1" defaultAmount="1" sortIndex="1"/>
@@ -4461,7 +4461,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bike Squadron" hidden="false" id="6acb-a381-8f5c-abdb" sortIndex="15">
       <categoryLinks>
-        <categoryLink name="Fast Attack" hidden="false" id="19a6-368b-5604-6e43" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
+        <categoryLink name="Fast Attack" hidden="false" id="3eda-8427-0ebb-45c0" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Attack Bike" hidden="false" id="033b-e9fb-3457-20cc" type="selectionEntry" targetId="89e8-fb61-d518-15f2">
@@ -4702,7 +4702,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Speeder Squadron" hidden="false" id="4a76-a7b0-9871-cc49" sortIndex="14">
       <categoryLinks>
-        <categoryLink name="Fast Attack" hidden="false" id="78c2-640a-3aef-3883" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
+        <categoryLink name="Fast Attack" hidden="false" id="12ea-e801-9f9e-8e3d" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Land Speeders" id="1f6e-6901-2d3e-6c2f" hidden="false" defaultSelectionEntryId="ab87-71ef-4ce9-bbfd">
@@ -4861,7 +4861,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Attack Bike Squadron" hidden="false" id="dd31-a3d9-3d3b-cb2d" sortIndex="16">
       <categoryLinks>
-        <categoryLink name="Fast Attack" hidden="false" id="36d7-3792-331b-b435" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
+        <categoryLink name="Fast Attack" hidden="false" id="64bc-14ac-6671-405e" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Attack Bike" hidden="false" id="7e17-330d-da4f-5ce3" type="selectionEntry" targetId="89e8-fb61-d518-15f2">
@@ -4916,7 +4916,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Scout Bike Squadron" hidden="false" id="9951-a482-9601-e346" sortIndex="17">
       <categoryLinks>
-        <categoryLink name="Fast Attack" hidden="false" id="5078-6922-66b1-f0fa" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
+        <categoryLink name="Fast Attack" hidden="false" id="a54e-9d0d-7383-0c94" targetId="11cf-dc94-5c14-2c2a" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Scout Biker Sergeant" hidden="false" id="306d-a124-7618-8d4f" sortIndex="1">
@@ -5068,7 +5068,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vindicator" hidden="false" id="2341-1759-1cd3-650c" sortIndex="19">
       <categoryLinks>
-        <categoryLink name="Heavy Support" hidden="false" id="a397-3f62-a60c-ee71" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Heavy Support" hidden="false" id="a98a-4357-3fc8-0e86" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Vindicator" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="371d-92a1-973b-4519">
@@ -5140,7 +5140,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Predator Annihilator" hidden="false" id="7737-f7b1-95b7-acab" sortIndex="20">
       <categoryLinks>
-        <categoryLink name="Heavy Support" hidden="false" id="cf84-805e-5cb4-dcd7" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Heavy Support" hidden="false" id="4a0a-7e0d-b0e8-2d37" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Predator Annihilator" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="b640-77e5-7b03-527c">
@@ -5218,7 +5218,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Predator Destructor" hidden="false" id="3f4c-2d7d-e1b4-59cd" sortIndex="21">
       <categoryLinks>
-        <categoryLink name="Heavy Support" hidden="false" id="0c08-35ea-4b5c-bbb9" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Heavy Support" hidden="false" id="34f9-4af5-7bc4-9721" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Autocannon (Turret-mounted)" hidden="false" id="ebe9-6314-9bbc-115d">
@@ -5323,7 +5323,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Whirlwind" hidden="false" id="0877-32be-d27e-405e" sortIndex="22">
       <categoryLinks>
-        <categoryLink name="Heavy Support" hidden="false" id="bf59-d28f-176d-d23b" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Heavy Support" hidden="false" id="d816-701b-6977-daba" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
@@ -5410,8 +5410,8 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="dcea-afce-6ef5-36b2" sortIndex="24">
       <categoryLinks>
-        <categoryLink name="Heavy Support" hidden="false" id="e76c-4618-61b3-de67" targetId="6a52-1951-5b0c-024e" primary="true"/>
         <categoryLink name="Land Raider" hidden="false" id="2737-ebd7-d40c-2cfc" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
+        <categoryLink name="Heavy Support" hidden="false" id="378b-71f6-6dbc-74d4" targetId="6a52-1951-5b0c-024e" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Land Raider Crusader" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="ca30-26f9-36de-2ceb">
@@ -5519,7 +5519,7 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Squad" hidden="false" id="veteransquad" sortIndex="8">
       <categoryLinks>
-        <categoryLink targetId="39ab-2bcd-49d1-cfef" id="792c-1ca0-0328-f42f" primary="true" name="Elites"/>
+        <categoryLink name="Elites" hidden="false" id="1cc9-5cea-be27-acb9" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Space Marine Sergeant" hidden="false" id="f028-ef20-90db-2bb7" type="selectionEntry" targetId="sergeant1" sortIndex="1">
@@ -5692,7 +5692,7 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Forge World" hidden="false" id="375a-d331-f8e5-1936" sortIndex="0" defaultAmount="1">
       <categoryLinks>
-        <categoryLink name="Force Customization" hidden="false" id="f665-2c8f-401b-f953" targetId="7466-cf81-3a11-64ab" primary="true"/>
+        <categoryLink name="Force Customization" hidden="false" id="1970-aba1-2bcc-5d16" targetId="7466-cf81-3a11-64ab" primary="true"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="4026-20f9-8592-2829-min" includeChildSelections="false" automatic="false"/>
@@ -5701,7 +5701,7 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chapter Traits" hidden="false" id="b665-3944-7392-ddb2" sortIndex="0" defaultAmount="1">
       <categoryLinks>
-        <categoryLink name="Force Customization" hidden="false" id="3083-7552-e630-2ec8" targetId="7466-cf81-3a11-64ab" primary="true"/>
+        <categoryLink name="Force Customization" hidden="false" id="eaa5-fd26-d582-c703" targetId="7466-cf81-3a11-64ab" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="true" id="d395-3aea-5175-eef0" type="selectionEntryGroup" targetId="aea3-96a9-868a-3701">
@@ -5841,8 +5841,8 @@ If you select a named chapter from above and choose to use codex divergent trait
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kayvaan Shrike" hidden="true" id="5f56-3d70-0cad-6440">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="722a-c941-b1bf-dca5" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="485d-d2a0-0c2e-3c14" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="HQ" hidden="false" id="9b44-0683-646e-a40f" targetId="0d45-9523-cfd8-4efd" primary="true"/>
       </categoryLinks>
       <profiles>
         <profile name="Kayvaan Shrike" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="c731-f31c-b0a5-5933">
@@ -6039,7 +6039,7 @@ If you select a named chapter from above and choose to use codex divergent trait
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink name="Elites" hidden="false" id="2fc9-be76-c01c-0ebc" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Elites" hidden="false" id="4ffb-3547-1378-05ce" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Space Marine Sergeant" hidden="false" id="d3f1-94b7-3fab-b3fb" type="selectionEntry" targetId="sergeant1" sortIndex="1">
@@ -6148,8 +6148,8 @@ If you select a named chapter from above and choose to use codex divergent trait
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Marneus Calgar, Chapter Master" hidden="true" id="1d8f-f602-f983-fdad">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="c6d1-43ee-f404-59d3" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="57c4-8c41-9675-938d" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="HQ" hidden="false" id="91b7-aa3f-4415-ae90" targetId="0d45-9523-cfd8-4efd" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="185"/>
@@ -6317,8 +6317,8 @@ If you select a named chapter from above and choose to use codex divergent trait
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="170"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="4efe-da35-a4e5-d610" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="5272-3075-22d3-8f9d" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="HQ" hidden="false" id="a3f1-6c7c-a215-ee05" targetId="0d45-9523-cfd8-4efd" primary="true"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ad24-39f0-ddf3-7cf1" includeChildSelections="true" includeChildForces="true" automatic="false"/>
@@ -6410,8 +6410,8 @@ If you select a named chapter from above and choose to use codex divergent trait
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chaplain Cassius" hidden="true" id="9df2-f317-1174-40df">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="2ab8-f6c4-1138-e176" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="f50b-adf8-f277-873b" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="HQ" hidden="false" id="6c45-63a8-e42d-c072" targetId="0d45-9523-cfd8-4efd" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Command Squad" hidden="false" id="14f1-7cfc-0c2d-30a2" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="8"/>
@@ -6532,8 +6532,8 @@ If you select a named chapter from above and choose to use codex divergent trait
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tigurius, Chief Librarian" hidden="true" id="d2fd-1e19-346c-e5f5">
       <categoryLinks>
-        <categoryLink name="HQ" hidden="false" id="8967-e30b-483b-5a0a" targetId="0d45-9523-cfd8-4efd" primary="true"/>
         <categoryLink name="Character" hidden="false" id="dda0-ec86-074b-6be6" targetId="c918-96c1-1ff1-3df1" primary="false"/>
+        <categoryLink name="HQ" hidden="false" id="1c2c-68eb-e974-216f" targetId="0d45-9523-cfd8-4efd" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Command Squad" hidden="false" id="ed99-8a9e-e948-7bd7" type="selectionEntry" targetId="1202-16ac-4bf1-c237" sortIndex="7"/>
@@ -7848,21 +7848,21 @@ If you select a named chapter from above and choose to use codex divergent trait
     </selectionEntryGroup>
     <selectionEntryGroup name="Vehicle Upgrades" id="bc1e-2573-4257-74e9" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Storm Bolter" hidden="false" id="4bf1-ffd4-0fd8-b23b" type="selectionEntry" targetId="1ed7-654d-07b2-1121">
+        <entryLink import="true" name="Storm Bolter" hidden="false" id="4bf1-ffd4-0fd8-b23b" type="selectionEntry" targetId="1ed7-654d-07b2-1121" collective="true">
           <modifiers>
-            <modifier type="set" value="Storm Bolter (Pintle-mounted)" field="name"/>
+            <modifier type="prepend" value="Pintle-mounted" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5330-7b73-1fd2-d75f" shared="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Storm Bolter (Pintle-mounted)" field="name" affects="self.entries.profiles.Weapon"/>
+            <modifier type="append" value="(Pintle-mounted)" field="name" affects="self.entries.profiles.Weapon" join=" "/>
           </modifiers>
           <costs>
             <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
           </costs>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ceb-b5d7-e291-9ecb" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5ceb-b5d7-e291-9ecb" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="d932-a2da-b470-e143" type="selectionEntry" targetId="ff72-89fa-37d7-07a2">
@@ -7967,6 +7967,25 @@ If you select a named chapter from above and choose to use codex divergent trait
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a5f-7341-63c6-8f02" includeChildSelections="false"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Improved Comms" hidden="true" id="4f4b-5752-ac60-fcac">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Improved Comms" typeId="57617267656172204974656d23232344415441232323" typeName="Wargear" hidden="false" id="612f-685f-cf21-7980">
+              <characteristics>
+                <characteristic name="Description" typeId="4465736372697074696f6e23232344415441232323">Improved comms allow the player to re-roll one Reserves roll per turn, and to re-roll the dice when checking to see if an enemy unit or obstacle is hit by a preliminary bombardment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="b1c0-a365-7929-2c99" shared="true" childName="Imperial Armour Vol. 2"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -8518,7 +8537,7 @@ May not use any Allies.</description>
                 <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="terminatorsergeant" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="1507-f6be-3680-5e10" shared="true" roundUp="false" includeChildSelections="true"/>
                 <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="bddd-b518-aa98-9fac" shared="true" roundUp="false" includeChildSelections="true"/>
-                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="c171-abee-04ba-97cc" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="c171-abee-04ba-97cc" shared="true" roundUp="false" includeChildSelections="true" childName="Neophyte"/>
               </repeats>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -8805,6 +8824,16 @@ May not use any Allies.</description>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="58fd-ffa1-5c12-4e59" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9"/>
+            <entryLink import="true" name="Storm Bolter" hidden="false" id="5c17-35c5-ef70-3a03" type="selectionEntry" targetId="1ed7-654d-07b2-1121" sortIndex="1" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7d2d-3bef-168f-59e2-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7d2d-3bef-168f-59e2-max" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="append" value="(Pintle-mounted)" field="name" affects="self.entries.profiles.Weapon" join=" "/>
+                <modifier type="prepend" value="Pintle-mounted" field="name" join=" "/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Razorback" hidden="false" id="954e-3989-544f-e6cc" type="selectionEntry" targetId="ee1d-64c6-0a77-1b03">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="31b1-aa9d-4826-98b2" name="Blood Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="5" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Additional Space Marines" hidden="false" id="5346-564f-637a-87d4">
       <constraints>
@@ -765,7 +765,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
               </constraints>
               <modifiers>
                 <modifier type="prepend" value="Pintle-mounted" field="name"/>
-                <modifier type="prepend" value="Pintle-mounted" field="name" affects="profiles.Weapon"/>
+                <modifier type="prepend" value="(Pintle-mounted)" field="name" affects="profiles.Weapon"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -978,11 +978,11 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
         </entryLink>
         <entryLink import="true" name="Storm Bolter" hidden="false" id="255f-78b5-e406-0ce0" type="selectionEntry" targetId="1ed7-654d-07b2-1121">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="16fe-4751-4324-94df" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="16fe-4751-4324-94df" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="prepend" value="Pintle-mounted" field="name"/>
-            <modifier type="prepend" value="Pintle-mounted" field="name" affects="profiles.Weapon"/>
+            <modifier type="prepend" value="(Pintle-mounted)" field="name" affects="profiles.Weapon"/>
             <modifier type="set" value="10" field="4deb-313d-6685-f48b">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c68f-30ee-2bb4-5f1c" shared="true" childName="Baal Predator"/>
