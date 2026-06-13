@@ -2706,7 +2706,7 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="sergeant1" shared="true"/>
-                        <condition type="equalTo" value="0" field="selections" scope="force" childId="ffc4-9fce-350d-21ca" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="1028-7523-6719-7232" shared="true" includeChildSelections="true" childName="Scions of Mars"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4322,9 +4322,10 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
             <modifier type="set-primary" value="0d45-9523-cfd8-4efd" field="category" scope="parent"/>
             <modifier type="remove" value="39ab-2bcd-49d1-cfef" field="category" scope="parent"/>
             <modifier type="increment" value="1" field="5.723232344415441e+21" affects="profiles.Unit" scope="parent"/>
+            <modifier type="append" value="(Scion of Mars)" field="name" scope="parent"/>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="34f2-ab98-5fdc-105d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="34f2-ab98-5fdc-105d" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Signum" hidden="false" id="26a4-05fe-e3aa-1cd5" sortIndex="6">
@@ -7182,7 +7183,8 @@ If you select a named chapter from above and choose to use codex divergent trait
                       <conditionGroups>
                         <conditionGroup type="and">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ffc4-9fce-350d-21ca" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1028-7523-6719-7232" shared="true" includeChildSelections="true" childName="Scions of Mars"/>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="8f0b-efba-7e72-b45c" shared="true" includeChildSelections="true" childName="Aspire to Glory"/>
                           </conditions>
                           <conditionGroups>
                             <conditionGroup type="or">
@@ -8279,7 +8281,6 @@ May not take any relics or artefacts from the Armoury.</description>
                         <conditionGroup type="or">
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="force" childId="5129-52fb-efe2-22a3" shared="true" includeChildSelections="true" childName="Heed the Wisdom of the Ancients"/>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1028-7523-6719-7232" shared="true" includeChildSelections="true" childName="Scions of Mars"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -8287,11 +8288,6 @@ May not take any relics or artefacts from the Armoury.</description>
                     <modifier type="add" value="Aspire to Glory may not be selected along with Heed the Wisdom of the Ancients" field="info">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="force" childId="5129-52fb-efe2-22a3" shared="true" includeChildSelections="true" childName="Heed the Wisdom of the Ancients"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="add" value="Aspire to Glory may not be selected along with Scions of Mars" field="info">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="1028-7523-6719-7232" shared="true" includeChildSelections="true" childName="Scions of Mars"/>
                       </conditions>
                     </modifier>
                   </modifiers>
