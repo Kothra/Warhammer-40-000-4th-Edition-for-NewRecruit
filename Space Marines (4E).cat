@@ -2659,6 +2659,7 @@ Drop pods may be used in Standard Missions without your opponent&apos;s agreemen
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Land Raider" hidden="false" id="c5b1-0b81-b83f-f3a0" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
+        <categoryLink name="Flesh Over Steel Restricted" hidden="false" id="bdd6-7e3e-908c-a83b" targetId="b821-4ff1-d229-3c61" primary="false"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Terminator Armour" hidden="false" id="a10d-d7dd-4f63-b6a0">
@@ -5070,6 +5071,7 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
     <selectionEntry type="unit" import="true" name="Vindicator" hidden="false" id="2341-1759-1cd3-650c" sortIndex="19">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="a98a-4357-3fc8-0e86" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Flesh Over Steel Restricted" hidden="false" id="9330-12e7-4902-a50f" targetId="b821-4ff1-d229-3c61" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Vindicator" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="371d-92a1-973b-4519">
@@ -5103,45 +5105,11 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
           </constraints>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="dcd9-99d1-47a9-6268" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="dcd9-99d1-47a9-6268">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="00f5-2494-713d-8c74" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="0877-32be-d27e-405e" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3f4c-2d7d-e1b4-59cd" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="0" field="dcd9-99d1-47a9-6268">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="3f4c-2d7d-e1b4-59cd" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="00f5-2494-713d-8c74" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0877-32be-d27e-405e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Predator Annihilator" hidden="false" id="7737-f7b1-95b7-acab" sortIndex="20">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="4a0a-7e0d-b0e8-2d37" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Flesh Over Steel Banned" hidden="false" id="87fe-f656-e1f5-2586" targetId="3d27-2fef-1170-474e" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Predator Annihilator" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="b640-77e5-7b03-527c">
@@ -5209,17 +5177,11 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
           </constraints>
         </selectionEntry>
       </selectionEntries>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Predator Destructor" hidden="false" id="3f4c-2d7d-e1b4-59cd" sortIndex="21">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="34f9-4af5-7bc4-9721" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Flesh Over Steel Restricted" hidden="false" id="4614-a897-9579-37d8" targetId="b821-4ff1-d229-3c61" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Autocannon (Turret-mounted)" hidden="false" id="ebe9-6314-9bbc-115d">
@@ -5286,45 +5248,11 @@ The effect of the Lion Helm does not extend to vehicles.</characteristic>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="3eb4-33ac-bc73-7369" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="3eb4-33ac-bc73-7369">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="00f5-2494-713d-8c74" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="0877-32be-d27e-405e" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2341-1759-1cd3-650c" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="0" field="3eb4-33ac-bc73-7369">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="2341-1759-1cd3-650c" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="00f5-2494-713d-8c74" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0877-32be-d27e-405e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Whirlwind" hidden="false" id="0877-32be-d27e-405e" sortIndex="22">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="d816-701b-6977-daba" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Flesh Over Steel Restricted" hidden="false" id="498d-70be-e046-1d1b" targetId="b821-4ff1-d229-3c61" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="85"/>
@@ -5373,46 +5301,12 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
       <entryLinks>
         <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="697c-8140-5ded-4024" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9" sortIndex="2"/>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d962-093c-6296-62ce" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="d962-093c-6296-62ce">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="00f5-2494-713d-8c74" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3f4c-2d7d-e1b4-59cd" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2341-1759-1cd3-650c" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="0" field="d962-093c-6296-62ce">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="2341-1759-1cd3-650c" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="00f5-2494-713d-8c74" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="3f4c-2d7d-e1b4-59cd" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Raider Crusader" hidden="false" id="dcea-afce-6ef5-36b2" sortIndex="24">
       <categoryLinks>
         <categoryLink name="Land Raider" hidden="false" id="2737-ebd7-d40c-2cfc" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
         <categoryLink name="Heavy Support" hidden="false" id="378b-71f6-6dbc-74d4" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Flesh Over Steel Banned" hidden="false" id="8e2c-4747-d988-69e4" targetId="3d27-2fef-1170-474e" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Land Raider Crusader" typeId="56656869636c6523232344415441232323" typeName="Vehicle" hidden="false" id="ca30-26f9-36de-2ceb">
@@ -5503,17 +5397,6 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="265"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="39eb-b011-40d2-4d22" automatic="false"/>
       </constraints>
@@ -8990,12 +8873,6 @@ May not use any Allies.</description>
                             </conditionGroup>
                           </conditionGroups>
                         </conditionGroup>
-                        <conditionGroup type="or"/>
-                        <conditionGroup type="or"/>
-                        <conditionGroup type="or"/>
-                        <conditionGroup type="or"/>
-                        <conditionGroup type="or"/>
-                        <conditionGroup type="or"/>
                       </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
@@ -9359,41 +9236,6 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
         <categoryLink name="Heavy Support" hidden="false" id="98ee-4333-b4b0-1ccb" targetId="6a52-1951-5b0c-024e" primary="true"/>
         <categoryLink name="Land Raider" hidden="false" id="7e75-2f96-b928-07b5" targetId="cf0b-0171-f99b-fa4d" primary="false"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="214a-f777-29f9-3f7f" includeChildSelections="false"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="1" field="214a-f777-29f9-3f7f">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="3f4c-2d7d-e1b4-59cd" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="0877-32be-d27e-405e" shared="true"/>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="2341-1759-1cd3-650c" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="0" field="214a-f777-29f9-3f7f">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="2341-1759-1cd3-650c" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="3f4c-2d7d-e1b4-59cd" shared="true"/>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="0877-32be-d27e-405e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
     </entryLink>
     <entryLink import="true" name="Bike Squadron" hidden="true" id="18cd-6e35-5e07-7e43" type="selectionEntry" targetId="6acb-a381-8f5c-abdb">
       <categoryLinks>
@@ -9500,6 +9342,30 @@ If when using this power the Librarian rolls a 12 on his Psychic test, resolve t
     </categoryEntry>
     <categoryEntry name="Dreadnought" id="5330-7b73-1fd2-d75f" hidden="false"/>
     <categoryEntry name="Land Raider" id="cf0b-0171-f99b-fa4d" hidden="false"/>
+    <categoryEntry name="Flesh Over Steel Restricted" id="b821-4ff1-d229-3c61" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2c84-389f-8c96-b11e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="2c84-389f-8c96-b11e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" childName="Flesh over Steel" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Flesh Over Steel Banned" id="3d27-2fef-1170-474e" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="882b-3a6f-8783-c2ef" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="882b-3a6f-8783-c2ef">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="1ce1-51e8-0686-2e46" shared="true" childName="Flesh over Steel" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <infoLinks>
     <infoLink name="And They Shall Know No Fear" id="9d0f-b0cd-b7f8-ebf0" hidden="false" type="rule" targetId="8eaf-de62-f965-125b"/>
