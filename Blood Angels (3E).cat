@@ -163,15 +163,40 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Forge World" hidden="false" id="91f4-9e72-e103-f21c" type="selectionEntry" targetId="375a-d331-f8e5-1936" sortIndex="0"/>
-    <entryLink import="true" name="Predator Destructor [FW]" hidden="false" id="3ac7-7a07-6856-8022" type="selectionEntry" targetId="6bfa-aceb-5b89-ec37" sortIndex="200"/>
-    <entryLink import="true" name="Predator Annihilator [FW]" hidden="false" id="dd9d-71fd-1829-d21c" type="selectionEntry" targetId="35e9-8c2c-9ed2-b1e8" sortIndex="201"/>
-    <entryLink import="true" name="Whirlwind [FW]" hidden="false" id="ed2c-1f0a-8aaa-1790" type="selectionEntry" targetId="c3ea-4e3b-86af-b00c" sortIndex="203"/>
-    <entryLink import="true" name="Whirlwind Hyperios [FW]" hidden="false" id="96c8-99dc-33b5-b074" type="selectionEntry" targetId="cd75-10ac-ea11-e723" sortIndex="204"/>
-    <entryLink import="true" name="Vindicator [FW]" hidden="false" id="ab3c-18a6-583d-4874" type="selectionEntry" targetId="5226-2b5a-38e2-e182" sortIndex="205"/>
-    <entryLink import="true" name="Damocles Command Rhino [FW]" hidden="false" id="2369-d17b-610c-2e8e" type="selectionEntry" targetId="c42e-cf0a-8159-2e39" sortIndex="206"/>
+    <entryLink import="true" name="Predator Destructor [FW]" hidden="false" id="3ac7-7a07-6856-8022" type="selectionEntry" targetId="6bfa-aceb-5b89-ec37" sortIndex="200">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="46d6-088c-6184-87e2" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Predator Annihilator [FW]" hidden="false" id="dd9d-71fd-1829-d21c" type="selectionEntry" targetId="35e9-8c2c-9ed2-b1e8" sortIndex="201">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="1792-ce92-2874-0751" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind [FW]" hidden="false" id="ed2c-1f0a-8aaa-1790" type="selectionEntry" targetId="c3ea-4e3b-86af-b00c" sortIndex="203">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="b85a-8108-f72b-2bb0" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind Hyperios [FW]" hidden="false" id="96c8-99dc-33b5-b074" type="selectionEntry" targetId="cd75-10ac-ea11-e723" sortIndex="204">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="7e02-35cf-391d-012d" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vindicator [FW]" hidden="false" id="ab3c-18a6-583d-4874" type="selectionEntry" targetId="5226-2b5a-38e2-e182" sortIndex="205">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="5cb7-a89f-7bad-97c6" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Damocles Command Rhino [FW]" hidden="false" id="2369-d17b-610c-2e8e" type="selectionEntry" targetId="c42e-cf0a-8159-2e39" sortIndex="206">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="b6d4-b843-faae-9fa7" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Land Raider [FW]" hidden="false" id="0335-ef38-3cd4-9daa" type="selectionEntry" targetId="9cce-c74b-4f1e-1387" sortIndex="207">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="4056-9bf2-f046-9d0c" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Blood Angel" hidden="false" id="3076-6689-e799-9b02" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="250"/>
@@ -181,14 +206,34 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="bc3a-e861-0cf9-3da1" includeChildSelections="false"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="6dc7-a788-5932-0241" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Land Speeder Squadron [FW]" hidden="false" id="9fa1-91ff-3dc8-7f08" type="selectionEntry" targetId="82a9-3a56-9f1c-a74a" sortIndex="210"/>
-    <entryLink import="true" name="Land Raider Helios [FW]" hidden="false" id="552e-aa82-107e-fa59" type="selectionEntry" targetId="2b27-ed1a-a6ec-2d15" sortIndex="209"/>
-    <entryLink import="true" name="Land Speeder Tempest [FW]" hidden="false" id="aaf4-0786-1f19-8b81" type="selectionEntry" targetId="1fd6-656f-b112-159d" sortIndex="211"/>
-    <entryLink import="true" name="Venerable Dreadnought [FW]" hidden="false" id="379d-aa10-456c-7dd8" type="selectionEntry" targetId="d87a-0aae-57fd-3ea7" sortIndex="212"/>
+    <entryLink import="true" name="Land Speeder Squadron [FW]" hidden="false" id="9fa1-91ff-3dc8-7f08" type="selectionEntry" targetId="82a9-3a56-9f1c-a74a" sortIndex="210">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="1d78-655d-73cb-aa8a" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [FW]" hidden="false" id="552e-aa82-107e-fa59" type="selectionEntry" targetId="2b27-ed1a-a6ec-2d15" sortIndex="209">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="e845-bf0b-c0e0-8d99" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest [FW]" hidden="false" id="aaf4-0786-1f19-8b81" type="selectionEntry" targetId="1fd6-656f-b112-159d" sortIndex="211">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="e6a6-0c70-2415-72ff" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Venerable Dreadnought [FW]" hidden="false" id="379d-aa10-456c-7dd8" type="selectionEntry" targetId="d87a-0aae-57fd-3ea7" sortIndex="212">
+      <categoryLinks>
+        <categoryLink name="Blood Angel" hidden="false" id="5871-b3ed-5758-f496" targetId="e39c-0852-74f1-402d" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Dreadnought [FW]" hidden="false" id="ae86-2bd4-a365-51ae" type="selectionEntry" targetId="f661-d47c-9739-8209" sortIndex="213">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="f1de-b971-34b0-a884" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Blood Angel" hidden="false" id="8b08-cadc-dea6-bfc3" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="remove" value="39ab-2bcd-49d1-cfef" field="category"/>
@@ -1915,6 +1960,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
       </profiles>
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="31df-64db-f40d-f73d" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Blood Angel" hidden="false" id="a0ce-185c-bbe3-91d6" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon 1" id="92c5-24ec-7538-dfff" hidden="false" defaultSelectionEntryId="271b-32b1-d9ab-6fae" sortIndex="1" flatten="true">
@@ -2009,6 +2055,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
         <categoryLink name="Heavy Support" hidden="false" id="db3c-906d-e870-b912" targetId="6a52-1951-5b0c-024e" primary="true"/>
         <categoryLink name="Blood Angel" hidden="false" id="7b31-f4d1-d92c-42ed" targetId="e39c-0852-74f1-402d" primary="false"/>
         <categoryLink name="Forge World" hidden="false" id="129b-aeca-2462-9faa" targetId="087b-1c16-81ac-ce0d" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="8ded-3af3-dfc5-b355" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="110"/>
@@ -2097,6 +2144,7 @@ In addition, any enemy squad within 6&quot; of Dante at the start of that side&a
         <categoryLink name="Blood Angel" hidden="false" id="d325-d802-e744-29b9" targetId="e39c-0852-74f1-402d" primary="false"/>
         <categoryLink name="Dreadnought" hidden="false" id="e049-77f7-a878-7863" targetId="5330-7b73-1fd2-d75f" primary="false"/>
         <categoryLink name="Forge World" hidden="false" id="3c86-766f-f57e-529d" targetId="087b-1c16-81ac-ce0d" primary="false"/>
+        <categoryLink name="Blood Angel" hidden="false" id="3691-bb86-b857-ef6b" targetId="e39c-0852-74f1-402d" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Furioso Dreadnought" typeId="57616c6b657223232344415441232323" typeName="Walker" hidden="false" id="ce87-33d0-2da2-18c6">
