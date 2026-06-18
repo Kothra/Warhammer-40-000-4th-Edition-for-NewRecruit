@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="55e7-b0fe-b92b-4ad8" name="Space Wolves (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="1" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="9d0f-b637-b918-4624">
+<catalogue library="false" id="55e7-b0fe-b92b-4ad8" name="Space Wolves (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="9d0f-b637-b918-4624">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Space Marines (4E)" id="3cdc-72ee-2bf9-4be3" importRootEntries="false" targetId="c99d-b51f-afe5-22cb"/>
   </catalogueLinks>
@@ -3161,6 +3161,78 @@ You may not pick Logan Grimnar or Ragnar Blackmane for this bonus.</description>
     <entryLink import="true" name="Attack Bike Squadron" hidden="false" id="bbf2-ff6c-11a6-427c" type="selectionEntry" targetId="dd31-a3d9-3d3b-cb2d">
       <categoryLinks>
         <categoryLink name="Space Wolf" hidden="false" id="8826-6075-8e2b-5a0c" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Predator Destructor [FW]" hidden="false" id="1e18-f628-c34c-017b" type="selectionEntry" targetId="6bfa-aceb-5b89-ec37">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="3a8a-68f8-ae84-28e8" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Predator Annihilator [FW]" hidden="false" id="d07e-0c52-778c-af6e" type="selectionEntry" targetId="35e9-8c2c-9ed2-b1e8">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="0d25-e0c2-eb1e-77d9" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind [FW]" hidden="false" id="e001-11b4-bf5f-0a7f" type="selectionEntry" targetId="c3ea-4e3b-86af-b00c">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="d8e2-d0ea-a0f8-cd56" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind Hyperios [FW]" hidden="false" id="8a15-4b97-08e8-9bbe" type="selectionEntry" targetId="cd75-10ac-ea11-e723">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="ad0a-fb6b-e31e-2b7a" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vindicator [FW]" hidden="false" id="5ac7-0dfb-8349-e214" type="selectionEntry" targetId="5226-2b5a-38e2-e182">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="970f-e2d7-5b87-6643" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Damocles Command Rhino [FW]" hidden="false" id="cb25-8f7c-757a-e465" type="selectionEntry" targetId="c42e-cf0a-8159-2e39">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="64f4-699b-eaa8-8ded" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider [FW]" hidden="false" id="686d-c7a4-8880-994f" type="selectionEntry" targetId="9cce-c74b-4f1e-1387">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="6e17-3821-3cdf-f7ab" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Space Wolf" hidden="false" id="8780-24ff-8a2a-1f99" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="250"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Crusader [FW]" hidden="false" id="9749-8951-c392-f35f" type="selectionEntry" targetId="0a31-a731-96f9-1092">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fa89-eec7-bb74-c61a" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="cedc-4919-9786-ca4e" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [FW]" hidden="false" id="415c-8a99-2410-5aaa" type="selectionEntry" targetId="2b27-ed1a-a6ec-2d15">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="4898-3017-f78b-ffa7" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Squadron [FW]" hidden="false" id="e03c-400e-098c-6fb0" type="selectionEntry" targetId="82a9-3a56-9f1c-a74a">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="ceef-f4f9-8896-ee58" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest [FW]" hidden="false" id="0e0c-2cba-dcf4-9e78" type="selectionEntry" targetId="1fd6-656f-b112-159d">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="3a32-0b93-6c83-7026" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Venerable Dreadnought [FW]" hidden="false" id="fa35-b83b-9f7d-acf7" type="selectionEntry" targetId="d87a-0aae-57fd-3ea7">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="29d4-25a1-0275-1541" targetId="407e-febc-7e2c-0621" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dreadnought [FW]" hidden="false" id="b1ed-223b-d458-bf33" type="selectionEntry" targetId="f661-d47c-9739-8209">
+      <categoryLinks>
+        <categoryLink name="Space Wolf" hidden="false" id="f0e5-946e-2f92-50a8" targetId="407e-febc-7e2c-0621" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
