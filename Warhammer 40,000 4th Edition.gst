@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="4" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
+<gameSystem id="sys-b41a-8226-286b-0dea" name="Warhammer 40,000 4th Edition" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Kothra" publicationId="c0d3-c074-f54c-9ec4">
   <categoryEntries>
     <categoryEntry name="HQ" id="0d45-9523-cfd8-4efd" hidden="false"/>
     <categoryEntry name="Elites" id="39ab-2bcd-49d1-cfef" hidden="false"/>
@@ -15,6 +15,7 @@
     <categoryEntry name="Additional Units" id="0589-7c29-bfa2-d566" hidden="false"/>
     <categoryEntry name="Blood Angel" id="e39c-0852-74f1-402d" hidden="false"/>
     <categoryEntry name="Space Wolf" id="407e-febc-7e2c-0621" hidden="false"/>
+    <categoryEntry name="Forge World" id="087b-1c16-81ac-ce0d" hidden="false"/>
   </categoryEntries>
   <publications>
     <publication name="Warhammer 40,000 4th Edition Rulebook" id="c0d3-c074-f54c-9ec4" hidden="false" shortName="BRB" publisher="Warhammer 40,000 4th Edition Rulebook" publicationDate="2004/08/28" publisherUrl="https://wh40k.lexicanum.com/wiki/Warhammer_40,000_4th_Edition_Rulebook"/>
@@ -48,11 +49,11 @@
     <publication name="Chapter Approved 2001" id="1e8d-01eb-e231-b479" hidden="false" publisher="Chapter Approved 2001" shortName="CA01" publicationDate="2001/07" publisherUrl="https://wh40k.lexicanum.com/wiki/Chapter_Approved_2001"/>
     <publication name="Chapter Approved 2003" id="c20e-10ee-f8e8-b94e" hidden="false" shortName="CA03" publisher="Chapter Approved 2003" publicationDate="2002/11" publisherUrl="https://wh40k.lexicanum.com/wiki/Chapter_Approved_2003"/>
     <publication name="Chapter Approved 2004" id="6ede-3247-4032-c53b" hidden="false" publisher="Chapter Approved 2004" shortName="CA04" publisherUrl="https://wh40k.lexicanum.com/wiki/Chapter_Approved_2004" publicationDate="2004"/>
-    <publication name="Imperial Armour Vol. 1 - Imperial Guard" id="296c-ccd7-595e-a2e9" hidden="false" publisher="Imperial Armour Volume One: Imperial Guard &amp; Imperial Navy" shortName="IAV1" publicationDate="2003/01" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_One_-_Imperial_Guard_and_Imperial_Navy"/>
-    <publication name="Imperial Armour Vol. 2 - Space Marines &amp; Inquisition" id="bcb1-c9fa-ec1b-8e38" hidden="false" shortName="IAV2" publisher="Imperial Armour Volume Two - Space Marines and Forces of the Inquisition" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Two_-_Space_Marines_and_Forces_of_the_Inquisition" publicationDate="2004/12"/>
-    <publication name="Imperial Armour Vol. 3 - The Taros Campaign" id="c95d-1db6-d313-22ab" hidden="false" publisher="Imperial Armour Volume Three - The Taros Campaign" shortName="IAV3" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Three_-_The_Taros_Campaign" publicationDate="2005/10"/>
-    <publication name="Imperial Armour Vol. 5 - Siege of Vraks Pt. 1" id="dd2d-f9b0-781c-f79f" hidden="false" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Five_-_The_Siege_of_Vraks_-_Part_One" shortName="IAV5" publisher="Imperial Armour Volume Five - The Siege of Vraks - Part One" publicationDate="2007/12"/>
-    <publication name="Imperial Armour Vol. 4 - The Anphelion Project" id="6ea6-0bcb-b3b1-1ba5" hidden="false" publisher="Imperial Armour Volume Four - The Anphelion Project" shortName="IAV4" publicationDate="2006/12" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Four_-_The_Anphelion_Project"/>
+    <publication name="Imperial Armour Vol. 1 - Imperial Guard" id="296c-ccd7-595e-a2e9" hidden="false" publisher="Imperial Armour Volume One: Imperial Guard &amp; Imperial Navy" shortName="IAv1" publicationDate="2003/01" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_One_-_Imperial_Guard_and_Imperial_Navy"/>
+    <publication name="Imperial Armour Vol. 2 - Space Marines &amp; Inquisition" id="bcb1-c9fa-ec1b-8e38" hidden="false" shortName="IAv2" publisher="Imperial Armour Volume Two - Space Marines and Forces of the Inquisition" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Two_-_Space_Marines_and_Forces_of_the_Inquisition" publicationDate="2004/12"/>
+    <publication name="Imperial Armour Vol. 3 - The Taros Campaign" id="c95d-1db6-d313-22ab" hidden="false" publisher="Imperial Armour Volume Three - The Taros Campaign" shortName="IAv3" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Three_-_The_Taros_Campaign" publicationDate="2005/10"/>
+    <publication name="Imperial Armour Vol. 5 - Siege of Vraks Pt. 1" id="dd2d-f9b0-781c-f79f" hidden="false" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Five_-_The_Siege_of_Vraks_-_Part_One" shortName="IAv5" publisher="Imperial Armour Volume Five - The Siege of Vraks - Part One" publicationDate="2007/12"/>
+    <publication name="Imperial Armour Vol. 4 - The Anphelion Project" id="6ea6-0bcb-b3b1-1ba5" hidden="false" publisher="Imperial Armour Volume Four - The Anphelion Project" shortName="IAv4" publicationDate="2006/12" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Volume_Four_-_The_Anphelion_Project"/>
     <publication name="Imperial Armour Update 2005" id="5a6f-859c-946b-7329" hidden="false" publisher="Imperial Armour Update 2005" shortName="IA05" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Update_2005" publicationDate="2005"/>
     <publication name="Imperial Armour Update 2006" id="da31-fef4-944a-f034" hidden="false" shortName="IA06" publisher="Imperial Armour Update 2006" publicationDate="2006" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Update_2006"/>
     <publication name="Imperial Armour Update (2002)" id="3c4e-ed0b-b966-9bce" hidden="false" publisherUrl="https://wh40k.lexicanum.com/wiki/Imperial_Armour_Update" publisher="Imperial Armour Update" shortName="IA02" publicationDate="2002"/>
@@ -108,7 +109,7 @@
         <characteristicType name="A" id="dd6f-2402-7687-9468"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Flyer" id="3a08-ea03-a598-8615" hidden="false" sortIndex="14">
+    <profileType name="Flyer" id="3a08-ea03-a598-8615" hidden="false" sortIndex="13">
       <characteristicTypes>
         <characteristicType name="BS" id="9878-e3f6-b7b4-7225"/>
         <characteristicType name="Front" id="3a4e-bc1d-4a12-7176"/>
@@ -1466,6 +1467,15 @@ If a Psyker rolls a 2 or 12 when making their Psychic test, the Psyker is subjec
     <rule name="Assault Vehicle" id="9b2f-9ece-4171-4f3b" hidden="false">
       <description>Models disembarking from any access point may launch an assault on the turn they do so.</description>
     </rule>
+    <rule name="Anti-Aircraft Mount" id="257c-c3b6-2c15-0be7" hidden="false">
+      <description>An anti-aircraft mount allows the weapon to shoot at flyers using its normal BS, rather than only hitting on a 6. It allows ordnance and barrage weapons to fire at flyers. For ordnance or barrage weapons roll the Scatter dice, on a &apos;Hit&apos; result the flyer is is, otherwise the shot misses. Do not roll for scatter.
+
+Weapons fitting in anti-aircraft mounts may not fire at all if the vehicle moved, and preclude the use of any other weapons on the vehicle in the turn that they fired, unless they are fitted to a super heavy vehicle.</description>
+      <alias>AA Mount</alias>
+    </rule>
+    <rule name="Super Heavy Vehicle" id="45bc-36e9-08bf-9dd3" hidden="false">
+      <alias>War Machine</alias>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Frag Grenades" hidden="false" id="2d20-fb36-3564-0dbe">
@@ -1864,6 +1874,33 @@ Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteris
       <infoLinks>
         <infoLink name="Battle Cannon" id="abb2-142d-4d55-8da7" hidden="false" type="profile" targetId="ef13-5d02-562d-ef4b"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Forge World" hidden="false" id="375a-d331-f8e5-1936" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink name="Force Customization" hidden="false" id="1970-aba1-2bcc-5d16" targetId="7466-cf81-3a11-64ab" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="4026-20f9-8592-2829-max" includeChildSelections="false" automatic="false"/>
+      </constraints>
+      <rules>
+        <rule name="Note" id="1cc2-0467-33c8-441d" hidden="false">
+          <description>For units that are repeated between an Imperial Armour book and a subsequent Codex, it is recommended to use the Codex version unless agreed upon with your opponent.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Anti-Aircraft Mount" hidden="false" id="022e-1119-c5c0-8414">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="AA Mount" id="799c-d798-0613-337f" hidden="false" type="rule" targetId="257c-c3b6-2c15-0be7"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713d-5833-9063-9d0a" includeChildSelections="false" automatic="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="append" value="AA Mount" field="8b10-045a-f593-605e" scope="parent" affects="profiles.Weapon" join=", "/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <conditions>

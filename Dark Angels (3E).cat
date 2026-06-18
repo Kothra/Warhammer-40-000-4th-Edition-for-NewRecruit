@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="3" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="5813-70d9-ad1a-07f5">
+<catalogue library="false" id="e91d-d504-5f58-6e99" name="Dark Angels (3E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="2" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="5813-70d9-ad1a-07f5">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Space Marines (4E)" id="92c6-d8b3-84b5-653e" importRootEntries="false" targetId="c99d-b51f-afe5-22cb"/>
   </catalogueLinks>
@@ -737,6 +737,86 @@
         </modifierGroup>
       </modifierGroups>
     </entryLink>
+    <entryLink import="true" name="Predator Destructor [FW]" hidden="false" id="4b01-742e-79ee-1e83" type="selectionEntry" targetId="6bfa-aceb-5b89-ec37">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="f317-fb04-cdfa-945e" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Predator Annihilator [FW]" hidden="false" id="0fc2-17e6-a4f3-7734" type="selectionEntry" targetId="35e9-8c2c-9ed2-b1e8">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="5508-9c5b-77d9-7ad2" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind [FW]" hidden="false" id="0df0-d99a-7707-5e6e" type="selectionEntry" targetId="c3ea-4e3b-86af-b00c">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="925e-cde7-b97f-7ca7" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Whirlwind Hyperios [FW]" hidden="false" id="508e-6f76-179f-493b" type="selectionEntry" targetId="cd75-10ac-ea11-e723">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="b38c-ccf5-a6eb-124c" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vindicator [FW]" hidden="false" id="0b88-f026-bcc6-21af" type="selectionEntry" targetId="5226-2b5a-38e2-e182">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="2ee0-fd6b-2c7f-bd6c" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Damocles Command Rhino [FW]" hidden="false" id="ce6d-d84b-42b0-3cf1" type="selectionEntry" targetId="c42e-cf0a-8159-2e39">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="2ae8-bc1f-cbe3-c92e" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Raider [FW]" hidden="false" id="cbda-d5d3-ca5f-49ff" type="selectionEntry" targetId="9cce-c74b-4f1e-1387">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="1ff6-d971-8e24-4317" targetId="6a52-1951-5b0c-024e" primary="true"/>
+        <categoryLink name="Dark Angel" hidden="false" id="0ce9-2fc6-4f4f-346b" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="250"/>
+      </costs>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Crusader [FW]" hidden="false" id="b0d6-f6b4-3b28-1284" type="selectionEntry" targetId="0a31-a731-96f9-1092">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="3ffb-182a-165e-fa11" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+        <categoryLink name="Dark Angel" hidden="false" id="02b8-4c2f-0296-51c6" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="de19-468a-2f3e-98d5" includeChildSelections="false"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="true" name="Land Raider Helios [FW]" hidden="false" id="2977-bc44-2a00-2aaf" type="selectionEntry" targetId="2b27-ed1a-a6ec-2d15">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="893a-51e8-3a87-c79f" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Squadron [FW]" hidden="false" id="d61e-b1e5-0695-d448" type="selectionEntry" targetId="82a9-3a56-9f1c-a74a">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="abbf-9c68-139f-4338" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Land Speeder Tempest [FW]" hidden="false" id="acc3-ebae-9d68-d5ca" type="selectionEntry" targetId="1fd6-656f-b112-159d">
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="125"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Ravenwing" id="df76-44b2-be81-1c8f" hidden="false" type="rule" targetId="fbf9-5752-f4f1-414a"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="524c-5ceb-c599-8df9" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Venerable Dreadnought [FW]" hidden="false" id="dbc0-48fd-5425-ece4" type="selectionEntry" targetId="d87a-0aae-57fd-3ea7">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="485f-3afc-bc5b-c8df" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dreadnought [FW]" hidden="false" id="9562-6ccc-4f06-97c1" type="selectionEntry" targetId="f661-d47c-9739-8209">
+      <categoryLinks>
+        <categoryLink name="Dark Angel" hidden="false" id="c886-9acc-7633-9341" targetId="9862-c761-5bd2-ffc7" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Forge World" hidden="false" id="0579-17c2-58d0-0a86" type="selectionEntry" targetId="375a-d331-f8e5-1936" sortIndex="0"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Deathwing" id="915b-6b49-dbe2-78ee" hidden="false"/>
@@ -1383,6 +1463,112 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mortis Dreadnought [FW]" hidden="true" id="4510-c933-41d0-edd2" publicationId="bcb1-c9fa-ec1b-8e38">
+      <profiles>
+        <profile name="Mortis Dreadnought" typeId="57616c6b657223232344415441232323" typeName="Walker" hidden="false" id="6687-f88a-5adc-1726">
+          <characteristics>
+            <characteristic name="Front" typeId="2c29-350b-f248-dd77">12</characteristic>
+            <characteristic name="Side" typeId="0420-dd4d-5193-9751">12</characteristic>
+            <characteristic name="Rear" typeId="261f-f688-43d2-6426">10</characteristic>
+            <characteristic name="WS" typeId="cdb5-5759-7ba6-4165">4</characteristic>
+            <characteristic name="BS" typeId="c2d0-06f8-ae22-6c79">4</characteristic>
+            <characteristic name="S" typeId="c10b-81fc-f48d-cb9c">6</characteristic>
+            <characteristic name="I" typeId="d3ac-4b4f-59d3-54d0">4</characteristic>
+            <characteristic name="A" typeId="dd6f-2402-7687-9468">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Dreadnought" hidden="false" id="6ddb-9c2c-35ab-087f" targetId="5330-7b73-1fd2-d75f" primary="false"/>
+        <categoryLink name="Elites" hidden="false" id="3992-f6a0-561e-45e6" targetId="39ab-2bcd-49d1-cfef" primary="true"/>
+        <categoryLink name="Forge World" hidden="false" id="e037-9281-6a58-b206" targetId="087b-1c16-81ac-ce0d" primary="false"/>
+        <categoryLink name="Aspire to Glory Restricted" hidden="false" id="0096-ff5e-f961-3f81" targetId="4960-bc53-f3ff-6ae4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Vehicle Upgrades" hidden="false" id="3564-1e90-ca36-a6b0" type="selectionEntryGroup" targetId="bc1e-2573-4257-74e9" sortIndex="5"/>
+        <entryLink import="true" name="Transport" hidden="false" id="c1b1-7d7b-3bbb-d483" type="selectionEntryGroup" targetId="f59a-7dd6-663f-131b" sortIndex="6"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1f36-c098-6538-5d85" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="375a-d331-f8e5-1936" shared="true" includeChildSelections="true" childName="Forge World"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" id="c8c9-2a0a-0ce9-21b3" hidden="false" defaultSelectionEntryId="none" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e93-ad29-f032-76e2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4101-0f1b-f1ba-6567" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Twin-linked Lascannon" hidden="false" id="5091-db5e-6987-655b">
+              <infoLinks>
+                <infoLink name="Lascannon" id="c80a-400e-2be0-8086" hidden="false" type="profile" targetId="a985-b7e4-1396-ce64">
+                  <modifiers>
+                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", "/>
+                    <modifier type="prepend" value="2x Twin-linked" field="name" affects="self.entries.profiles.Weapon"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="100"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Twin-linked Autocannon" hidden="false" id="c62f-e539-7bb3-9b35">
+              <infoLinks>
+                <infoLink name="Autocannon" id="0895-6331-5d3f-9d0f" hidden="false" type="profile" targetId="7d29-c50b-9499-c31b">
+                  <modifiers>
+                    <modifier type="prepend" value="2x Twin-linked" field="name" affects="self.entries.profiles.Weapon"/>
+                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="70"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Twin-linked Heavy Bolter" hidden="false" id="f333-a3a1-5b5f-53fe">
+              <infoLinks>
+                <infoLink name="Heavy Bolter" id="5dfc-0548-6a01-7420" hidden="false" type="profile" targetId="0e61-328d-62cd-8b59">
+                  <modifiers>
+                    <modifier type="prepend" value="2x Twin-linked" field="name" affects="self.entries.profiles.Weapon"/>
+                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" join=", "/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Missile Launcher" hidden="false" id="03f5-b55a-3934-a89e">
+              <infoLinks>
+                <infoLink name="Missile Launcher (Frag)" id="b85c-1190-bfaa-68e9" hidden="false" type="profile" targetId="2774-242b-9be0-90f2">
+                  <modifiers>
+                    <modifier type="prepend" value="2x" field="name" affects="self.entries.profiles.Weapon"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Missile Launcher (Krak)" id="ca9b-059d-3661-18f0" hidden="false" type="profile" targetId="db43-c0ed-46f2-39ab">
+                  <modifiers>
+                    <modifier type="prepend" value="2x" field="name" affects="self.entries.profiles.Weapon"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="50"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>Space Marines</comment>
+      <costs>
+        <cost name="Points" typeId="4deb-313d-6685-f48b" value="65"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
