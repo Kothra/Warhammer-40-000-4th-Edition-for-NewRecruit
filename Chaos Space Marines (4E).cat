@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0ec4-29f4-dcb0-0107" name="Chaos Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="2" authorName="Kothra" battleScribeVersion="2.03" publicationId="3c33-edbb-79d5-85d1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0ec4-29f4-dcb0-0107" name="Chaos Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" publicationId="3c33-edbb-79d5-85d1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Icon of Chaos" id="837c-b0d9-39a1-ff07" hidden="false">
       <selectionEntries>
@@ -4440,7 +4440,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                             <modifier type="set" value="Pair of Lightning Claws" field="name"/>
                           </modifiers>
                           <costs>
-                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                            <cost name="Points" typeId="4deb-313d-6685-f48b" value="25"/>
                           </costs>
                           <comment>Paired</comment>
                           <constraints>
