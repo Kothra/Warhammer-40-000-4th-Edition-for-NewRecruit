@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Ethereal" hidden="false" id="e1f9-3763-f9f9-9013">
       <categoryLinks>
@@ -1043,7 +1043,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Seeker Missile" hidden="false" id="aa81-aab4-7a76-c2d2" type="selectionEntry" targetId="db60-5dab-709b-9e99">
+        <entryLink import="true" name="Seeker Missile" hidden="false" id="aa81-aab4-7a76-c2d2" type="selectionEntry" targetId="db60-5dab-709b-9e99" sortIndex="2">
           <constraints>
             <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="51e9-0ee3-b9bf-e1ca-min" includeChildSelections="false" automatic="true"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="51e9-0ee3-b9bf-e1ca-max" includeChildSelections="false" automatic="true"/>
@@ -1052,7 +1052,7 @@
             <modifier type="append" value="(turret-mounted)" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Networked Markerlight" hidden="false" id="c993-6860-7e51-f0da" type="selectionEntry" targetId="6527-9dbc-340b-34f8">
+        <entryLink import="true" name="Networked Markerlight" hidden="false" id="c993-6860-7e51-f0da" type="selectionEntry" targetId="6527-9dbc-340b-34f8" sortIndex="1">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c489-d77d-2496-2d24-min" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c489-d77d-2496-2d24-max" includeChildSelections="false"/>
@@ -1061,11 +1061,40 @@
             <modifier type="append" value="(turret-mounted)" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Vehicle Armoury" hidden="false" id="ae24-e36a-1b17-4ed7" type="selectionEntryGroup" targetId="cc37-0241-b035-5cf9"/>
+        <entryLink import="true" name="Vehicle Armoury" hidden="false" id="ae24-e36a-1b17-4ed7" type="selectionEntryGroup" targetId="cc37-0241-b035-5cf9" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="125"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Secondary Weapons" id="17a1-24e9-a99b-5176" hidden="false" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1e8-f7bf-31a4-5759" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8a8-5cb0-da33-bb09" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Burst Cannon" hidden="false" id="571f-5117-c808-d4c1" type="selectionEntry" targetId="d55e-1958-0701-6340">
+              <modifiers>
+                <modifier type="set" value="2x Burst Cannon" field="name"/>
+                <modifier type="set" value="2x Burst Cannon" field="name" affects="profiles.Weapon"/>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="2x Gun Drones" hidden="false" id="0666-1d6f-33d1-9d85" type="selectionEntry" targetId="f577-4ece-e85d-75d8">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Smart Missile System" hidden="false" id="6c44-82aa-d66f-130c" type="selectionEntry" targetId="97ca-2a28-52fb-8d1b">
+              <costs>
+                <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stealth Team" hidden="false" id="3faf-82d6-1fce-5529">
       <categoryLinks>
