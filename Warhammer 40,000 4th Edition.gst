@@ -1694,7 +1694,11 @@ Against vehicles, frag grenades roll D6+4 for armour penetration.</characteristi
         <infoLink name="Autocannon" id="18ca-59f8-b9db-3f02" hidden="false" type="profile" targetId="7d29-c50b-9499-c31b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="958c-db25-e5af-3db5"/>
+    <selectionEntry type="upgrade" import="true" name="Assault Cannon" hidden="false" id="958c-db25-e5af-3db5">
+      <infoLinks>
+        <infoLink name="Assault Cannon" id="959d-6309-5fb6-a8a3" hidden="false" type="profile" targetId="d4c2-a3d4-540a-5585"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="31e2-9687-ef98-263e">
       <infoLinks>
         <infoLink name="Plasma Gun" id="23d9-1386-5c5f-5292" hidden="false" type="profile" targetId="45fb-35fd-3a93-bc60"/>
@@ -1893,7 +1897,7 @@ Against vehicles, plasma grenades roll D6+5 for armour penetration.</characteris
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="10"/>
       </costs>
       <infoLinks>
-        <infoLink name="AA Mount" id="799c-d798-0613-337f" hidden="false" type="rule" targetId="257c-c3b6-2c15-0be7"/>
+        <infoLink name="Anti-Aircraft Mount" id="799c-d798-0613-337f" hidden="false" type="rule" targetId="257c-c3b6-2c15-0be7"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="713d-5833-9063-9d0a" includeChildSelections="false" automatic="true"/>
