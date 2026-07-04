@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
+<catalogue library="false" id="c99d-b51f-afe5-22cb" name="Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="13" battleScribeVersion="2.03" publicationId="e1e7-bf54-15e0-5ded" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Kothra">
   <sharedProfiles>
     <profile name="Space Marine" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="2d36-f6b7-fe66-ff61" noindex="true">
       <characteristics>
@@ -7487,9 +7487,21 @@ Castellan missiles are fired singly, each contains dozens of mines which upon th
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="1" field="6050-a68e-8ddb-4f3d">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="0d45-9523-cfd8-4efd" shared="true" includeChildSelections="true" childName="HQ"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="0d45-9523-cfd8-4efd" shared="true" includeChildSelections="true" childName="HQ"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="c42e-cf0a-8159-2e39" shared="true" includeChildSelections="true" childName="Damocles Command Rhino [FW]"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="0d45-9523-cfd8-4efd" shared="true" includeChildSelections="true" childName="HQ"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditions>
