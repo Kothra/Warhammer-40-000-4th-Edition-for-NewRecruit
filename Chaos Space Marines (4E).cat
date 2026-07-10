@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0ec4-29f4-dcb0-0107" name="Chaos Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="3" authorName="Kothra" battleScribeVersion="2.03" publicationId="3c33-edbb-79d5-85d1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0ec4-29f4-dcb0-0107" name="Chaos Space Marines (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" publicationId="3c33-edbb-79d5-85d1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Icon of Chaos" id="837c-b0d9-39a1-ff07" hidden="false">
       <selectionEntries>
@@ -3617,7 +3617,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
         <entryLink import="true" name="Transport" hidden="false" id="353d-9c8f-1233-fce4" type="selectionEntryGroup" targetId="32c6-23b0-5f64-6459"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Khorne Berserkers" hidden="false" id="39ed-c191-1f11-c3da">
+    <selectionEntry type="unit" import="true" name="Khorne Berzerkers" hidden="false" id="39ed-c191-1f11-c3da">
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="1147-e7d0-f845-77cf" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
       </categoryLinks>
@@ -3873,6 +3873,9 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
         <infoLink name="Fearless" id="f655-db5f-7939-b119" hidden="false" type="rule" targetId="db33-1068-512b-6958"/>
         <infoLink name="Furious Charge" id="12c8-01b6-80fc-3fd7" hidden="false" type="rule" targetId="d9b8-5d21-f44f-80d3"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Transport" hidden="false" id="661e-0fbc-b08a-1e36" type="selectionEntryGroup" targetId="32c6-23b0-5f64-6459"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thousand Sons" hidden="false" id="475d-f22d-8a9a-2bc8">
       <categoryLinks>
