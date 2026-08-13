@@ -4869,7 +4869,7 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
             <selectionEntry type="upgrade" import="true" name="Obliterator Weapons" hidden="false" id="4dd6-604c-0db4-3c30">
               <rules>
                 <rule name="Obliterator Weapons" id="af33-af7b-c4a0-9fcf" hidden="false">
-                  <description>Obliterators may fire one wepaon from those available in each Shooting phase, and the entire squad must choose the same weapon. The weapons available are: lascannon, multi-melta, plasma cannon, twin-linked plasma gun, twin-linked meltagun, twin-linked flamer.</description>
+                  <description>Obliterators may fire one weapon from those available in each Shooting phase, and the entire squad must choose the same weapon. The weapons available are: lascannon, multi-melta, plasma cannon, twin-linked plasma gun, twin-linked meltagun, twin-linked flamer.</description>
                 </rule>
               </rules>
               <infoLinks>
@@ -4877,22 +4877,34 @@ D6 - Created a Monster: The warriors are Fearless and add +2 to their Strength f
                 <infoLink name="Lascannon" id="6af0-248a-0208-749d" hidden="false" type="profile" targetId="a985-b7e4-1396-ce64"/>
                 <infoLink name="Multi-melta" id="401f-eda5-fb9e-b6d9" hidden="false" type="profile" targetId="1b9f-dc29-44a8-9237"/>
                 <infoLink name="Plasma Gun" id="5e1c-c8e8-cfd4-79f9" hidden="false" type="profile" targetId="45fb-35fd-3a93-bc60">
-                  <modifiers>
-                    <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon" join=" "/>
-                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
-                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
+                        <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon" join=" "/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </infoLink>
                 <infoLink name="Flamer" id="777a-7dfd-7ac4-3c07" hidden="false" type="profile" targetId="e329-1729-419b-2bb6">
-                  <modifiers>
-                    <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon" join=" "/>
-                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
-                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
+                        <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon" join=" "/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </infoLink>
                 <infoLink name="Meltagun" id="8fca-6d04-3688-0ac8" hidden="false" type="profile" targetId="4771-d658-dd0f-2ccb">
-                  <modifiers>
-                    <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon" join=" "/>
-                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
-                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
+                        <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon" join=" "/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
                 </infoLink>
               </infoLinks>
               <constraints>
