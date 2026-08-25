@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="6" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
+<catalogue library="false" id="9ca9-5bc8-ab76-8fc3" name="Orks (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="7" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="4f2e-0482-0981-cdae">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Shoota" hidden="false" id="c786-be8b-b307-da9a">
       <infoLinks>
@@ -2396,15 +2396,15 @@ D6 Result
                 <profile name="Stormboy" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="ceba-fc17-be34-c290">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jump Infantry</characteristic>
-                    <characteristic name="WS" typeId="5.753232323444154e+23"/>
-                    <characteristic name="BS" typeId="4.2532323234441546e+23"/>
-                    <characteristic name="S" typeId="5.323232344415441e+21"/>
-                    <characteristic name="T" typeId="5.423232344415441e+21"/>
-                    <characteristic name="W" typeId="5.723232344415441e+21"/>
-                    <characteristic name="I" typeId="4.923232344415441e+21"/>
-                    <characteristic name="A" typeId="4.123232344415441e+21"/>
-                    <characteristic name="LD" typeId="4c4423232344415441232323"/>
-                    <characteristic name="Sv" typeId="5.361766523232344e+27"/>
+                    <characteristic name="WS" typeId="5.753232323444154e+23">4</characteristic>
+                    <characteristic name="BS" typeId="4.2532323234441546e+23">2</characteristic>
+                    <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                    <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+                    <characteristic name="W" typeId="5.723232344415441e+21">1</characteristic>
+                    <characteristic name="I" typeId="4.923232344415441e+21">2</characteristic>
+                    <characteristic name="A" typeId="4.123232344415441e+21">2</characteristic>
+                    <characteristic name="LD" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="Sv" typeId="5.361766523232344e+27">6+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
