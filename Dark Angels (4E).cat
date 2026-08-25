@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="bbe5-2055-bf14-667d" name="Dark Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="4" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="bbe5-2055-bf14-667d" name="Dark Angels (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="3" revision="5" authorName="Kothra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Combat Squads" id="1e13-5a27-bd9e-b0ed" hidden="false">
       <description>A number of ten-man  units in the Dark Angels army have the option of breaking down into two five-man units.
@@ -1191,10 +1191,6 @@ Any model wearing Terminator armour can be teleported onto the battlefield. They
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2d0-e3c9-6b2e-3d82" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f6e-b842-449b-b300" includeChildSelections="false"/>
-              </constraints>
               <costs>
                 <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
               </costs>
