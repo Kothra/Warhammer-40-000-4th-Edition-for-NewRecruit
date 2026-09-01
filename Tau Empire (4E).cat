@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="98cd-ee45-13c3-0665" name="Tau Empire (4E)" gameSystemId="sys-b41a-8226-286b-0dea" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Ethereal" hidden="false" id="e1f9-3763-f9f9-9013">
       <categoryLinks>
@@ -959,6 +959,82 @@
               </costs>
             </entryLink>
           </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Forge World Weapons" id="d45c-cc6a-452b-74b8" hidden="true" flatten="true">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="375a-d331-f8e5-1936" shared="true" childName="Forge World" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Long-barreled Burst Cannon" hidden="false" id="3cc9-707d-a138-ee5b" type="selectionEntry" targetId="dc60-ff28-0210-0b58">
+                  <modifiers>
+                    <modifier type="prepend" value="Twin-linked" field="name"/>
+                    <modifier type="prepend" value="Twin-linked" field="name" affects="profiles.Weapon"/>
+                    <modifier type="append" value="Twin-linked" field="8b10-045a-f593-605e" affects="profiles.Weapon" join=", "/>
+                    <modifier type="set" value="6" field="537472656e67746823232344415441232323" affects="profiles.Weapon"/>
+                    <modifier type="set" value="4" field="4.1502323234441545e+23" affects="profiles.Weapon"/>
+                    <modifier type="append" value="[FW]" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Missile Pods [FW]" hidden="false" id="5971-263c-90c5-ee57">
+                  <profiles>
+                    <profile name="Missile Pods" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="7b8b-94bf-a171-2991">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                        <characteristic name="AP" typeId="4.1502323234441545e+23">4</characteristic>
+                        <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 4</characteristic>
+                        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked Fusion Cannon [FW]" hidden="false" id="d81d-3050-f8c4-cf24">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="30"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Twin-linked Fusion Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="eda6-6fff-585a-4753">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">24&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">8</characteristic>
+                        <characteristic name="AP" typeId="4.1502323234441545e+23">1</characteristic>
+                        <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Blast, Melta</characteristic>
+                        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Twin-linked Plasma Cannon [FW]" hidden="false" id="ffc7-00eb-59c5-6549">
+                  <costs>
+                    <cost name="Points" typeId="4deb-313d-6685-f48b" value="35"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Twin-linked Plasma Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="0454-5f34-5e68-cfd5">
+                      <characteristics>
+                        <characteristic name="Range" typeId="52616e676523232344415441232323">48&quot;</characteristic>
+                        <characteristic name="Strength" typeId="537472656e67746823232344415441232323">7</characteristic>
+                        <characteristic name="AP" typeId="4.1502323234441545e+23">2</characteristic>
+                        <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 2</characteristic>
+                        <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup name="Secondary Weapons" id="08fb-5d6c-39bc-7199" hidden="false" sortIndex="2">
           <constraints>
@@ -1061,7 +1137,8 @@
             <modifier type="append" value="(turret-mounted)" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Vehicle Armoury" hidden="false" id="ae24-e36a-1b17-4ed7" type="selectionEntryGroup" targetId="cc37-0241-b035-5cf9" sortIndex="4"/>
+        <entryLink import="true" name="Vehicle Armoury" hidden="false" id="ae24-e36a-1b17-4ed7" type="selectionEntryGroup" targetId="cc37-0241-b035-5cf9" sortIndex="5"/>
+        <entryLink import="true" name="Landing Gear" hidden="false" id="78ce-3af4-dcd1-f172" type="selectionEntry" targetId="5eaa-df58-4f55-beec" sortIndex="4"/>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="4deb-313d-6685-f48b" value="125"/>
@@ -1095,6 +1172,17 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="AA Upgrade [FW]" hidden="true" id="2be7-22fa-2c28-2921">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="375a-d331-f8e5-1936" shared="true" childName="Forge World" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stealth Team" hidden="false" id="3faf-82d6-1fce-5529">
       <categoryLinks>
@@ -1870,7 +1958,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shield Drone" hidden="false" id="f4fd-46fb-1eb9-1432">
       <profiles>
-        <profile name="Marker Drone" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="6c56-cb23-9929-3581">
+        <profile name="Shield Drone" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="6c56-cb23-9929-3581">
           <characteristics>
             <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jump Infantry (Jet Pack)</characteristic>
             <characteristic name="WS" typeId="5.753232323444154e+23">2</characteristic>
@@ -2633,6 +2721,19 @@ While attached, the Gun Drones may fire as part of the vehicle, using their own 
           </conditions>
         </modifierGroup>
       </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Long-barreled Burst Cannon" hidden="false" id="dc60-ff28-0210-0b58">
+      <profiles>
+        <profile name="Long-barreled Burst Cannon" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="f9a8-7d7d-e9d2-73c0">
+          <characteristics>
+            <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="537472656e67746823232344415441232323">5</characteristic>
+            <characteristic name="AP" typeId="4.1502323234441545e+23">5</characteristic>
+            <characteristic name="Type" typeId="8b10-045a-f593-605e">Assault 3</characteristic>
+            <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -3510,4 +3611,7 @@ Drones must maintain coherency with the unit their controller is in. If he is an
       </modifiers>
     </infoLink>
   </infoLinks>
+  <entryLinks>
+    <entryLink import="true" name="Forge World" hidden="false" id="9bab-a76f-8921-7449" type="selectionEntry" targetId="375a-d331-f8e5-1936" sortIndex="0"/>
+  </entryLinks>
 </catalogue>
